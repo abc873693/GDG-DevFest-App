@@ -1,5 +1,6 @@
 import 'package:flutter_devfest/home/session.dart';
 import 'package:flutter_devfest/home/speaker.dart';
+import 'package:flutter_devfest/home/sponsor.dart';
 import 'package:flutter_devfest/home/team.dart';
 import 'package:flutter_devfest/home/track.dart';
 import 'package:flutter_devfest/network/i_client.dart';
@@ -11,6 +12,7 @@ abstract class IHomeProvider {
   Future<TracksData> getTracks();
   Future<SessionsData> getSessions();
   Future<TeamsData> getTeams();
+  Future<SponsorsData> getSponsors();
 }
 
 class HomeProvider implements IHomeProvider {
@@ -29,6 +31,9 @@ class HomeProvider implements IHomeProvider {
 
   //! Not Working
   static final String kConstGetTeamsUrl = "${Devfest.baseUrl}/team-kol.json";
+
+  //! Not Working
+  static final String kConstGetSponsorsUrl = "${Devfest.baseUrl}/sponsor-kol.json";
 
   HomeProvider() {
     _client = Injector().currentClient;
@@ -72,6 +77,17 @@ class HomeProvider implements IHomeProvider {
     var result = await _client.getAsync(kConstGetTeamsUrl);
     if (result.networkServiceResponse.success) {
       TeamsData res = TeamsData.fromJson(result.mappedResult);
+      return res;
+    }
+
+    throw Exception(result.networkServiceResponse.message);
+  }
+
+  @override
+  Future<SponsorsData> getSponsors() async {
+    var result = await _client.getAsync(kConstGetSponsorsUrl);
+    if (result.networkServiceResponse.success) {
+      SponsorsData res = SponsorsData.fromJson(result.mappedResult);
       return res;
     }
 

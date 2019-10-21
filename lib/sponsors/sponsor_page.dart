@@ -1,40 +1,38 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_devfest/home/home_bloc.dart';
+import 'package:flutter_devfest/home/home_state.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SponsorPage extends StatelessWidget {
   static const String routeName = "/sponsor";
 
   @override
   Widget build(BuildContext context) {
-    // var _homeBloc = HomeBloc();
+    var _homeBloc = HomeBloc();
+    var state = _homeBloc.currentState as InHomeState;
+    var sponsors = state.sponsorsData.sponsors;
     return DevScaffold(
-      body: ListView(
-        children: <Widget>[
-          SponsorImage(
-            imgUrl: "https://devfest.gdgkolkata.org/assets/img/logos/gd.png",
-          ),
-          SizedBox(
+      body: ListView.separated(
+        itemBuilder: (BuildContext context, int index) {
+          return ListTile(
+            leading: SponsorImage(
+              imgUrl: sponsors[index].image,
+            ),
+            title: Text(sponsors[index].name),
+            subtitle: Text(sponsors[index].desc),
+            onTap: () {
+              launch(sponsors[index].url);
+            },
+          );
+        },
+        separatorBuilder: (BuildContext context, int index) {
+          return SizedBox(
             height: 30,
-          ),
-          SponsorImage(
-            imgUrl: "https://devfest.gdgkolkata.org/assets/img/jetbrains.png",
-          ),
-          SizedBox(
-            height: 30,
-          ),
-          SponsorImage(
-            imgUrl:
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin-logo.svg/220px-Kotlin-logo.svg.png",
-          ),
-          SizedBox(
-            height: 30,
-          ),
-          SponsorImage(
-            imgUrl:
-                "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_0016c93c710cf35990b999cba3a59bae/firebase.png",
-          )
-        ],
+          );
+        },
+        itemCount: sponsors.length,
       ),
       title: "Sponsors",
     );
@@ -45,6 +43,7 @@ class SponsorImage extends StatelessWidget {
   final String imgUrl;
 
   const SponsorImage({Key key, this.imgUrl}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -53,8 +52,8 @@ class SponsorImage extends StatelessWidget {
         padding: const EdgeInsets.all(12.0),
         child: CachedNetworkImage(
           imageUrl: imgUrl,
-          height: 200.0,
-          width: 200.0,
+          height: 50.0,
+          width: 50.0,
           fit: BoxFit.contain,
         ),
       ),

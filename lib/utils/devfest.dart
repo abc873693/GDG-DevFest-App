@@ -80,4 +80,5 @@ class Devfest {
   static const String tracksAssetJson = "assets/json/tracks.json";
   static const String sessionsAssetJson = "assets/json/sessions.json";
   static const String teamsAssetJson = "assets/json/teams.json";
+  static const String sponsorsAssetJson = "assets/json/sponsors.json";
 }

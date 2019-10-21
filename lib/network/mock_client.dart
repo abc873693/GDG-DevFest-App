@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_devfest/home/home_provider.dart';
 import 'package:flutter_devfest/home/session.dart';
 import 'package:flutter_devfest/home/speaker.dart';
+import 'package:flutter_devfest/home/sponsor.dart';
 import 'package:flutter_devfest/home/team.dart';
 import 'package:flutter_devfest/home/track.dart' as prefix0;
 import 'package:flutter_devfest/home/track.dart';
@@ -57,6 +58,16 @@ class MockClient implements IClient {
         rawString = jsonEncode(TeamsData(teams: teams));
       } else {
         rawString = await rootBundle.loadString(Devfest.teamsAssetJson);
+      }
+      resultClass = await compute(jsonParserIsolate, rawString);
+    }
+
+    //? For Sponsors Hardcoded Data
+    else if (resourcePath == HomeProvider.kConstGetSponsorsUrl) {
+      if (Injector().currentDataMode == DataMode.DART) {
+        rawString = jsonEncode(SponsorsData(sponsors: sponsors));
+      } else {
+        rawString = await rootBundle.loadString(Devfest.sponsorsAssetJson);
       }
       resultClass = await compute(jsonParserIsolate, rawString);
     }
