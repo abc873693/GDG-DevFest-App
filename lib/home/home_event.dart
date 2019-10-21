@@ -10,6 +10,7 @@ abstract class HomeEvent {
 
 class LoadHomeEvent extends HomeEvent {
   final IHomeProvider _homeProvider = HomeProvider();
+
   @override
   String toString() => 'LoadHomeEvent';
 
@@ -17,10 +18,12 @@ class LoadHomeEvent extends HomeEvent {
   Future<HomeState> applyAsync({HomeState currentState, HomeBloc bloc}) async {
     try {
       var speakersData = await _homeProvider.getSpeakers();
+      var tracksData = await _homeProvider.getTracks();
       var sessionsData = await _homeProvider.getSessions();
       var teamsData = await _homeProvider.getTeams();
       return InHomeState(
         speakersData: speakersData,
+        tracksData: tracksData,
         sessionsData: sessionsData,
         teamsData: teamsData,
       );

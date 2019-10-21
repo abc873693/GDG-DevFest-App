@@ -9,14 +9,18 @@ import 'package:flutter_devfest/universal/dev_scaffold.dart';
 import 'package:flutter_devfest/utils/tools.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'agenda_screen.dart';
+
 class AgendaPage extends StatelessWidget {
   static const String routeName = "/agenda";
 
   @override
   Widget build(BuildContext context) {
     var _homeBloc = HomeBloc();
+    var state = _homeBloc.currentState as InHomeState;
+    var tracks = state.tracksData.tracks;
     return DefaultTabController(
-      length: 3,
+      length: tracks.length,
       child: DevScaffold(
         title: "Agenda",
         tabBar: TabBar(
@@ -26,42 +30,27 @@ class AgendaPage extends StatelessWidget {
             fontSize: 12,
           ),
           isScrollable: false,
-          tabs: <Widget>[
-            Tab(
-              child: Text("Cloud"),
-              icon: Icon(
-                FontAwesomeIcons.cloud,
-                size: 12,
-              ),
-            ),
-            Tab(
-              child: Text("Mobile"),
-              icon: Icon(
-                FontAwesomeIcons.mobile,
-                size: 12,
-              ),
-            ),
-            Tab(
-              child: Text("Web & More"),
-              icon: Icon(
-                FontAwesomeIcons.chrome,
-                size: 12,
-              ),
-            )
-          ],
+          tabs: tracks.map(
+            (track) {
+              return Tab(
+                child: Text(track.title),
+                icon: Icon(
+                  FontAwesomeIcons.laptop,
+                  size: 12,
+                ),
+              );
+            },
+          ).toList(),
         ),
         body: TabBarView(
-          children: <Widget>[
-            CloudScreen(
-              homeBloc: _homeBloc,
-            ),
-            MobileScreen(
-              homeBloc: _homeBloc,
-            ),
-            WebScreen(
-              homeBloc: _homeBloc,
-            ),
-          ],
+          children: tracks.map(
+            (track) {
+              return AgendaScreen(
+                track: track,
+                homeBloc: _homeBloc,
+              );
+            },
+          ).toList(),
         ),
       ),
     );

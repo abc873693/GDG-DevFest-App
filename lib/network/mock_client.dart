@@ -7,6 +7,8 @@ import 'package:flutter_devfest/home/home_provider.dart';
 import 'package:flutter_devfest/home/session.dart';
 import 'package:flutter_devfest/home/speaker.dart';
 import 'package:flutter_devfest/home/team.dart';
+import 'package:flutter_devfest/home/track.dart' as prefix0;
+import 'package:flutter_devfest/home/track.dart';
 import 'package:flutter_devfest/utils/dependency_injection.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
 
@@ -25,6 +27,16 @@ class MockClient implements IClient {
         rawString = jsonEncode(SpeakersData(speakers: speakers));
       } else {
         rawString = await rootBundle.loadString(Devfest.speakersAssetJson);
+      }
+      resultClass = await compute(jsonParserIsolate, rawString);
+    }
+
+    //? For Tracks Hardcoded Data
+    else if (resourcePath == HomeProvider.kConstGetTracksUrl) {
+      if (Injector().currentDataMode == DataMode.DART) {
+        rawString = jsonEncode(TracksData(tracks: tracks));
+      } else {
+        rawString = await rootBundle.loadString(Devfest.tracksAssetJson);
       }
       resultClass = await compute(jsonParserIsolate, rawString);
     }

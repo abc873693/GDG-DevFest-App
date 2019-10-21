@@ -77,6 +77,7 @@ class Devfest {
 
   //* JSON URLS
   static const String speakersAssetJson = "assets/json/speakers.json";
+  static const String tracksAssetJson = "assets/json/tracks.json";
   static const String sessionsAssetJson = "assets/json/sessions.json";
   static const String teamsAssetJson = "assets/json/teams.json";
 }
