@@ -4,15 +4,19 @@ enum Flavor { MOCK, REST, FIREBASE }
 
 enum DataMode { DART, JSON }
 
+enum EventMode { SINGLE, MULTI }
+
 //DI
 class Injector {
   static final Injector _singleton = new Injector._internal();
   static Flavor _flavor;
   static DataMode _dataMode;
+  static EventMode _eventMode;
 
-  static void configure(Flavor flavor, DataMode dataMode) {
+  static void configure(Flavor flavor, DataMode dataMode, EventMode eventMode) {
     _flavor = flavor;
     _dataMode = dataMode;
+    _eventMode = eventMode;
   }
 
   factory Injector() {
@@ -42,5 +46,9 @@ class Injector {
       default:
         return DataMode.DART;
     }
+  }
+
+  EventMode get currentEventMode {
+    return _eventMode;
   }
 }

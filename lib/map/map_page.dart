@@ -1,19 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_devfest/config/config_bloc.dart';
+import 'package:flutter_devfest/config/config_state.dart';
+import 'package:flutter_devfest/config/devfest_event.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class MapPage extends StatefulWidget {
   static const String routeName = "/map";
+
   @override
   _MapPageState createState() => _MapPageState();
 }
 
 class _MapPageState extends State<MapPage> {
+  DevFestEvent get _devFestEvent =>
+      (ConfigBloc().currentState as InConfigState).devFestEvent;
+
   GoogleMapController _controller;
   bool isMapCreated = false;
-  static final LatLng myLocation = LatLng(37.42796133580664, -122.085749655962);
+  static final LatLng myLocation = LatLng(
+      (ConfigBloc().currentState as InConfigState).devFestEvent.location.lat,
+      (ConfigBloc().currentState as InConfigState).devFestEvent.location.lng);
 
   @override
   void initState() {
@@ -83,13 +91,13 @@ class _MapPageState extends State<MapPage> {
                   child: RichText(
                     textAlign: TextAlign.center,
                     text: TextSpan(
-                        text: "Google Office\n",
+                        text: "${_devFestEvent.location.mapTitle}\n",
                         style: Theme.of(context).textTheme.title.copyWith(
                               fontWeight: FontWeight.bold,
                             ),
                         children: [
                           TextSpan(
-                              text: "Shoreline Amphitheatre, Mountain View, CA",
+                              text: "${_devFestEvent.location.mapSubTitle}",
                               style: Theme.of(context).textTheme.subtitle,
                               children: []),
                         ]),

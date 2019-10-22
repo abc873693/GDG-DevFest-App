@@ -4,7 +4,13 @@
       "name": "Sundar Pichai",
       "desc": "Organizer",
       "contribution": "Google CEO",
-      "image": "https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0_400x400.jpg"
+      "image": "https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0_400x400.jpg",
+      "job": "",
+      "speciality": "",
+      "fbUrl": "",
+      "twitterUrl": "",
+      "linkedinUrl": "",
+      "githubUrl": ""
     },
     {
       "name": "Vrijraj",

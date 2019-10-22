@@ -3,6 +3,8 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_devfest/config/config_provider.dart';
+import 'package:flutter_devfest/config/devfest_event.dart';
 import 'package:flutter_devfest/home/home_provider.dart';
 import 'package:flutter_devfest/home/session.dart';
 import 'package:flutter_devfest/home/speaker.dart';
@@ -68,6 +70,26 @@ class MockClient implements IClient {
         rawString = jsonEncode(SponsorsData(sponsors: sponsors));
       } else {
         rawString = await rootBundle.loadString(Devfest.sponsorsAssetJson);
+      }
+      resultClass = await compute(jsonParserIsolate, rawString);
+    }
+
+    //? For DevFestEvent Hardcoded Data
+    else if (resourcePath == ConfigProvider.kConstGetDevFestEventUrl) {
+      if (Injector().currentDataMode == DataMode.DART) {
+        rawString = jsonEncode(devFestEvent);
+      } else {
+        rawString = await rootBundle.loadString(Devfest.devFestEventAssetJson);
+      }
+      resultClass = await compute(jsonParserIsolate, rawString);
+    }
+
+    //? For DevFestEvents Hardcoded Data
+    else if (resourcePath == ConfigProvider.kConstGetDevFestEventsUrl) {
+      if (Injector().currentDataMode == DataMode.DART) {
+        rawString = jsonEncode(devFestEvent);
+      } else {
+        rawString = await rootBundle.loadString(Devfest.devFestEventsAssetJson);
       }
       resultClass = await compute(jsonParserIsolate, rawString);
     }

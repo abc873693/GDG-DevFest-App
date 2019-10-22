@@ -2,6 +2,8 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:flutter_devfest/config/index.dart';
 
+import 'devfest_event.dart';
+
 class ConfigBloc extends Bloc<ConfigEvent, ConfigState> {
   static final ConfigBloc _configBlocSingleton = ConfigBloc._internal();
   factory ConfigBloc() {
@@ -10,6 +12,8 @@ class ConfigBloc extends Bloc<ConfigEvent, ConfigState> {
   ConfigBloc._internal();
 
   bool darkModeOn = false;
+
+  DevFestEvent devFestEvent;
 
   ConfigState get initialState => new UnConfigState();
 
