@@ -1,7 +1,9 @@
 {
   "tag": "gdg",
+  "isActive": true,
   "name": "DevFest",
-  "data": "2019/10/19",
+  "host": "GDG",
+  "date": "2019-11-9",
   "image": "https://jamaicandevelopers.com/p/devfest-2019/@@images/image",
   "welcomeText": "Welcome to GDG DevFest",
   "descText": "''DevFests are community-led, developer events hosted by GDG chapters around the globe focused on community building & learning about Google’s technologies. Each DevFest is inspired by and uniquely tailored to the needs of the developer community and region that hosts it.''",

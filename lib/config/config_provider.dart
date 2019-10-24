@@ -6,7 +6,7 @@ import 'package:flutter_devfest/utils/devfest.dart';
 abstract class IConfigProvider {
   Future<DevFestEvent> getDevFestEvent();
 
-  Future<DevFestEventsData> getDevFestEvents();
+  Future<DevFestEventsData> getDevFestEventsData();
 }
 
 class ConfigProvider implements IConfigProvider {
@@ -34,7 +34,7 @@ class ConfigProvider implements IConfigProvider {
   }
 
   @override
-  Future<DevFestEventsData> getDevFestEvents() async {
+  Future<DevFestEventsData> getDevFestEventsData() async {
     var result = await _client.getAsync(kConstGetDevFestEventsUrl);
     if (result.networkServiceResponse.success) {
       DevFestEventsData res = DevFestEventsData.fromJson(result.mappedResult);

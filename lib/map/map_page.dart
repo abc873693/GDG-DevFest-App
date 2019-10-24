@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_devfest/config/config_bloc.dart';
-import 'package:flutter_devfest/config/config_state.dart';
 import 'package:flutter_devfest/config/devfest_event.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -14,14 +13,14 @@ class MapPage extends StatefulWidget {
 }
 
 class _MapPageState extends State<MapPage> {
-  DevFestEvent get _devFestEvent =>
-      (ConfigBloc().currentState as InConfigState).devFestEvent;
+  DevFestEvent get _devFestEvent => ConfigBloc().devFestEvent;
 
   GoogleMapController _controller;
   bool isMapCreated = false;
   static final LatLng myLocation = LatLng(
-      (ConfigBloc().currentState as InConfigState).devFestEvent.location.lat,
-      (ConfigBloc().currentState as InConfigState).devFestEvent.location.lng);
+    ConfigBloc().devFestEvent.location.lat,
+    ConfigBloc().devFestEvent.location.lng,
+  );
 
   @override
   void initState() {

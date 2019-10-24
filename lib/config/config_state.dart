@@ -23,16 +23,21 @@ class UnConfigState extends ConfigState {
 
 /// Initialized
 class InConfigState extends ConfigState {
+  final DevFestEventsData devFestEventsData;
   final DevFestEvent devFestEvent;
 
-  InConfigState({this.devFestEvent}) : super([devFestEvent]);
+  InConfigState({this.devFestEventsData, this.devFestEvent})
+      : super([devFestEventsData, devFestEvent]);
 
   @override
   String toString() => 'InConfigState';
 
   @override
   ConfigState getStateCopy() {
-    return InConfigState(devFestEvent: this.devFestEvent);
+    return InConfigState(
+      devFestEvent: this.devFestEvent,
+      devFestEventsData: this.devFestEventsData,
+    );
   }
 }
 

@@ -44,10 +44,15 @@ class LoadDevFestEvent extends ConfigEvent {
   Future<ConfigState> applyAsync(
       {ConfigState currentState, ConfigBloc bloc}) async {
     try {
-      DevFestEvent devFestEvent;
+      print(Injector().currentEventMode);
       if (Injector().currentEventMode == EventMode.SINGLE)
-        devFestEvent = await _configProvider.getDevFestEvent();
-      return InConfigState(devFestEvent: devFestEvent);
+        bloc.devFestEvent = await _configProvider.getDevFestEvent();
+      else if (Injector().currentEventMode == EventMode.MULTI)
+        bloc.devFestEventsData = await _configProvider.getDevFestEventsData();
+      return InConfigState(
+        devFestEvent: bloc.devFestEvent,
+        devFestEventsData: bloc.devFestEventsData,
+      );
     } catch (_, stackTrace) {
       print('$_ $stackTrace');
       return new ErrorConfigState(_?.toString());

@@ -24,9 +24,12 @@ class DevFestEventsData {
 
 class DevFestEvent {
   String tag;
+  bool isActive;
   String name;
-  String data;
+  String host;
+  String date;
   String image;
+  String imageAsset;
   String welcomeText;
   String descText;
   Location location;
@@ -35,8 +38,9 @@ class DevFestEvent {
   DevFestEvent(
       {this.tag,
       this.name,
-      this.data,
+      this.date,
       this.image,
+      this.imageAsset,
       this.welcomeText,
       this.descText,
       this.location,
@@ -44,9 +48,12 @@ class DevFestEvent {
 
   DevFestEvent.fromJson(Map<String, dynamic> json) {
     tag = json['tag'];
+    isActive = json['isActive'];
     name = json['name'];
-    data = json['data'];
+    host = json['host'];
+    date = json['date'];
     image = json['image'];
+    imageAsset = json['imageAsset'];
     welcomeText = json['welcomeText'];
     descText = json['descText'];
     location = json['location'] != null
@@ -58,9 +65,12 @@ class DevFestEvent {
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['tag'] = this.tag;
+    data['isActive'] = this.isActive;
     data['name'] = this.name;
-    data['data'] = this.data;
+    data['host'] = this.host;
+    data['date'] = this.date;
     data['image'] = this.image;
+    data['imageAsset'] = this.imageAsset;
     data['welcomeText'] = this.welcomeText;
     data['descText'] = this.descText;
     if (this.location != null) {
@@ -76,7 +86,7 @@ class DevFestEvent {
 DevFestEvent devFestEvent = DevFestEvent(
   tag: "gdg",
   name: "DevFest",
-  data: "2019/10/19",
+  date: "2019/10/19",
   image: "https://jamaicandevelopers.com/p/devfest-2019/@@images/image",
   welcomeText: "Welcome to GDG DevFest",
   descText:

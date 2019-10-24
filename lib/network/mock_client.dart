@@ -3,6 +3,7 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_devfest/config/config_bloc.dart';
 import 'package:flutter_devfest/config/config_provider.dart';
 import 'package:flutter_devfest/config/devfest_event.dart';
 import 'package:flutter_devfest/home/home_provider.dart';
@@ -14,6 +15,7 @@ import 'package:flutter_devfest/home/track.dart' as prefix0;
 import 'package:flutter_devfest/home/track.dart';
 import 'package:flutter_devfest/utils/dependency_injection.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
+import 'package:sprintf/sprintf.dart';
 
 import 'index.dart';
 
@@ -23,13 +25,18 @@ class MockClient implements IClient {
       {bool customHeaders}) async {
     var resultClass;
     String rawString;
+    final tag = ConfigBloc().devFestEvent?.tag;
 
     //? For Speakers Hardcoded Data
     if (resourcePath == HomeProvider.kConstGetSpeakersUrl) {
       if (Injector().currentDataMode == DataMode.DART) {
         rawString = jsonEncode(SpeakersData(speakers: speakers));
       } else {
-        rawString = await rootBundle.loadString(Devfest.speakersAssetJson);
+        rawString = await rootBundle.loadString(
+          Injector().currentEventMode == EventMode.MULTI
+              ? sprintf(Devfest.speakersAssetJsonCity, [tag])
+              : Devfest.speakersAssetJson,
+        );
       }
       resultClass = await compute(jsonParserIsolate, rawString);
     }
@@ -39,7 +46,11 @@ class MockClient implements IClient {
       if (Injector().currentDataMode == DataMode.DART) {
         rawString = jsonEncode(TracksData(tracks: tracks));
       } else {
-        rawString = await rootBundle.loadString(Devfest.tracksAssetJson);
+        rawString = await rootBundle.loadString(
+          Injector().currentEventMode == EventMode.MULTI
+              ? sprintf(Devfest.tracksAssetJsonCity, [tag])
+              : Devfest.tracksAssetJson,
+        );
       }
       resultClass = await compute(jsonParserIsolate, rawString);
     }
@@ -49,7 +60,11 @@ class MockClient implements IClient {
       if (Injector().currentDataMode == DataMode.DART) {
         rawString = jsonEncode(SessionsData(sessions: sessions));
       } else {
-        rawString = await rootBundle.loadString(Devfest.sessionsAssetJson);
+        rawString = await rootBundle.loadString(
+          Injector().currentEventMode == EventMode.MULTI
+              ? sprintf(Devfest.sessionsAssetJsonCity, [tag])
+              : Devfest.sessionsAssetJson,
+        );
       }
       resultClass = await compute(jsonParserIsolate, rawString);
     }
@@ -59,7 +74,11 @@ class MockClient implements IClient {
       if (Injector().currentDataMode == DataMode.DART) {
         rawString = jsonEncode(TeamsData(teams: teams));
       } else {
-        rawString = await rootBundle.loadString(Devfest.teamsAssetJson);
+        rawString = await rootBundle.loadString(
+          Injector().currentEventMode == EventMode.MULTI
+              ? sprintf(Devfest.teamsAssetJsonCity, [tag])
+              : Devfest.teamsAssetJson,
+        );
       }
       resultClass = await compute(jsonParserIsolate, rawString);
     }
@@ -69,7 +88,11 @@ class MockClient implements IClient {
       if (Injector().currentDataMode == DataMode.DART) {
         rawString = jsonEncode(SponsorsData(sponsors: sponsors));
       } else {
-        rawString = await rootBundle.loadString(Devfest.sponsorsAssetJson);
+        rawString = await rootBundle.loadString(
+          Injector().currentEventMode == EventMode.MULTI
+              ? sprintf(Devfest.sponsorsAssetJsonCity, [tag])
+              : Devfest.sponsorsAssetJson,
+        );
       }
       resultClass = await compute(jsonParserIsolate, rawString);
     }

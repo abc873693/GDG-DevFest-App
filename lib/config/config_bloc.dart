@@ -13,6 +13,8 @@ class ConfigBloc extends Bloc<ConfigEvent, ConfigState> {
 
   bool darkModeOn = false;
 
+  DevFestEventsData devFestEventsData;
+
   DevFestEvent devFestEvent;
 
   ConfigState get initialState => new UnConfigState();

@@ -14,8 +14,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomeFront extends StatelessWidget {
-  DevFestEvent get _devFestEvent =>
-      (ConfigBloc().currentState as InConfigState).devFestEvent;
+  DevFestEvent get _devFestEvent => ConfigBloc().devFestEvent;
 
   List<Widget> devFestTexts(context) => [
         Text(

@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_devfest/utils/dependency_injection.dart';
@@ -28,7 +29,7 @@ Future<void> main() async {
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 
   // * Get Shared Preference Instance for whole app
-  Devfest.prefs = await SharedPreferences.getInstance();
+  if (!kIsWeb) Devfest.prefs = await SharedPreferences.getInstance();
 
   //* To check the app is running in debug and set some variables for that
   Devfest.checkDebug();
@@ -38,7 +39,7 @@ Future<void> main() async {
 
   // * Set flavor for your app. For eg - MOCK for offline, REST for some random server calls to your backend, FIREBASE for firebase calls
   //* Set DataMode.DART to use Dart hardcoded data and DataMode.JSON to use json file for hardcoded data.
-  Injector.configure(Flavor.MOCK, DataMode.JSON, EventMode.SINGLE);
+  Injector.configure(Flavor.MOCK, DataMode.JSON, EventMode.MULTI);
 
   runApp(ConfigPage());
 }
