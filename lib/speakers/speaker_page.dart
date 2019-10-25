@@ -18,45 +18,50 @@ class SpeakerPage extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            IconButton(
-              icon: Icon(
-                FontAwesomeIcons.facebookF,
-                size: 15,
+            if (speaker.fbUrl != null && speaker.fbUrl.isNotEmpty)
+              IconButton(
+                icon: Icon(
+                  FontAwesomeIcons.facebookF,
+                  size: 15,
+                ),
+                onPressed: () {
+                  launch(speaker.fbUrl);
+                },
               ),
-              onPressed: () {
-                launch(speaker.fbUrl);
-              },
-            ),
-            IconButton(
-              icon: Icon(
-                FontAwesomeIcons.twitter,
-                size: 15,
+            if (speaker.twitterUrl != null && speaker.twitterUrl.isNotEmpty)
+              IconButton(
+                icon: Icon(
+                  FontAwesomeIcons.twitter,
+                  size: 15,
+                ),
+                onPressed: () {
+                  launch(speaker.twitterUrl);
+                },
               ),
-              onPressed: () {
-                launch(speaker.twitterUrl);
-              },
-            ),
-            IconButton(
-              icon: Icon(
-                FontAwesomeIcons.linkedinIn,
-                size: 15,
+            if (speaker.linkedinUrl != null && speaker.linkedinUrl.isNotEmpty)
+              IconButton(
+                icon: Icon(
+                  FontAwesomeIcons.linkedinIn,
+                  size: 15,
+                ),
+                onPressed: () {
+                  launch(speaker.linkedinUrl);
+                },
               ),
-              onPressed: () {
-                launch(speaker.linkedinUrl);
-              },
-            ),
-            IconButton(
-              icon: Icon(
-                FontAwesomeIcons.github,
-                size: 15,
+            if (speaker.githubUrl != null && speaker.githubUrl.isNotEmpty)
+              IconButton(
+                icon: Icon(
+                  FontAwesomeIcons.github,
+                  size: 15,
+                ),
+                onPressed: () {
+                  launch(speaker.githubUrl);
+                },
               ),
-              onPressed: () {
-                launch(speaker.githubUrl);
-              },
-            ),
           ],
         ),
       );
+
   @override
   Widget build(BuildContext context) {
     var _homeBloc = HomeBloc();

@@ -35,6 +35,11 @@ class Devfest {
   static const String home_img = "assets/images/home_img.jpeg";
   static const String banner_light = "assets/images/banner_light.png";
   static const String banner_dark = "assets/images/banner_dark.png";
+  static const String gdg = "assets/images/gdg.png";
+  static const String banner_devFest_default =
+      "assets/images/banner_devFest_default.webp";
+  static const String banner_devFest_taichung =
+      "assets/images/banner_devFest_taichung.webp";
 
   //*  Texts
   static const String welcomeText = "Welcome to GDG DevFest";
@@ -81,4 +86,11 @@ class Devfest {
   static const String sessionsAssetJson = "assets/json/sessions.json";
   static const String teamsAssetJson = "assets/json/teams.json";
   static const String sponsorsAssetJson = "assets/json/sponsors.json";
+  static const String speakersAssetJsonCity = "assets/json/%s/speakers.json";
+  static const String tracksAssetJsonCity = "assets/json/%s/tracks.json";
+  static const String sessionsAssetJsonCity = "assets/json/%s/sessions.json";
+  static const String teamsAssetJsonCity = "assets/json/%s/teams.json";
+  static const String sponsorsAssetJsonCity = "assets/json/%s/sponsors.json";
+  static const String devFestEventAssetJson = "assets/json/event.json";
+  static const String devFestEventsAssetJson = "assets/json/events.json";
 }

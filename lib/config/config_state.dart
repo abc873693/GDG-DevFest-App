@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import 'package:flutter_devfest/config/devfest_event.dart';
 import 'package:meta/meta.dart';
 
 @immutable
@@ -22,12 +23,21 @@ class UnConfigState extends ConfigState {
 
 /// Initialized
 class InConfigState extends ConfigState {
+  final DevFestEventsData devFestEventsData;
+  final DevFestEvent devFestEvent;
+
+  InConfigState({this.devFestEventsData, this.devFestEvent})
+      : super([devFestEventsData, devFestEvent]);
+
   @override
   String toString() => 'InConfigState';
 
   @override
   ConfigState getStateCopy() {
-    return InConfigState();
+    return InConfigState(
+      devFestEvent: this.devFestEvent,
+      devFestEventsData: this.devFestEventsData,
+    );
   }
 }
 
@@ -35,7 +45,7 @@ class ErrorConfigState extends ConfigState {
   final String errorMessage;
 
   ErrorConfigState(this.errorMessage);
-  
+
   @override
   String toString() => 'ErrorConfigState';
 

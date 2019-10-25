@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/agenda/agenda_page.dart';
+import 'package:flutter_devfest/config/devfest_event.dart';
 import 'package:flutter_devfest/config/index.dart';
 import 'package:flutter_devfest/faq/faq_page.dart';
 import 'package:flutter_devfest/map/map_page.dart';
@@ -13,9 +14,11 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomeFront extends StatelessWidget {
+  DevFestEvent get _devFestEvent => ConfigBloc().devFestEvent;
+
   List<Widget> devFestTexts(context) => [
         Text(
-          Devfest.welcomeText,
+          _devFestEvent.welcomeText,
           style: Theme.of(context).textTheme.headline,
           textAlign: TextAlign.center,
         ),
@@ -23,7 +26,7 @@ class HomeFront extends StatelessWidget {
           height: 10,
         ),
         Text(
-          Devfest.descText,
+          _devFestEvent.descText,
           style: Theme.of(context).textTheme.caption,
           textAlign: TextAlign.center,
         ),
@@ -138,45 +141,56 @@ class HomeFront extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            IconButton(
-              icon: Icon(FontAwesomeIcons.facebookF),
-              onPressed: () async {
-                await _launchURL("https://facebook.com/imthepk");
-              },
-            ),
-            IconButton(
-              icon: Icon(FontAwesomeIcons.twitter),
-              onPressed: () async {
-                await _launchURL("https://twitter.com/imthepk");
-              },
-            ),
-            IconButton(
-              icon: Icon(FontAwesomeIcons.linkedinIn),
-              onPressed: () async {
-                _launchURL("https://linkedin.com/in/imthepk");
-              },
-            ),
-            IconButton(
-              icon: Icon(FontAwesomeIcons.youtube),
-              onPressed: () async {
-                await _launchURL("https://youtube.com/mtechviral");
-              },
-            ),
-            IconButton(
-              icon: Icon(FontAwesomeIcons.meetup),
-              onPressed: () async {
-                await _launchURL("https://meetup.com/");
-              },
-            ),
-            IconButton(
-              icon: Icon(FontAwesomeIcons.envelope),
-              onPressed: () async {
-                var emailUrl =
-                    '''mailto:mtechviral@gmail.com?subject=Support Needed For DevFest App&body={Name: Pawan Kumar},Email: pawan221b@gmail.com}''';
-                var out = Uri.encodeFull(emailUrl);
-                await _launchURL(out);
-              },
-            ),
+            if (_devFestEvent.links.facebook != null &&
+                _devFestEvent.links.facebook.isNotEmpty)
+              IconButton(
+                icon: Icon(FontAwesomeIcons.facebookF),
+                onPressed: () async {
+                  await _launchURL(_devFestEvent.links.facebook);
+                },
+              ),
+            if (_devFestEvent.links.twitter != null &&
+                _devFestEvent.links.twitter.isNotEmpty)
+              IconButton(
+                icon: Icon(FontAwesomeIcons.twitter),
+                onPressed: () async {
+                  await _launchURL(_devFestEvent.links.twitter);
+                },
+              ),
+            if (_devFestEvent.links.linkedinIn != null &&
+                _devFestEvent.links.linkedinIn.isNotEmpty)
+              IconButton(
+                icon: Icon(FontAwesomeIcons.linkedinIn),
+                onPressed: () async {
+                  _launchURL(_devFestEvent.links.linkedinIn);
+                },
+              ),
+            if (_devFestEvent.links.youtube != null &&
+                _devFestEvent.links.youtube.isNotEmpty)
+              IconButton(
+                icon: Icon(FontAwesomeIcons.youtube),
+                onPressed: () async {
+                  await _launchURL(_devFestEvent.links.youtube);
+                },
+              ),
+            if (_devFestEvent.links.meetup != null &&
+                _devFestEvent.links.meetup.isNotEmpty)
+              IconButton(
+                icon: Icon(FontAwesomeIcons.meetup),
+                onPressed: () async {
+                  await _launchURL(_devFestEvent.links.meetup);
+                },
+              ),
+            if (_devFestEvent.links.emailUrl != null &&
+                _devFestEvent.links.emailUrl.isNotEmpty)
+              IconButton(
+                icon: Icon(FontAwesomeIcons.envelope),
+                onPressed: () async {
+                  var emailUrl = _devFestEvent.links.emailUrl;
+                  var out = Uri.encodeFull(emailUrl);
+                  await _launchURL(out);
+                },
+              ),
           ],
         ),
       );
@@ -228,6 +242,7 @@ class ActionCard extends StatelessWidget {
 
   const ActionCard({Key key, this.onPressed, this.icon, this.title, this.color})
       : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return InkWell(

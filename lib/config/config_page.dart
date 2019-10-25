@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_devfest/agenda/agenda_page.dart';
+import 'package:flutter_devfest/config/devfest_event.dart';
 import 'package:flutter_devfest/config/index.dart';
 import 'package:flutter_devfest/faq/faq_page.dart';
 import 'package:flutter_devfest/find_devfest/find_devfest_page.dart';
@@ -9,10 +10,12 @@ import 'package:flutter_devfest/map/map_page.dart';
 import 'package:flutter_devfest/speakers/speaker_page.dart';
 import 'package:flutter_devfest/sponsors/sponsor_page.dart';
 import 'package:flutter_devfest/team/team_page.dart';
+import 'package:flutter_devfest/utils/dependency_injection.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
 
 class ConfigPage extends StatefulWidget {
   static const String routeName = "/";
+
   @override
   _ConfigPageState createState() => _ConfigPageState();
 }
@@ -26,10 +29,11 @@ class _ConfigPageState extends State<ConfigPage> {
     setupApp();
   }
 
-  setupApp() {
+  setupApp() async{
     configBloc = ConfigBloc();
     configBloc.darkModeOn =
         Devfest.prefs.getBool(Devfest.darkModePref) ?? false;
+    configBloc.dispatch(LoadDevFestEvent());
   }
 
   @override
@@ -60,7 +64,9 @@ class _ConfigPageState extends State<ConfigPage> {
                 elevation: 0.0,
               ),
             ),
-            home: HomePage(),
+            home: Injector().currentEventMode == EventMode.SINGLE
+                ? HomePage()
+                : FindDevFestPage(),
             routes: {
               HomePage.routeName: (context) => HomePage(),
               SpeakerPage.routeName: (context) => SpeakerPage(),
