@@ -51,11 +51,11 @@ class SessionList extends StatelessWidget {
               ),
             ),
             leading: Hero(
-              tag: allSessions[i].speakerImage,
+              tag: allSessions[i].speaker.speakerImage,
               child: CircleAvatar(
                 radius: 30,
                 backgroundImage:
-                    CachedNetworkImageProvider(allSessions[i].speakerImage),
+                    CachedNetworkImageProvider(allSessions[i].speaker.speakerImage),
               ),
             ),
             title: RichText(
@@ -64,7 +64,7 @@ class SessionList extends StatelessWidget {
                 style: Theme.of(context).textTheme.title.copyWith(fontSize: 16),
                 children: [
                   TextSpan(
-                      text: allSessions[i].speakerName,
+                      text: allSessions[i].speaker.speakerName,
                       style: Theme.of(context).textTheme.subtitle.copyWith(
                             fontSize: 14,
                             color: Tools.multiColors[Random().nextInt(4)],
@@ -74,7 +74,7 @@ class SessionList extends StatelessWidget {
               ),
             ),
             subtitle: Text(
-              allSessions[i].speakerDesc,
+              allSessions[i].speaker.speakerDesc,
               style: Theme.of(context).textTheme.caption.copyWith(
                     fontSize: 10.0,
                   ),

@@ -1,15 +1,15 @@
 {
   "tracks": [
     {
-      "id": "cloud",
+      "id": "1",
       "title": "Cloud"
     },
     {
-      "id": "mobile",
+      "id": "2",
       "title": "Mobile"
     },
     {
-      "id": "web",
+      "id": "3",
       "title": "Web & More"
     }
   ]

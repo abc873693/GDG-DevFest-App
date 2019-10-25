@@ -10,7 +10,7 @@ class MobileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var state = homeBloc.currentState as InHomeState;
     var sessions = state.sessionsData.sessions;
-    var mobileSessions = sessions.where((s) => s.track == "mobile").toList();
+    var mobileSessions = sessions.where((s) => s.trackId == "mobile").toList();
     return SessionList(
       allSessions: mobileSessions,
     );

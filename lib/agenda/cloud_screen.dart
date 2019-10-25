@@ -10,7 +10,7 @@ class CloudScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var state = homeBloc.currentState as InHomeState;
     var sessions = state.sessionsData.sessions;
-    var cloudSessions = sessions.where((s) => s.track == "cloud").toList();
+    var cloudSessions = sessions.where((s) => s.trackId == "cloud").toList();
     return SessionList(
       allSessions: cloudSessions,
     );

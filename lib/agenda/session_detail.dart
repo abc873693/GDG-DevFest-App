@@ -15,45 +15,56 @@ class SessionDetail extends StatelessWidget {
 
   SessionDetail({Key key, @required this.session}) : super(key: key);
 
-  Widget socialActions(context) => FittedBox(
+  Widget socialActions(context, Speaker speaker) => FittedBox(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            IconButton(
-              icon: Icon(
-                FontAwesomeIcons.facebookF,
-                size: 15,
+            if (speaker.fbUrl != null && speaker.fbUrl.isNotEmpty)
+              IconButton(
+                icon: Icon(
+                  FontAwesomeIcons.facebookF,
+                  size: 15,
+                ),
+                onPressed: () {
+                  launch(speaker.fbUrl);
+                },
               ),
-              onPressed: () {
-                launch(speakers[0].fbUrl);
-              },
-            ),
-            IconButton(
-              icon: Icon(
-                FontAwesomeIcons.twitter,
-                size: 15,
+            if (speaker.twitterUrl != null && speaker.twitterUrl.isNotEmpty)
+              IconButton(
+                icon: Icon(
+                  FontAwesomeIcons.twitter,
+                  size: 15,
+                ),
+                onPressed: () {
+                  launch(speaker.twitterUrl);
+                },
               ),
-              onPressed: () {
-                launch(speakers[0].twitterUrl);
-              },
-            ),
-            IconButton(
-              icon: Icon(
-                FontAwesomeIcons.linkedinIn,
-                size: 15,
+            if (speaker.linkedinUrl != null && speaker.linkedinUrl.isNotEmpty)
+              IconButton(
+                icon: Icon(
+                  FontAwesomeIcons.linkedinIn,
+                  size: 15,
+                ),
+                onPressed: () {
+                  launch(speaker.linkedinUrl);
+                },
               ),
-              onPressed: () {
-                launch(speakers[0].linkedinUrl);
-              },
-            ),
+            if (speaker.githubUrl != null && speaker.githubUrl.isNotEmpty)
+              IconButton(
+                icon: Icon(
+                  FontAwesomeIcons.github,
+                  size: 15,
+                ),
+                onPressed: () {
+                  launch(speaker.githubUrl);
+                },
+              ),
             IconButton(
               icon: Icon(
                 FontAwesomeIcons.github,
-                size: 15,
+                size: 0,
               ),
-              onPressed: () {
-                launch(speakers[0].githubUrl);
-              },
+              onPressed: null,
             ),
           ],
         ),
@@ -71,11 +82,11 @@ class SessionDetail extends StatelessWidget {
             children: <Widget>[
               Center(
                 child: Hero(
-                  tag: session.speakerImage,
+                  tag: session.speaker.speakerImage,
                   child: CircleAvatar(
                     radius: 100.0,
                     backgroundImage: CachedNetworkImageProvider(
-                      session.speakerImage,
+                      session.speaker.speakerImage,
                     ),
                   ),
                 ),
@@ -84,7 +95,7 @@ class SessionDetail extends StatelessWidget {
                 height: 10,
               ),
               Text(
-                "${session.speakerDesc}",
+                "${session.speaker.speakerDesc}",
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.title.copyWith(
                       fontSize: 14,
@@ -114,12 +125,12 @@ class SessionDetail extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              socialActions(context),
+              socialActions(context, session.speaker),
             ],
           ),
         ),
       ),
-      title: session.speakerName,
+      title: session.speaker.speakerName,
     );
   }
 }

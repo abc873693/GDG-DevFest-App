@@ -13,7 +13,7 @@ class AgendaScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var state = homeBloc.currentState as InHomeState;
     var sessions = state.sessionsData.sessions;
-    var webSessions = sessions.where((s) => s.track == track.id).toList();
+    var webSessions = sessions.where((s) => s.trackId == track.id).toList();
     return SessionList(
       allSessions: webSessions,
     );

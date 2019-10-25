@@ -8,6 +8,7 @@ import 'package:flutter_devfest/home/home_page.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
 import 'package:flutter_devfest/utils/tools.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:intl/intl.dart';
 
 class FindDevFestPage extends StatelessWidget {
@@ -155,7 +156,9 @@ class FindDevFestPage extends StatelessWidget {
       );
     } else {
       return Center(
-        child: CircularProgressIndicator(),
+        child: SpinKitChasingDots(
+          color: Tools.multiColors[Random().nextInt(3)],
+        ),
       );
     }
   }
