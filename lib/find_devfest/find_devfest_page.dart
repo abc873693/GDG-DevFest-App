@@ -45,7 +45,7 @@ class FindDevFestPage extends StatelessWidget {
                 Expanded(
                   flex: 1,
                   child: Text(
-                    event.isActive ? ' Active ' : 'Coming\n Soon',
+                    event.isActive ? 'Active' : 'Coming Soon',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 16.0,
@@ -85,64 +85,57 @@ class FindDevFestPage extends StatelessWidget {
                           ),
                         ),
                         Row(
+                          crossAxisAlignment: CrossAxisAlignment.end,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: <Widget>[
-                                Text(
-                                  DateFormat.d().format(date),
-                                  style: TextStyle(
-                                    fontSize: 40.0,
-                                    color:
-                                        Tools.multiColors[Random().nextInt(4)],
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                Text(
-                                  DateFormat.yMMMM().format(date),
-                                  style: TextStyle(
-                                    fontSize: 16.0,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
+                            Text(
+                              DateFormat.d().format(date),
+                              style: TextStyle(
+                                fontSize: 40.0,
+                                color: Tools.multiColors[Random().nextInt(4)],
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              mainAxisAlignment: MainAxisAlignment.end,
+                            Row(
                               children: <Widget>[
-                                SizedBox(height: 8.0),
-                                Row(
-                                  children: <Widget>[
-                                    Image.asset(
-                                      Devfest.gdg,
-                                      width: 30.0,
-                                      height: 30.0,
-                                    ),
-                                    SizedBox(width: 8.0),
-                                    Text(
-                                      event.host,
-                                      style: TextStyle(
-                                        fontSize: 20.0,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ],
+                                Image.asset(
+                                  Devfest.gdg,
+                                  width: 30.0,
+                                  height: 30.0,
                                 ),
+                                SizedBox(width: 8.0),
                                 Text(
-                                  event.location.name,
+                                  event.host,
                                   style: TextStyle(
                                     fontSize: 16.0,
+                                    fontWeight: FontWeight.bold,
                                     color: Colors.white,
                                   ),
                                 ),
                               ],
                             ),
                           ],
-                        )
+                        ),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text(
+                              DateFormat.MMMM().format(date),
+                              style: TextStyle(
+                                fontSize: 16.0,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Text(
+                              event.location.name,
+                              style: TextStyle(
+                                fontSize: 16.0,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
