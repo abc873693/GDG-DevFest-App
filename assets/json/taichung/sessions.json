@@ -9,7 +9,7 @@
       "speaker_image": "",
       "speaker_name": "Opening",
       "speaker_desc": "",
-      "track": "Opening"
+      "track": "R1"
     },
     {
       "session_id": "2",
@@ -20,7 +20,7 @@
       "speaker_image": "https://drive.google.com/file/d/1VsRqjKBgNM3t1CLpTbB8oIFEMog-ylCX",
       "speaker_name": "Weizhong Yang",
       "speaker_desc": "從 2005 年開始接觸 Objective C 語言已經 macOS App 開發，從 2008 年開始開發 iOS app，從 2011 年開始在 KKBOX 工作，參與過 KKBOX 的 macOS、iOS、tvOS 與 watchOS 版本開發，以及 KKTIX、Uta Pass 的 iOS 版本，之前也參與過雅虎輸入發以及無蝦皮輸入法 macOS 版本。從 2018 年開始接觸 Flutter。",
-      "track": "Flutter"
+      "track": "R1"
     },
     {
       "session_id": "3",
@@ -31,7 +31,7 @@
       "speaker_image": "https://drive.google.com/file/d/1ECQ9mlULkcFZIvMUf_K-osEgR3cq-ggl",
       "speaker_name": "魏澤人",
       "speaker_desc": "ML GDE、 iiNumbers 首席數學家、花蓮.py 及 GDG 花蓮發起人。",
-      "track": "ML"
+      "track": "R1"
     },
     {
       "session_id": "4",
@@ -42,7 +42,7 @@
       "speaker_image": "https://drive.google.com/file/d/1wvkkhTcIbgupHI12DZEz0PfHtAJRQ5Hf",
       "speaker_name": "Richard Lee",
       "speaker_desc": "愛料理技術長與共同創辦人，同時為創業人、行銷人及技術人。\n近期聚焦於將機器學習應用在商業產品中，並且替顧客、合作夥伴創造商業價值。\n業餘時為 LINE 官方推薦的 API Expert，並為商業技術社群 TGONetworks 的理事，2017 年亦被選為富比世亞洲30位30歲以下傑出青年。\n可以透過 Facebook / Twitter 聯繫我：Richard Lee / dlackty 或可以撰寫 Email： rl@icook.tw",
-      "track": "Cloud"
+      "track": "R1"
     },
     {
       "session_id": "5",
@@ -53,7 +53,7 @@
       "speaker_image": "https://drive.google.com/file/d/16GYDZd160hEEUefWo_lPkAlj1sktRa4U",
       "speaker_name": "Akane Lee",
       "speaker_desc": "如果設計師能和工程師順利合作，那麼老公也就能準時下班了吧。因此努力推廣 UI/UX 設計方面的知識、技術，並分享自己在專案開發上踩過的各種坑與心得。",
-      "track": "WTM"
+      "track": "R1"
     },
     {
       "session_id": "6",
@@ -64,7 +64,7 @@
       "speaker_image": "https://drive.google.com/file/d/177l3QUcGiT63TRZktLKHg2DwzvdhFemy",
       "speaker_name": "Irene Chang",
       "speaker_desc": "目前在 Google 擔任 Assistant Mobile Solutions Consultant (Temp)，致力於推廣 Mobile Web 相關技術，包括 Accelerated Mobile Pages (AMP)、Progressive Web App (PWA)、User Experience (UX) 與 web optimization 等。平面設計出身，4 年網頁設計與開發經驗。咖啡成癮的貓奴，喜歡撞球和小酌。",
-      "track": "Web"
+      "track": "R1"
     }
   ]
 }
