@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
+import 'package:flutter_devfest/utils/app_localizations.dart';
 
 class FaqPage extends StatelessWidget {
   static const String routeName = "/faq";
@@ -10,10 +11,10 @@ class FaqPage extends StatelessWidget {
     return DevScaffold(
       body: Container(
         child: Center(
-          child: Text("Coming Soon"),
+          child: Text(AppLocalizations.of(context).active),
         ),
       ),
-      title: "FAQ",
+      title: AppLocalizations.of(context).faq,
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:ui';
 import 'package:flutter_devfest/config/devfest_event.dart';
 import 'package:flutter_devfest/config/index.dart';
 import 'package:flutter_devfest/utils/dependency_injection.dart';
@@ -53,6 +54,24 @@ class LoadDevFestEvent extends ConfigEvent {
         devFestEvent: bloc.devFestEvent,
         devFestEventsData: bloc.devFestEventsData,
       );
+    } catch (_, stackTrace) {
+      print('$_ $stackTrace');
+      return new ErrorConfigState(_?.toString());
+    }
+  }
+}
+
+class LocaleEvent extends ConfigEvent {
+  final Locale locale;
+
+  LocaleEvent(this.locale);
+
+  @override
+  Future<ConfigState> applyAsync(
+      {ConfigState currentState, ConfigBloc bloc}) async {
+    try {
+      bloc.languageCode = locale.languageCode;
+      return InConfigState();
     } catch (_, stackTrace) {
       print('$_ $stackTrace');
       return new ErrorConfigState(_?.toString());

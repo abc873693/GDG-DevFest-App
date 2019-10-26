@@ -25,6 +25,7 @@ class HomeScreen extends StatefulWidget {
 
 class HomeScreenState extends State<HomeScreen> {
   final HomeBloc _homeBloc;
+
   HomeScreenState(this._homeBloc);
 
   @override
@@ -71,13 +72,14 @@ class HomeScreenState extends State<HomeScreen> {
             }
             if (currentState is ErrorHomeState) {
               return Container(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Center(
-                    child: Text(
-                      currentState.errorMessage ?? 'Error',
-                      textAlign: TextAlign.center,
-                    ),
-                  ));
+                padding: const EdgeInsets.all(16.0),
+                child: Center(
+                  child: Text(
+                    currentState.errorMessage ?? 'Error',
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              );
             }
             return HomeFront();
           }),

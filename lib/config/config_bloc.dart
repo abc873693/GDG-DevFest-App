@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:ui';
 import 'package:bloc/bloc.dart';
 import 'package:flutter_devfest/config/index.dart';
 
@@ -12,6 +13,8 @@ class ConfigBloc extends Bloc<ConfigEvent, ConfigState> {
   ConfigBloc._internal();
 
   bool darkModeOn = false;
+
+  String languageCode;
 
   DevFestEventsData devFestEventsData;
 

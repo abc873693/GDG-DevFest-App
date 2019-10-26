@@ -8,6 +8,7 @@ import 'package:flutter_devfest/speakers/speaker_page.dart';
 import 'package:flutter_devfest/sponsors/sponsor_page.dart';
 import 'package:flutter_devfest/team/team_page.dart';
 import 'package:flutter_devfest/universal/image_card.dart';
+import 'package:flutter_devfest/utils/app_localizations.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
 import 'package:flutter_devfest/utils/tools.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -45,14 +46,14 @@ class HomeFront extends StatelessWidget {
         spacing: 10.0,
         children: <Widget>[
           RaisedButton(
-            child: Text("Agenda"),
+            child: Text(AppLocalizations.of(context).agenda),
             shape: StadiumBorder(),
             color: Colors.red,
             colorBrightness: Brightness.dark,
             onPressed: () => Navigator.pushNamed(context, AgendaPage.routeName),
           ),
           RaisedButton(
-            child: Text("Speakers"),
+            child: Text(AppLocalizations.of(context).speakers),
             shape: StadiumBorder(),
             color: Colors.green,
             colorBrightness: Brightness.dark,
@@ -60,7 +61,7 @@ class HomeFront extends StatelessWidget {
                 Navigator.pushNamed(context, SpeakerPage.routeName),
           ),
           RaisedButton(
-            child: Text("Sponsors"),
+            child: Text(AppLocalizations.of(context).sponsor),
             shape: StadiumBorder(),
             color: Colors.orange,
             colorBrightness: Brightness.dark,
@@ -68,21 +69,21 @@ class HomeFront extends StatelessWidget {
                 Navigator.pushNamed(context, SponsorPage.routeName),
           ),
           RaisedButton(
-            child: Text("Team"),
+            child: Text(AppLocalizations.of(context).team),
             shape: StadiumBorder(),
             color: Colors.purple,
             colorBrightness: Brightness.dark,
             onPressed: () => Navigator.pushNamed(context, TeamPage.routeName),
           ),
           RaisedButton(
-            child: Text("FAQ"),
+            child: Text(AppLocalizations.of(context).faq),
             shape: StadiumBorder(),
             color: Colors.brown,
             colorBrightness: Brightness.dark,
             onPressed: () => Navigator.pushNamed(context, FaqPage.routeName),
           ),
           RaisedButton(
-            child: Text("Locate Us"),
+            child: Text(AppLocalizations.of(context).map),
             shape: StadiumBorder(),
             color: Colors.blue,
             colorBrightness: Brightness.dark,
@@ -99,39 +100,39 @@ class HomeFront extends StatelessWidget {
           ActionCard(
             icon: Icons.schedule,
             color: Colors.red,
-            title: Devfest.agenda_text,
+            title: AppLocalizations.of(context).agenda,
             onPressed: () => Navigator.pushNamed(context, AgendaPage.routeName),
           ),
           ActionCard(
             icon: Icons.person,
             color: Colors.green,
-            title: Devfest.speakers_text,
+            title: AppLocalizations.of(context).speakers,
             onPressed: () =>
                 Navigator.pushNamed(context, SpeakerPage.routeName),
           ),
           ActionCard(
             icon: Icons.people,
             color: Colors.amber,
-            title: Devfest.team_text,
+            title: AppLocalizations.of(context).team,
             onPressed: () => Navigator.pushNamed(context, TeamPage.routeName),
           ),
           ActionCard(
             icon: Icons.attach_money,
             color: Colors.purple,
-            title: Devfest.sponsor_text,
+            title: AppLocalizations.of(context).sponsor,
             onPressed: () =>
                 Navigator.pushNamed(context, SponsorPage.routeName),
           ),
           ActionCard(
             icon: Icons.question_answer,
             color: Colors.brown,
-            title: Devfest.faq_text,
+            title: AppLocalizations.of(context).faq,
             onPressed: () => Navigator.pushNamed(context, FaqPage.routeName),
           ),
           ActionCard(
             icon: Icons.map,
             color: Colors.blue,
-            title: Devfest.map_text,
+            title: AppLocalizations.of(context).map,
             onPressed: () => Navigator.pushNamed(context, MapPage.routeName),
           )
         ],
