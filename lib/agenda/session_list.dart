@@ -4,14 +4,18 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/agenda/session_detail.dart';
 import 'package:flutter_devfest/home/session.dart';
+import 'package:flutter_devfest/utils/app_localizations.dart';
 import 'package:flutter_devfest/utils/tools.dart';
+import 'package:intl/intl.dart';
 
 class SessionList extends StatelessWidget {
   final List<Session> allSessions;
 
   const SessionList({Key key, @required this.allSessions}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
+    final format = DateFormat('yyyy-MM-DD HH:mm:ss');
     return ListView.builder(
       shrinkWrap: false,
       itemCount: allSessions.length,
@@ -35,14 +39,16 @@ class SessionList extends StatelessWidget {
             trailing: RichText(
               textAlign: TextAlign.center,
               text: TextSpan(
-                text: "${allSessions[i].sessionTotalTime}\n",
+                text: "${allSessions[i].sessionTotalTime}"
+                    "${AppLocalizations.of(context).minutes}\n",
                 style: Theme.of(context)
                     .textTheme
                     .title
                     .copyWith(fontSize: 14, fontWeight: FontWeight.bold),
                 children: [
                   TextSpan(
-                    text: allSessions[i].sessionStartTime,
+                    text: DateFormat.Hm()
+                        .format(format.parse(allSessions[i].sessionStartTime)),
                     style: Theme.of(context).textTheme.subtitle.copyWith(
                           fontSize: 12,
                         ),
@@ -54,8 +60,12 @@ class SessionList extends StatelessWidget {
               tag: allSessions[i].speaker.speakerImage,
               child: CircleAvatar(
                 radius: 30,
-                backgroundImage:
-                    CachedNetworkImageProvider(allSessions[i].speaker.speakerImage),
+                backgroundImage: allSessions[i].speaker.speakerImage != null &&
+                        allSessions[i].speaker.speakerImage.isNotEmpty
+                    ? CachedNetworkImageProvider(
+                        allSessions[i].speaker.speakerImage,
+                      )
+                    : null,
               ),
             ),
             title: RichText(
