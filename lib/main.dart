@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:bloc/bloc.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -40,6 +43,13 @@ Future<void> main() async {
   // * Set flavor for your app. For eg - MOCK for offline, REST for some random server calls to your backend, FIREBASE for firebase calls
   //* Set DataMode.DART to use Dart hardcoded data and DataMode.JSON to use json file for hardcoded data.
   Injector.configure(Flavor.MOCK, DataMode.JSON, EventMode.MULTI);
+
+  if (kIsWeb) {
+  } else if (Platform.isIOS || Platform.isAndroid) {
+    Crashlytics.instance.enableInDevMode = true;
+    // Pass all uncaught errors from the framework to Crashlytics.
+    FlutterError.onError = Crashlytics.instance.recordFlutterError;
+  }
 
   runApp(ConfigPage());
 }

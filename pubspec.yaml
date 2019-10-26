@@ -33,6 +33,12 @@ dependencies:
   http: ^0.12.0+2
   intl: 0.16.0
   sprintf: 4.0.2
+  #firebase
+  firebase_core: 0.4.0+9
+  firebase_analytics: 5.0.2
+  firebase_remote_config: 0.2.0+7
+  firebase_messaging: 5.1.6
+  firebase_crashlytics: 0.1.0+3
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
