@@ -19,6 +19,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_cupertino_localizations: 1.0.1
   bloc: ^0.14.4
   flutter_bloc: ^0.20.0
   equatable: ^0.3.0
@@ -31,7 +34,6 @@ dependencies:
   sliding_up_panel: ^0.3.4
   google_maps_flutter: ^0.5.19+2
   http: ^0.12.0+2
-  intl: 0.16.0
   sprintf: 4.0.2
   #firebase
   firebase_core: 0.4.0+9
@@ -62,6 +64,8 @@ flutter:
     - assets/
     - assets/images/
     - assets/json/
+    - assets/json/en/
+    - assets/json/zh/
   # assets:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg

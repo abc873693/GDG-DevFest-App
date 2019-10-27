@@ -16,8 +16,10 @@ import 'package:flutter_devfest/map/map_page.dart';
 import 'package:flutter_devfest/speakers/speaker_page.dart';
 import 'package:flutter_devfest/sponsors/sponsor_page.dart';
 import 'package:flutter_devfest/team/team_page.dart';
+import 'package:flutter_devfest/utils/app_localizations.dart';
 import 'package:flutter_devfest/utils/dependency_injection.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 class ConfigPage extends StatefulWidget {
   static const String routeName = "/";
@@ -39,6 +41,8 @@ class _ConfigPageState extends State<ConfigPage> {
     configBloc = ConfigBloc();
     configBloc.darkModeOn =
         Devfest.prefs.getBool(Devfest.darkModePref) ?? false;
+    configBloc.languageCode =
+        Devfest.prefs.getString(Devfest.languagePref) ?? 'zh';
     configBloc.dispatch(LoadDevFestEvent());
     if (kIsWeb) {
     } else if (Platform.isAndroid || Platform.isIOS) {
@@ -55,7 +59,11 @@ class _ConfigPageState extends State<ConfigPage> {
       child: BlocBuilder<ConfigBloc, ConfigState>(
         builder: (context, state) {
           return MaterialApp(
-            title: 'Google Devfest',
+            localeResolutionCallback:
+                (Locale locale, Iterable<Locale> supportedLocales) {
+              return Locale(configBloc.languageCode);
+            },
+            onGenerateTitle: (context) => AppLocalizations.of(context).appName,
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
               //* Custom Google Font
@@ -79,6 +87,13 @@ class _ConfigPageState extends State<ConfigPage> {
             home: Injector().currentEventMode == EventMode.SINGLE
                 ? HomePage()
                 : FindDevFestPage(),
+            localizationsDelegates: [
+              const AppLocalizationsDelegate(),
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+            ],
+            supportedLocales: AppLocalizations.supportLocales,
             routes: {
               HomePage.routeName: (context) => HomePage(),
               SpeakerPage.routeName: (context) => SpeakerPage(),

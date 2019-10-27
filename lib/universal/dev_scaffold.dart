@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/config/config_bloc.dart';
 import 'package:flutter_devfest/config/config_event.dart';
+import 'package:flutter_devfest/home/home_bloc.dart';
+import 'package:flutter_devfest/home/home_event.dart';
+import 'package:flutter_devfest/utils/app_localizations.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share/share.dart';
 
@@ -12,6 +15,7 @@ class DevScaffold extends StatelessWidget {
   const DevScaffold(
       {Key key, @required this.body, @required this.title, this.tabBar})
       : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
@@ -26,6 +30,29 @@ class DevScaffold extends StatelessWidget {
             centerTitle: true,
             bottom: tabBar != null ? tabBar : null,
             actions: <Widget>[
+              if (title == AppLocalizations.of(context).home ||
+                  title == AppLocalizations.of(context).events)
+                InkWell(
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 8.0),
+                    alignment: Alignment.center,
+                    child: Text(
+                      ConfigBloc().languageCode == AppLocalizations.ZH
+                          ? AppLocalizations.of(context).traditionalChinese
+                          : AppLocalizations.of(context).english,
+                    ),
+                  ),
+                  onTap: () {
+                    String code =
+                        ConfigBloc().languageCode == AppLocalizations.EN
+                            ? AppLocalizations.ZH
+                            : AppLocalizations.EN;
+                    ConfigBloc().dispatch(LocaleEvent(Locale(code)));
+                    if (title == AppLocalizations.of(context).home) {
+                      HomeBloc().dispatch(LoadHomeEvent());
+                    }
+                  },
+                ),
               IconButton(
                 icon: Icon(
                   ConfigBloc().darkModeOn
@@ -39,8 +66,8 @@ class DevScaffold extends StatelessWidget {
                 },
               ),
               IconButton(
-                onPressed: () => Share.share(
-                    "Download the new DevFest App and share with your tech friends.\nPlayStore -  http://bit.ly/2GDr18N"),
+                onPressed: () =>
+                    Share.share(AppLocalizations.of(context).shareText),
                 icon: Icon(
                   Icons.share,
                   size: 20,

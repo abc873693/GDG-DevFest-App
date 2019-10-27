@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:ui';
 import 'package:bloc/bloc.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -17,6 +18,8 @@ class ConfigBloc extends Bloc<ConfigEvent, ConfigState> {
   ConfigBloc._internal();
 
   bool darkModeOn = false;
+
+  String languageCode;
 
   DevFestEventsData devFestEventsData;
 

@@ -79,18 +79,19 @@ class Devfest {
   static const String photoPref = "photoPref";
   static const String isAdminPref = "isAdminPref";
   static const String darkModePref = "darkModePref";
+  static const String languagePref = "languagePref";
 
   //* JSON URLS
-  static const String speakersAssetJson = "assets/json/speakers.json";
-  static const String tracksAssetJson = "assets/json/tracks.json";
-  static const String sessionsAssetJson = "assets/json/sessions.json";
-  static const String teamsAssetJson = "assets/json/teams.json";
-  static const String sponsorsAssetJson = "assets/json/sponsors.json";
-  static const String speakersAssetJsonCity = "assets/json/%s/speakers.json";
-  static const String tracksAssetJsonCity = "assets/json/%s/tracks.json";
-  static const String sessionsAssetJsonCity = "assets/json/%s/sessions.json";
-  static const String teamsAssetJsonCity = "assets/json/%s/teams.json";
-  static const String sponsorsAssetJsonCity = "assets/json/%s/sponsors.json";
-  static const String devFestEventAssetJson = "assets/json/event.json";
-  static const String devFestEventsAssetJson = "assets/json/events.json";
+  static const String speakersAssetJson = "assets/json/%s/speakers.json";
+  static const String tracksAssetJson = "assets/json/%s/tracks.json";
+  static const String sessionsAssetJson = "assets/json/%s/sessions.json";
+  static const String teamsAssetJson = "assets/json/%s/teams.json";
+  static const String sponsorsAssetJson = "assets/json/%s/sponsors.json";
+  static const String speakersAssetJsonCity = "assets/json/%s/%s/speakers.json";
+  static const String tracksAssetJsonCity = "assets/json/%s/%s/tracks.json";
+  static const String sessionsAssetJsonCity = "assets/json/%s/%s/sessions.json";
+  static const String teamsAssetJsonCity = "assets/json/%s/%s/teams.json";
+  static const String sponsorsAssetJsonCity = "assets/json/%s/%s/sponsors.json";
+  static const String devFestEventAssetJson = "assets/json/%s/event.json";
+  static const String devFestEventsAssetJson = "assets/json/%s/events.json";
 }

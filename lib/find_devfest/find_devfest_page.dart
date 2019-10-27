@@ -6,6 +6,7 @@ import 'package:flutter_devfest/config/config_bloc.dart';
 import 'package:flutter_devfest/config/config_state.dart';
 import 'package:flutter_devfest/home/home_page.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
+import 'package:flutter_devfest/utils/app_localizations.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
 import 'package:flutter_devfest/utils/tools.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -19,7 +20,7 @@ class FindDevFestPage extends StatelessWidget {
     // var _homeBloc = HomeBloc();
     return DevScaffold(
       body: _body(context),
-      title: "Events",
+      title: AppLocalizations.of(context).events,
     );
   }
 
@@ -27,7 +28,7 @@ class FindDevFestPage extends StatelessWidget {
     var _configBloc = ConfigBloc();
     if (_configBloc.currentState is InConfigState) {
       final events = _configBloc.devFestEventsData.devFestEvents;
-      final format = DateFormat('yyyy-MM-DD');
+      final format = DateFormat('yyyy-MM-DD', _configBloc.languageCode);
       return ListView.builder(
         itemBuilder: (_, index) {
           final event = events[index];
@@ -45,7 +46,9 @@ class FindDevFestPage extends StatelessWidget {
                 Expanded(
                   flex: 1,
                   child: Text(
-                    event.isActive ? 'Active' : 'Coming Soon',
+                    event.isActive
+                        ? AppLocalizations.of(context).active
+                        : AppLocalizations.of(context).comingSoon,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 16.0,
@@ -121,7 +124,8 @@ class FindDevFestPage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             Text(
-                              DateFormat.MMMM().format(date),
+                              DateFormat.MMMM(_configBloc.languageCode)
+                                  .format(date),
                               style: TextStyle(
                                 fontSize: 16.0,
                                 color: Colors.white,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/home/index.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
+import 'package:flutter_devfest/utils/app_localizations.dart';
 
 class HomePage extends StatelessWidget {
   static const String routeName = "/home";
@@ -77,7 +78,7 @@ class HomePage extends StatelessWidget {
       //   ),
       //   body: HomeScreen(homeBloc: _homeBloc),
       // ),
-      title: "Home",
+      title: AppLocalizations.of(context).home,
     );
   }
 }

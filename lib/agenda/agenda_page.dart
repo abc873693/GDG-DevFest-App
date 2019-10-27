@@ -6,6 +6,7 @@ import 'package:flutter_devfest/agenda/mobile_screen.dart';
 import 'package:flutter_devfest/agenda/web_screen.dart';
 import 'package:flutter_devfest/home/index.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
+import 'package:flutter_devfest/utils/app_localizations.dart';
 import 'package:flutter_devfest/utils/tools.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -22,7 +23,7 @@ class AgendaPage extends StatelessWidget {
     return DefaultTabController(
       length: tracks.length,
       child: DevScaffold(
-        title: "Agenda",
+        title: AppLocalizations.of(context).agenda,
         tabBar: TabBar(
           indicatorSize: TabBarIndicatorSize.label,
           indicatorColor: Tools.multiColors[Random().nextInt(4)],

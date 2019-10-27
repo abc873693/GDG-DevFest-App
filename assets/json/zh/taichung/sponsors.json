@@ -1,0 +1,32 @@
+{
+  "sponsors": [
+    {
+      "name": "GDG Kolkata",
+      "image": "https://devfest.gdgkolkata.org/assets/img/logos/gd.png",
+      "desc": "Organizer",
+      "url": "https://devfest.gdgkolkata.org/",
+      "logo": ""
+    },
+    {
+      "name": "Jetbrains",
+      "image": "https://devfest.gdgkolkata.org/assets/img/jetbrains.png",
+      "desc": "Slivers Sponsors",
+      "url": "https://devfest.gdgkolkata.org/",
+      "logo": ""
+    },
+    {
+      "name": "Kotlin",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin-logo.svg/220px-Kotlin-logo.svg.png",
+      "desc": "Slivers Sponsors",
+      "url": "https://devfest.gdgkolkata.org/",
+      "logo": ""
+    },
+    {
+      "name": "Firebase",
+      "image": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_0016c93c710cf35990b999cba3a59bae/firebase.png",
+      "desc": "Slivers Sponsors",
+      "url": "https://devfest.gdgkolkata.org/",
+      "logo": ""
+    }
+  ]
+}

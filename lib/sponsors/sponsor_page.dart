@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_devfest/home/home_bloc.dart';
 import 'package:flutter_devfest/home/home_state.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
+import 'package:flutter_devfest/utils/app_localizations.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SponsorPage extends StatelessWidget {
@@ -34,7 +35,7 @@ class SponsorPage extends StatelessWidget {
         },
         itemCount: sponsors.length,
       ),
-      title: "Sponsors",
+      title: AppLocalizations.of(context).sponsor,
     );
   }
 }

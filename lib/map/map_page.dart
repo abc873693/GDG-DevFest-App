@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_devfest/config/config_bloc.dart';
 import 'package:flutter_devfest/config/devfest_event.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
+import 'package:flutter_devfest/utils/app_localizations.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class MapPage extends StatefulWidget {
@@ -105,7 +106,7 @@ class _MapPageState extends State<MapPage> {
           ],
         ),
       ),
-      title: "Locate Us",
+      title: AppLocalizations.of(context).map,
     );
   }
 }

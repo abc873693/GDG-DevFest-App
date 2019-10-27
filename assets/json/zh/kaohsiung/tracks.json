@@ -1,0 +1,16 @@
+{
+  "tracks": [
+    {
+      "id": "cloud",
+      "title": "Cloud"
+    },
+    {
+      "id": "mobile",
+      "title": "Mobile"
+    },
+    {
+      "id": "web",
+      "title": "Web & More"
+    }
+  ]
+}

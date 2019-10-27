@@ -2,8 +2,8 @@
   "sessions": [
     {
       "session_id": "1",
-      "session_start_time": "9:30",
-      "session_total_time": "20 Mins",
+      "session_start_time": "2019-11-09 09:00:00",
+      "session_total_time": "20",
       "session_title": "Ericsk",
       "session_desc": "",
       "speaker_image": "",
@@ -14,8 +14,8 @@
     },
     {
       "session_id": "2",
-      "session_start_time": "10:00 AM",
-      "session_total_time": "40 Mins",
+      "session_start_time": "2019-11-09 10:00:00",
+      "session_total_time": "40",
       "session_title": "在導入 Flutter 之前，你應該知道什麼？",
       "session_desc": "Flutter 是一套在這兩年逐漸普及的 App 開發框架。然而，即使採用了 Flutter 技術，最後你或你的企業，還是在做一套 iOS/Android App，也有不可迴避的原生部分。在這場 Talk 中，我會提到建議你如何評估 Flutter 這門技術，以及怎樣避免一些在導入 Flutter 的過程中可能會遇到的問題。",
       "speaker_image": "https://lh5.googleusercontent.com/RKzm23ktP-gq-rpetFJe9q1L4yp1xDbBFT0SY3Xa0b6DSP2BzD3xLwMMAVEOOlq2Q7Z1eEhMotedoM1ZCaPp=w1920-h920",
@@ -26,8 +26,8 @@
     },
     {
       "session_id": "3",
-      "session_start_time": "11:00 AM",
-      "session_total_time": "40 Mins",
+      "session_start_time": "2019-11-09 11:00:00",
+      "session_total_time": "40",
       "session_title": "探索 Tensorflow 2.0",
       "session_desc": "新推出的 Tensorflow 2.0 與之前的版本有很大的差異，是否值得轉換呢？\n有哪些新的功能呢？\n程式碼要怎麼改？\n只要在 keras 前面加上 tf？\n我們將帶大家一起探索 Tensorflow 2.0。",
       "speaker_image": "https://drive.google.com/file/d/1ECQ9mlULkcFZIvMUf_K-osEgR3cq-ggl",
@@ -38,8 +38,8 @@
     },
     {
       "session_id": "4",
-      "session_start_time": "13:00",
-      "session_total_time": "40 Mins",
+      "session_start_time": "2019-11-09 13:00:00",
+      "session_total_time": "40",
       "session_title": "用 Firebase 實現跨平台的行銷自動化",
       "session_desc": "在這次的分享當中，我將帶大家一窺 Firebase 較少為人知與討論的數據分析及行銷相關功能。並以電商網站中最常見的「加入購物車後提醒」行銷手段作為範例，配合在今年 Firebase 最新推出的 Web 支援，與各位分享如何實現跨平台的行銷自動化，以技術手段創造出商業的好成績。",
       "speaker_image": "https://drive.google.com/file/d/1wvkkhTcIbgupHI12DZEz0PfHtAJRQ5Hf",
@@ -50,8 +50,8 @@
     },
     {
       "session_id": "5",
-      "session_start_time": "15:00",
-      "session_total_time": "40 Mins",
+      "session_start_time": "2019-11-09 15:00:00",
+      "session_total_time": "40",
       "session_title": "為什麼要加「新功能」？",
       "session_desc": "要不要加新功能、新功能怎麼來是某人說了算？設計師和工程師僅能被動接受指令嗎？傳統的公司營運方式很難理解產品對顧客造成的什麼樣的影響，即使知道使用者經驗很重要也不覺得應該導入目前的開發流程。難道開發人員就只能待在隕石坑底了嗎？",
       "speaker_image": "https://drive.google.com/file/d/16GYDZd160hEEUefWo_lPkAlj1sktRa4U",
@@ -62,8 +62,8 @@
     },
     {
       "session_id": "6",
-      "session_start_time": "16:00",
-      "session_total_time": "40 Mins",
+      "session_start_time": "2019-11-09 16:00:00",
+      "session_total_time": "40",
       "session_title": "All you need to know about AMP",
       "session_desc": "AMP 是 Google 根據開放原始碼格式所設計的網頁開發框架，能夠加快網頁載入速度進而提升使用者體驗。本議程概括 AMP 的發展歷程與其特色，幫助新手快速理解並上手，同時提供有經驗者最新的產品更新資訊。",
       "speaker_image": "https://drive.google.com/file/d/177l3QUcGiT63TRZktLKHg2DwzvdhFemy",
