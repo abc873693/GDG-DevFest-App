@@ -5,6 +5,7 @@ import 'package:flutter_devfest/config/index.dart';
 import 'package:flutter_devfest/utils/dependency_injection.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
 import 'package:meta/meta.dart';
+import 'package:intl/intl.dart';
 
 import 'config_provider.dart';
 
@@ -47,8 +48,18 @@ class LoadDevFestEvent extends ConfigEvent {
     try {
       if (Injector().currentEventMode == EventMode.SINGLE)
         bloc.devFestEvent = await _configProvider.getDevFestEvent();
-      else if (Injector().currentEventMode == EventMode.MULTI)
+      else if (Injector().currentEventMode == EventMode.MULTI) {
         bloc.devFestEventsData = await _configProvider.getDevFestEventsData();
+        bloc.devFestEventsData.devFestEvents.forEach((event) {
+          DateFormat dateFormat = DateFormat('yyyy-MM-dd');
+          DateTime date = dateFormat.parse(event.date);
+          DateTime now = DateTime.now();
+          if (now.isBefore(date.add(Duration(days: -2))) &&
+              now.isAfter(date.add(Duration(days: -2)))) {
+            bloc.firebaseMessaging.subscribeToTopic(event.tag);
+          }
+        });
+      }
       return InConfigState(
         devFestEvent: bloc.devFestEvent,
         devFestEventsData: bloc.devFestEventsData,

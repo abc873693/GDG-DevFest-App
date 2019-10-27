@@ -27,7 +27,7 @@
       }
     },
     {
-      "tag": "gdg",
+      "tag": "hualien",
       "isActive": false,
       "name": "DevFest 花蓮",
       "host": "GDG 花蓮",
@@ -53,7 +53,7 @@
       }
     },
     {
-      "tag": "gdg",
+      "tag": "taipei",
       "isActive": false,
       "name": "DevFest 台北",
       "host": "GDG 台北",
@@ -79,7 +79,7 @@
       }
     },
     {
-      "tag": "gdg",
+      "tag": "kaohsiung",
       "isActive": false,
       "name": "DevFest 高雄",
       "host": "GDG 高雄",
