@@ -10,6 +10,10 @@ class AppLocalizations {
   static const DEFAULT = ZH;
   static const ZH = 'zh';
   static const EN = 'en';
+  static const supportLocales = [
+    const Locale('en', 'US'), // English
+    const Locale('zh', 'TW'), // Chinese
+  ];
 
   Map get _vocabularies {
     return _localizedValues[ConfigBloc().languageCode] ??

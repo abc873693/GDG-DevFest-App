@@ -81,10 +81,7 @@ class _ConfigPageState extends State<ConfigPage> {
               GlobalWidgetsLocalizations.delegate,
               GlobalCupertinoLocalizations.delegate,
             ],
-            supportedLocales: [
-              const Locale('en', 'US'), // English
-              const Locale('zh', 'TW'), // Chinese
-            ],
+            supportedLocales: AppLocalizations.supportLocales,
             routes: {
               HomePage.routeName: (context) => HomePage(),
               SpeakerPage.routeName: (context) => SpeakerPage(),

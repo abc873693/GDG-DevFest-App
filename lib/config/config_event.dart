@@ -45,7 +45,6 @@ class LoadDevFestEvent extends ConfigEvent {
   Future<ConfigState> applyAsync(
       {ConfigState currentState, ConfigBloc bloc}) async {
     try {
-      print(Injector().currentEventMode);
       if (Injector().currentEventMode == EventMode.SINGLE)
         bloc.devFestEvent = await _configProvider.getDevFestEvent();
       else if (Injector().currentEventMode == EventMode.MULTI)
@@ -63,6 +62,7 @@ class LoadDevFestEvent extends ConfigEvent {
 
 class LocaleEvent extends ConfigEvent {
   final Locale locale;
+  final IConfigProvider _configProvider = ConfigProvider();
 
   LocaleEvent(this.locale);
 
@@ -71,6 +71,16 @@ class LocaleEvent extends ConfigEvent {
       {ConfigState currentState, ConfigBloc bloc}) async {
     try {
       bloc.languageCode = locale.languageCode;
+      Devfest.prefs.setString(Devfest.languagePref, locale.languageCode);
+      if (Injector().currentEventMode == EventMode.SINGLE)
+        bloc.devFestEvent = await _configProvider.getDevFestEvent();
+      else if (Injector().currentEventMode == EventMode.MULTI)
+        bloc.devFestEventsData = await _configProvider.getDevFestEventsData();
+      if (bloc.devFestEvent != null) {
+        bloc.devFestEventsData.devFestEvents.forEach((event) {
+          if (bloc.devFestEvent.tag == event.tag) bloc.devFestEvent = event;
+        });
+      }
       return InConfigState();
     } catch (_, stackTrace) {
       print('$_ $stackTrace');

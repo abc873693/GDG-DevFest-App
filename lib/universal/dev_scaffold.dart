@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/config/config_bloc.dart';
 import 'package:flutter_devfest/config/config_event.dart';
+import 'package:flutter_devfest/home/home_bloc.dart';
+import 'package:flutter_devfest/home/home_event.dart';
 import 'package:flutter_devfest/utils/app_localizations.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share/share.dart';
@@ -28,23 +30,29 @@ class DevScaffold extends StatelessWidget {
             centerTitle: true,
             bottom: tabBar != null ? tabBar : null,
             actions: <Widget>[
-              InkWell(
-                child: Container(
-                  padding: EdgeInsets.symmetric(horizontal: 8.0),
-                  alignment: Alignment.center,
-                  child: Text(
-                    ConfigBloc().languageCode == AppLocalizations.ZH
-                        ? AppLocalizations.of(context).traditionalChinese
-                        : AppLocalizations.of(context).english,
+              if (title == AppLocalizations.of(context).home ||
+                  title == AppLocalizations.of(context).events)
+                InkWell(
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 8.0),
+                    alignment: Alignment.center,
+                    child: Text(
+                      ConfigBloc().languageCode == AppLocalizations.ZH
+                          ? AppLocalizations.of(context).traditionalChinese
+                          : AppLocalizations.of(context).english,
+                    ),
                   ),
+                  onTap: () {
+                    String code =
+                        ConfigBloc().languageCode == AppLocalizations.EN
+                            ? AppLocalizations.ZH
+                            : AppLocalizations.EN;
+                    ConfigBloc().dispatch(LocaleEvent(Locale(code)));
+                    if (title == AppLocalizations.of(context).home) {
+                      HomeBloc().dispatch(LoadHomeEvent());
+                    }
+                  },
                 ),
-                onTap: () {
-                  String code = ConfigBloc().languageCode == AppLocalizations.EN
-                      ? AppLocalizations.ZH
-                      : AppLocalizations.EN;
-                  ConfigBloc().dispatch(LocaleEvent(Locale(code)));
-                },
-              ),
               IconButton(
                 icon: Icon(
                   ConfigBloc().darkModeOn
@@ -58,8 +66,8 @@ class DevScaffold extends StatelessWidget {
                 },
               ),
               IconButton(
-                onPressed: () => Share.share(
-                    AppLocalizations.of(context).shareText),
+                onPressed: () =>
+                    Share.share(AppLocalizations.of(context).shareText),
                 icon: Icon(
                   Icons.share,
                   size: 20,

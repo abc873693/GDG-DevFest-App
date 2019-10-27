@@ -25,7 +25,7 @@ class MockClient implements IClient {
       {bool customHeaders}) async {
     var resultClass;
     String rawString;
-    final tag = ConfigBloc().devFestEvent?.tag;
+    final cityTag = ConfigBloc().devFestEvent?.tag;
 
     //? For Speakers Hardcoded Data
     if (resourcePath == HomeProvider.kConstGetSpeakersUrl) {
@@ -34,8 +34,9 @@ class MockClient implements IClient {
       } else {
         rawString = await rootBundle.loadString(
           Injector().currentEventMode == EventMode.MULTI
-              ? sprintf(Devfest.speakersAssetJsonCity, [tag])
-              : Devfest.speakersAssetJson,
+              ? sprintf(Devfest.speakersAssetJsonCity,
+                  [ConfigBloc().languageCode, cityTag])
+              : sprintf(Devfest.speakersAssetJson, [ConfigBloc().languageCode]),
         );
       }
       resultClass = await compute(jsonParserIsolate, rawString);
@@ -48,8 +49,9 @@ class MockClient implements IClient {
       } else {
         rawString = await rootBundle.loadString(
           Injector().currentEventMode == EventMode.MULTI
-              ? sprintf(Devfest.tracksAssetJsonCity, [tag])
-              : Devfest.tracksAssetJson,
+              ? sprintf(Devfest.tracksAssetJsonCity,
+                  [ConfigBloc().languageCode, cityTag])
+              : sprintf(Devfest.tracksAssetJson, [ConfigBloc().languageCode]),
         );
       }
       resultClass = await compute(jsonParserIsolate, rawString);
@@ -62,8 +64,9 @@ class MockClient implements IClient {
       } else {
         rawString = await rootBundle.loadString(
           Injector().currentEventMode == EventMode.MULTI
-              ? sprintf(Devfest.sessionsAssetJsonCity, [tag])
-              : Devfest.sessionsAssetJson,
+              ? sprintf(Devfest.sessionsAssetJsonCity,
+                  [ConfigBloc().languageCode, cityTag])
+              : sprintf(Devfest.sessionsAssetJson, [ConfigBloc().languageCode]),
         );
       }
       resultClass = await compute(jsonParserIsolate, rawString);
@@ -76,8 +79,9 @@ class MockClient implements IClient {
       } else {
         rawString = await rootBundle.loadString(
           Injector().currentEventMode == EventMode.MULTI
-              ? sprintf(Devfest.teamsAssetJsonCity, [tag])
-              : Devfest.teamsAssetJson,
+              ? sprintf(Devfest.teamsAssetJsonCity,
+                  [ConfigBloc().languageCode, cityTag])
+              : sprintf(Devfest.teamsAssetJson, [ConfigBloc().languageCode]),
         );
       }
       resultClass = await compute(jsonParserIsolate, rawString);
@@ -90,8 +94,9 @@ class MockClient implements IClient {
       } else {
         rawString = await rootBundle.loadString(
           Injector().currentEventMode == EventMode.MULTI
-              ? sprintf(Devfest.sponsorsAssetJsonCity, [tag])
-              : Devfest.sponsorsAssetJson,
+              ? sprintf(Devfest.sponsorsAssetJsonCity,
+                  [ConfigBloc().languageCode, cityTag])
+              : sprintf(Devfest.sponsorsAssetJson, [ConfigBloc().languageCode]),
         );
       }
       resultClass = await compute(jsonParserIsolate, rawString);
@@ -102,7 +107,9 @@ class MockClient implements IClient {
       if (Injector().currentDataMode == DataMode.DART) {
         rawString = jsonEncode(devFestEvent);
       } else {
-        rawString = await rootBundle.loadString(Devfest.devFestEventAssetJson);
+        rawString = await rootBundle.loadString(
+          sprintf(Devfest.devFestEventAssetJson, [ConfigBloc().languageCode]),
+        );
       }
       resultClass = await compute(jsonParserIsolate, rawString);
     }
@@ -112,7 +119,9 @@ class MockClient implements IClient {
       if (Injector().currentDataMode == DataMode.DART) {
         rawString = jsonEncode(devFestEvent);
       } else {
-        rawString = await rootBundle.loadString(Devfest.devFestEventsAssetJson);
+        rawString = await rootBundle.loadString(
+          sprintf(Devfest.devFestEventsAssetJson, [ConfigBloc().languageCode]),
+        );
       }
       resultClass = await compute(jsonParserIsolate, rawString);
     }

@@ -58,6 +58,8 @@ flutter:
     - assets/
     - assets/images/
     - assets/json/
+    - assets/json/en/
+    - assets/json/zh/
   # assets:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
