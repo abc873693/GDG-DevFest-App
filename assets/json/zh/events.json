@@ -8,22 +8,23 @@
       "date": "2019-11-9",
       "image": "https://jamaicandevelopers.com/p/devfest-2019/@@images/image",
       "imageAsset": "assets/images/banner_devFest_taichung.webp",
-      "welcomeText": "Welcome to GDG DevFest",
-      "descText": "''DevFests are community-led, developer events hosted by GDG chapters around the globe focused on community building & learning about Google’s technologies. Each DevFest is inspired by and uniquely tailored to the needs of the developer community and region that hosts it.''",
+      "welcomeText": "GDG DevFest Taichung 2019",
+      "descText": "GDG Taichung (Google Developer Group Taichung) 是以研究 Google 相關技術為主的開發者社群，於每週四晚上聚會，由與會者提供數個 Lightening Talk，並不定期邀請講者分享特定主題、舉辦 Hackthon 或 Workshop 等活動。聚會地點在大台中地區，地點將隨著每次活動發佈。",
       "location": {
         "name": "東海大學",
-        "mapTitle": "Google Office",
-        "mapSubTitle": "Shoreline Amphitheatre, Mountain View, CA",
+        "mapTitle": "東海大學推廣部",
+        "mapSubTitle": "407台中市西屯區台灣大道四段1727號",
         "lat": 24.1824046,
         "lng": 120.6104689
       },
       "links": {
-        "facebook": "https://facebook.com/imthepk",
-        "twitter": "https://twitter.com/imthepk",
-        "linkedinIn": "https://linkedin.com/in/imthepk",
-        "youtube": "https://youtube.com/mtechviral",
-        "meetup": "https://meetup.com/",
-        "emailUrl": "''mailto:mtechviral@gmail.com?subject=Support Needed For DevFest App&body={Name: Pawan Kumar},Email: pawan221b@gmail.com}''"
+        "facebook": "https://www.facebook.com/GDG.Taichung",
+        "twitter": "",
+        "linkedinIn": "",
+        "youtube": "",
+        "meetup": "https://www.meetup.com/GDGTaichung",
+        "emailUrl": "",
+        "telegram": "https://t.me/gdg_taichung"
       }
     },
     {
