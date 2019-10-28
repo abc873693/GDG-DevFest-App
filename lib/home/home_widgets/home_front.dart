@@ -192,6 +192,16 @@ class HomeFront extends StatelessWidget {
                   await _launchURL(out);
                 },
               ),
+            if (_devFestEvent.links.telegram != null &&
+                _devFestEvent.links.telegram.isNotEmpty)
+              IconButton(
+                icon: Icon(FontAwesomeIcons.telegram),
+                onPressed: () async {
+                  var telegramUrl = _devFestEvent.links.telegram;
+                  var out = Uri.encodeFull(telegramUrl);
+                  await _launchURL(out);
+                },
+              ),
           ],
         ),
       );
