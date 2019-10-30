@@ -1,31 +1,17 @@
 {
   "sponsors": [
     {
-      "name": "GDG Kolkata",
-      "image": "https://devfest.gdgkolkata.org/assets/img/logos/gd.png",
-      "desc": "Organizer",
-      "url": "https://devfest.gdgkolkata.org/",
+      "name": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "desc": "主辦單位",
+      "url": "https://www.facebook.com/GDG.Taichung/",
       "logo": ""
     },
     {
-      "name": "Jetbrains",
-      "image": "https://devfest.gdgkolkata.org/assets/img/jetbrains.png",
-      "desc": "Slivers Sponsors",
-      "url": "https://devfest.gdgkolkata.org/",
-      "logo": ""
-    },
-    {
-      "name": "Kotlin",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin-logo.svg/220px-Kotlin-logo.svg.png",
-      "desc": "Slivers Sponsors",
-      "url": "https://devfest.gdgkolkata.org/",
-      "logo": ""
-    },
-    {
-      "name": "Firebase",
-      "image": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_0016c93c710cf35990b999cba3a59bae/firebase.png",
-      "desc": "Slivers Sponsors",
-      "url": "https://devfest.gdgkolkata.org/",
+      "name": "Google",
+      "image": "https://lh3.googleusercontent.com/u0Ct8FEWUyG75GFA0IXfr3JpI4eGttqyy-3w98cE78TZH94f789uKVaz5ZHPc0HRmSPI2mT7Y7BGPUAgSsPwLMVXEHw2bkmXF5OX3lhxEKR-4X7BfxRl-1hgCuvmfOKZvKE__GWQKuAou5Wxlou7VUEqxRXhe6cIiNnGkJsoqgmjLnES4b2eGSdTC3Aw4AwFm7Xpbaxbsk490h0LqvX1QI7P4DgS387-Wuhw304TBB3Jm3lKcNWlucadnDS7StNUOvr_pILAbZVdKDzV4HSAxa6UKwJ0urDuwd4fhhkOI7A-8M2IHbh0iavm44ZSYD83wbjlA8Ie7x0Wf1sYwHqh4RodwnihZj7m0-lN8hyyHRUmmy90G338qx-r3qPAMfi1jGOPO78EEK0hE4i_K-FV4LRA9h1hCtVYT3kw8bxlkuRr3sq-YaWhW7QBtS6xzFZVVdDFWiuDWJMcPgO4UqExFapM7mfxTUZbPDee8RfgQTW9xF2WTMTZfqsXCTIElYP3YqA20XdbFXkpy07_bKiW7mp7Sp-sc5tCHV3NL1TzQo3iqx1gcrD9kMmH2g4i7yDjneTMc3TCiJSzygy2Y5GS70ltqcEcFshYCXpvW70ZlNWuqM91cQTwaIhYjEbUjto9cn6r0iO7P6AUb7a7JDwe370vyomyqDAILLeeBjcihbUKRcWpYCBaVTlnpQteh3OGmVzYScDaBs2die5-kZ3Pkuew5Lgt5P7zAK62d1WGfQkFArBZ=w2048-h276-no",
+      "desc": "贊助商",
+      "url": "https://developers.google.com/",
       "logo": ""
     }
   ]
