@@ -143,15 +143,18 @@ class Links {
   String linkedinIn;
   String youtube;
   String meetup;
+  String telegram;
   String emailUrl;
 
-  Links(
-      {this.facebook,
-      this.twitter,
-      this.linkedinIn,
-      this.youtube,
-      this.meetup,
-      this.emailUrl});
+  Links({
+    this.facebook,
+    this.twitter,
+    this.linkedinIn,
+    this.youtube,
+    this.meetup,
+    this.emailUrl,
+    this.telegram,
+  });
 
   Links.fromJson(Map<String, dynamic> json) {
     facebook = json['facebook'];
@@ -159,6 +162,7 @@ class Links {
     linkedinIn = json['linkedinIn'];
     youtube = json['youtube'];
     meetup = json['meetup'];
+    telegram = json['telegram'];
     emailUrl = json['emailUrl'];
   }
 
@@ -169,6 +173,7 @@ class Links {
     data['linkedinIn'] = this.linkedinIn;
     data['youtube'] = this.youtube;
     data['meetup'] = this.meetup;
+    data['telegram'] = this.telegram;
     data['emailUrl'] = this.emailUrl;
     return data;
   }

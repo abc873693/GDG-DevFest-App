@@ -153,7 +153,7 @@ class AppLocalizations {
       'map': '位置',
       'registration': '報名',
       'active': '進行中',
-      'comingSoon': '敬啟期待',
+      'comingSoon': '敬啟\n期待',
       'minutes': '分',
       'shareText': '下載 DevFest App 並分享給您的好朋友\n'
           'PlayStore -  http://bit.ly/2GDr18N',

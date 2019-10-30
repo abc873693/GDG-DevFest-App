@@ -1,3 +1,9 @@
+import 'dart:io';
+
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_analytics/observer.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_devfest/agenda/agenda_page.dart';
@@ -38,6 +44,12 @@ class _ConfigPageState extends State<ConfigPage> {
     configBloc.languageCode =
         Devfest.prefs.getString(Devfest.languagePref) ?? 'zh';
     configBloc.dispatch(LoadDevFestEvent());
+    if (kIsWeb) {
+    } else if (Platform.isAndroid || Platform.isIOS) {
+      configBloc.analytics = FirebaseAnalytics();
+      configBloc.firebaseMessaging = FirebaseMessaging();
+      configBloc.initFCM();
+    }
   }
 
   @override
@@ -92,6 +104,15 @@ class _ConfigPageState extends State<ConfigPage> {
               FindDevFestPage.routeName: (context) => FindDevFestPage(),
               MapPage.routeName: (context) => MapPage(),
             },
+            navigatorObservers: (kIsWeb)
+                ? []
+                : (Platform.isIOS || Platform.isAndroid)
+                    ? [
+                        FirebaseAnalyticsObserver(
+                          analytics: configBloc.analytics,
+                        ),
+                      ]
+                    : [],
           );
         },
       ),
