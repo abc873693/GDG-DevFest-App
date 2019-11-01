@@ -1,0 +1,164 @@
+[
+  {
+    "StartTime": "8:30",
+    "EndTime": "9:30",
+    "Duration": "",
+    "title": "Registration",
+    "name": "",
+    "type": "",
+    "": ""
+  },
+  {
+    "StartTime": "9:30",
+    "EndTime": "9:40",
+    "Duration": "",
+    "title": "opening",
+    "name": "",
+    "type": "",
+    "": ""
+  },
+  {
+    "StartTime": "9:40",
+    "EndTime": "10:10",
+    "Duration": 30,
+    "title": "以 Ktor 打造 API 應用",
+    "name": "Shengyou Fan",
+    "type": "為了可以更簡單的使用 Kotlin 打造網路應用程式，JetBrains 自主研發推出了 Ktor  框架，讓我們可以快速打造需要的 API 應用，並享受 Kotlin 強型別所帶來的好處。在這場分享裡，將結合 Ktor 框架及 Exposed 函式庫，示範如何實作一個簡易的 API 應用。",
+    "": ""
+  },
+  {
+    "StartTime": "10:10",
+    "EndTime": "10:20",
+    "Duration": 10,
+    "title": "Break",
+    "name": "",
+    "type": "",
+    "": ""
+  },
+  {
+    "StartTime": "10:20",
+    "EndTime": "10:50",
+    "Duration": 30,
+    "title": "APP Girls創辦人教你如何跨越程式高牆 - admob google廣告串接與開發經驗和自學經驗分享",
+    "name": "鄭雅方",
+    "type": "分享APP Girls創辦, 開發經驗, 職涯經驗以及自學經驗等等，歸納出任何自學的重要元素與方法，並鼓勵每個人都可以寫程式，靠自己的力量做自己想要做的事情！提供一個方向和方法與自學經驗分享彼此交流。另外也介紹Admob的觀念解析與程式碼分享，讓大家知道如何透過AdMob這個強大又好用的工具，在應用程式內放廣告，為APP新增一項金流管道。",
+    "": ""
+  },
+  {
+    "StartTime": "10:50",
+    "EndTime": "11:00",
+    "Duration": 10,
+    "title": "Break",
+    "name": "",
+    "type": "",
+    "": ""
+  },
+  {
+    "StartTime": "11:00",
+    "EndTime": "11:30",
+    "Duration": 30,
+    "title": "探索 BigQuery",
+    "name": "Bob Lee",
+    "type": "大數據資料庫（ＡＩ）",
+    "": ""
+  },
+  {
+    "StartTime": "11:30",
+    "EndTime": "11:40",
+    "Duration": 10,
+    "title": "Break",
+    "name": "",
+    "type": "",
+    "": ""
+  },
+  {
+    "StartTime": "11:40",
+    "EndTime": "12:10",
+    "Duration": 30,
+    "title": "Kotlin overview",
+    "name": "Takuma Lee",
+    "type": "Andriod APP開發平台",
+    "": ""
+  },
+  {
+    "StartTime": "12:00",
+    "EndTime": "13:00",
+    "Duration": 60,
+    "title": "Lunch",
+    "name": "",
+    "type": "",
+    "": ""
+  },
+  {
+    "StartTime": "13:00",
+    "EndTime": "13:30",
+    "Duration": 30,
+    "title": "女性開發者經驗分享",
+    "name": "WTM",
+    "type": "",
+    "": ""
+  },
+  {
+    "StartTime": "13:30",
+    "EndTime": "13:40",
+    "Duration": 10,
+    "title": "Break",
+    "name": "",
+    "type": "",
+    "": ""
+  },
+  {
+    "StartTime": "13:40",
+    "EndTime": "14:30",
+    "Duration": 50,
+    "title": "Workshop 實作 Google 最新的 serverless 解決方案做為 chatbot(LINE Bot) / voice app (Google智慧語音助理) 的 webhook 應用",
+    "name": "Wolke",
+    "type": "進階工作坊",
+    "": "語音助理"
+  },
+  {
+    "StartTime": "14:30",
+    "EndTime": "15:00",
+    "Duration": 30,
+    "title": "Break time",
+    "name": "",
+    "type": "",
+    "": ""
+  },
+  {
+    "StartTime": "15:00",
+    "EndTime": "16:00",
+    "Duration": 60,
+    "title": "實作 Google Cloud Run 作為 dialogflow webhook",
+    "name": "Wolke",
+    "type": "進階工作坊",
+    "": ""
+  },
+  {
+    "StartTime": "16:00",
+    "EndTime": "16:10",
+    "Duration": 10,
+    "title": "Break",
+    "name": "",
+    "type": "",
+    "": ""
+  },
+  {
+    "StartTime": "16:10",
+    "EndTime": "16:40",
+    "Duration": 30,
+    "title": "Tensorflow 2.0",
+    "name": "魏澤人",
+    "type": "新推出的 Tensorflow 2.0 與之前的版本有很大的差異，是否值得轉換呢? 有哪些新的功能呢? 程式碼要怎麼改? 只要在 keras 前面加上 tf? 我們將帶大家一起探索 Tensorflow 2.0。",
+    "": ""
+  },
+  {
+    "StartTime": "16:40",
+    "EndTime": "上午 16:50:00",
+    "Duration": 10,
+    "title": "閉幕",
+    "name": "",
+    "type": "",
+    "": ""
+  }
+]
