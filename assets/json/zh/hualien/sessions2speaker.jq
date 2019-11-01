@@ -1,0 +1,1 @@
+jq '[.[] | .[] | select(.speaker_name != "") | . ]  | unique_by(.speaker_name) | sort_by(.session_id) | .[] | {speaker_id, speaker_image, speaker_name, speaker_desc,speaker_session,fb_url,github_url,linkedin_url,twitter_url}'

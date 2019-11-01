@@ -1,0 +1,1 @@
+jq 'to_entries | {sessions: [ .[] | {session_id: (.key+1) } +  { session_start_time: .value.StartTime, session_total_time: .value.Duration, session_title: .value.title, session_desc: .value.type, speaker_image: "", speaker_name: .value.name, speaker_desc:"", track_id: 1 } + {speaker_id: (.key+1)}] }'
