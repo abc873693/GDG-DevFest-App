@@ -20,7 +20,7 @@
       "session_desc": "Flutter 是一套在這兩年逐漸普及的 App 開發框架。然而，即使採用了 Flutter 技術，最後你或你的企業，還是在做一套 iOS/Android App，也有不可迴避的原生部分。在這場 Talk 中，我會提到建議你如何評估 Flutter 這門技術，以及怎樣避免一些在導入 Flutter 的過程中可能會遇到的問題。",
       "speaker_image": "https://lh5.googleusercontent.com/RKzm23ktP-gq-rpetFJe9q1L4yp1xDbBFT0SY3Xa0b6DSP2BzD3xLwMMAVEOOlq2Q7Z1eEhMotedoM1ZCaPp=w1920-h920",
       "speaker_name": "Weizhong Yang",
-      "speaker_desc": "從 2005 年開始接觸 Objective C 語言已經 macOS App 開發，從 2008 年開始開發 iOS app，從 2011 年開始在 KKBOX 工作，參與過 KKBOX 的 macOS、iOS、tvOS 與 watchOS 版本開發，以及 KKTIX、Uta Pass 的 iOS 版本，之前也參與過雅虎輸入發以及無蝦皮輸入法 macOS 版本。從 2018 年開始接觸 Flutter。",
+      "speaker_desc": "從 2005 年開始接觸 Objective C 語言已經 macOS App 開發，從 2008 年開始開發 iOS app，從 2011 年開始在 KKBOX 工作，參與過 KKBOX 的 macOS、iOS、tvOS 與 watchOS 版本開發，以及 KKTIX、Uta Pass 的 iOS 版本，之前也參與過雅虎輸入發以及無蝦米輸入法 macOS 版本。從 2018 年開始接觸 Flutter。",
       "speaker_id": "2",
       "track_id": "1"
     },
@@ -32,7 +32,7 @@
       "session_desc": "新推出的 Tensorflow 2.0 與之前的版本有很大的差異，是否值得轉換呢？\n有哪些新的功能呢？\n程式碼要怎麼改？\n只要在 keras 前面加上 tf？\n我們將帶大家一起探索 Tensorflow 2.0。",
       "speaker_image": "https://drive.google.com/file/d/1ECQ9mlULkcFZIvMUf_K-osEgR3cq-ggl",
       "speaker_name": "魏澤人",
-      "speaker_desc": "ML GDE、 iiNumbers 首席數學家、花蓮.py 及 GDG 花蓮發起人。",
+      "speaker_desc": "ML GDE、iiNumbers 首席數學家、花蓮.py 及 GDG 花蓮發起人。",
       "speaker_id": "3",
       "track_id": "1"
     },
