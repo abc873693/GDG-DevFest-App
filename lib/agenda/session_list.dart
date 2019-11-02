@@ -57,10 +57,10 @@ class SessionList extends StatelessWidget {
               ),
             ),
             leading: Hero(
-              tag: allSessions[i].speaker.speakerImage,
+              tag: allSessions[i].hashCode,
               child: CircleAvatar(
                 radius: 30,
-                backgroundImage: allSessions[i].speaker.speakerImage != null &&
+                backgroundImage: allSessions[i].speaker?.speakerImage != null &&
                         allSessions[i].speaker.speakerImage.isNotEmpty
                     ? CachedNetworkImageProvider(
                         allSessions[i].speaker.speakerImage,
@@ -74,7 +74,7 @@ class SessionList extends StatelessWidget {
                 style: Theme.of(context).textTheme.title.copyWith(fontSize: 16),
                 children: [
                   TextSpan(
-                      text: allSessions[i].speaker.speakerName,
+                      text: allSessions[i].speaker?.speakerName??'',
                       style: Theme.of(context).textTheme.subtitle.copyWith(
                             fontSize: 14,
                             color: Tools.multiColors[Random().nextInt(4)],

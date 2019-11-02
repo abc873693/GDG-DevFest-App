@@ -123,12 +123,13 @@ class MockClient implements IClient {
           sprintf(Devfest.devFestEventsAssetJson, [ConfigBloc().languageCode]),
         );
       }
-      resultClass = await compute(jsonParserIsolate, rawString);
+      resultClass = jsonDecode(rawString);
     }
 
     return MappedNetworkServiceResponse<T>(
-        mappedResult: resultClass,
-        networkServiceResponse: NetworkServiceResponse<T>(success: true));
+      mappedResult: resultClass,
+      networkServiceResponse: NetworkServiceResponse<T>(success: true),
+    );
   }
 
   @override

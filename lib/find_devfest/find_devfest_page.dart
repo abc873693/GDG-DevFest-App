@@ -68,9 +68,9 @@ class FindDevFestPage extends StatelessWidget {
                         fit: BoxFit.fitWidth,
                         colorFilter: ColorFilter.mode(
                             Colors.black.withOpacity(0.3), BlendMode.dstATop),
-                        image: AssetImage(event.isActive
-                            ? event.imageAsset
-                            : Devfest.banner_devFest_default),
+                        image: event.useImageAsset
+                            ? AssetImage(event.imageAsset)
+                            : NetworkImage(event.image),
                       ),
                       color: Colors.black87,
                       borderRadius: BorderRadiusDirectional.circular(24),
