@@ -37,6 +37,7 @@ class Session {
   String speakerInfo;
   String speakerId;
   String trackId;
+  List<String> tags;
   Speaker speaker;
 
   Session({
@@ -69,6 +70,7 @@ class Session {
     speakerInfo = json['speaker_info'];
     speakerId = json['speaker_id'];
     trackId = json['track_id'];
+    tags = List<String>.from(json["tags"].map((x) => x));
   }
 
   Map<String, dynamic> toJson() {
@@ -86,6 +88,7 @@ class Session {
     data['speaker_info'] = this.speakerInfo;
     data['speaker_id'] = this.speakerId;
     data['track_id'] = this.trackId;
+    data['tags'] = List<dynamic>.from(tags.map((x) => x));
     return data;
   }
 

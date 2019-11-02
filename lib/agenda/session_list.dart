@@ -83,11 +83,19 @@ class SessionList extends StatelessWidget {
                 ],
               ),
             ),
-            subtitle: Text(
-              allSessions[i].speaker.speakerDesc,
-              style: Theme.of(context).textTheme.caption.copyWith(
-                    fontSize: 10.0,
+            subtitle: Wrap(
+              children: <Widget>[
+                for (var j = 0; j < allSessions[i].tags.length; j++) ...[
+                  Chip(
+                    backgroundColor: Tools.tagToColor(allSessions[i].tags[j]),
+                    label: Text(
+                      Tools.tagToName(allSessions[i].tags[j]),
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ),
+                  if (j != allSessions[i].tags.length - 1) SizedBox(width: 8)
+                ]
+              ],
             ),
           ),
         );

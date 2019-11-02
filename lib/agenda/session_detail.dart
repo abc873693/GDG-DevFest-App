@@ -125,6 +125,23 @@ class SessionDetail extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
+              Wrap(
+                children: <Widget>[
+                  for (var i = 0; i < session.tags.length; i++) ...[
+                    Chip(
+                      backgroundColor: Tools.tagToColor(session.tags[i]),
+                      label: Text(
+                        Tools.tagToName(session.tags[i]),
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                    if (i != session.tags.length - 1) SizedBox(width: 8)
+                  ]
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
               socialActions(context, session.speaker),
             ],
           ),
