@@ -19,7 +19,7 @@ class AgendaPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var _homeBloc = HomeBloc();
     var state = _homeBloc.currentState as InHomeState;
-    var tracks = state.tracksData.tracks;
+    var tracks = state.sessionsData.tracks;
     return DefaultTabController(
       length: tracks.length,
       child: DevScaffold(

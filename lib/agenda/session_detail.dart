@@ -19,44 +19,44 @@ class SessionDetail extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            if (speaker.fbUrl != null && speaker.fbUrl.isNotEmpty)
+            if (speaker?.fbUrl != null && speaker?.fbUrl.isNotEmpty)
               IconButton(
                 icon: Icon(
                   FontAwesomeIcons.facebookF,
                   size: 15,
                 ),
                 onPressed: () {
-                  launch(speaker.fbUrl);
+                  launch(speaker?.fbUrl);
                 },
               ),
-            if (speaker.twitterUrl != null && speaker.twitterUrl.isNotEmpty)
+            if (speaker?.twitterUrl != null && speaker?.twitterUrl.isNotEmpty)
               IconButton(
                 icon: Icon(
                   FontAwesomeIcons.twitter,
                   size: 15,
                 ),
                 onPressed: () {
-                  launch(speaker.twitterUrl);
+                  launch(speaker?.twitterUrl);
                 },
               ),
-            if (speaker.linkedinUrl != null && speaker.linkedinUrl.isNotEmpty)
+            if (speaker?.linkedinUrl != null && speaker?.linkedinUrl.isNotEmpty)
               IconButton(
                 icon: Icon(
                   FontAwesomeIcons.linkedinIn,
                   size: 15,
                 ),
                 onPressed: () {
-                  launch(speaker.linkedinUrl);
+                  launch(speaker?.linkedinUrl);
                 },
               ),
-            if (speaker.githubUrl != null && speaker.githubUrl.isNotEmpty)
+            if (speaker?.githubUrl != null && speaker?.githubUrl.isNotEmpty)
               IconButton(
                 icon: Icon(
                   FontAwesomeIcons.github,
                   size: 15,
                 ),
                 onPressed: () {
-                  launch(speaker.githubUrl);
+                  launch(speaker?.githubUrl);
                 },
               ),
             IconButton(
@@ -82,11 +82,11 @@ class SessionDetail extends StatelessWidget {
             children: <Widget>[
               Center(
                 child: Hero(
-                  tag: session.speaker.speakerImage,
+                  tag: session.hashCode,
                   child: CircleAvatar(
                     radius: 100.0,
                     backgroundImage: CachedNetworkImageProvider(
-                      session.speaker.speakerImage,
+                      session.speaker?.speakerImage ?? '',
                     ),
                   ),
                 ),
@@ -95,7 +95,7 @@ class SessionDetail extends StatelessWidget {
                 height: 10,
               ),
               Text(
-                "${session.speaker.speakerDesc}",
+                "${session.speaker?.speakerDesc ?? ''}",
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.title.copyWith(
                       fontSize: 14,
@@ -125,12 +125,29 @@ class SessionDetail extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
+              Wrap(
+                children: <Widget>[
+                  for (var i = 0; i < session.tags.length; i++) ...[
+                    Chip(
+                      backgroundColor: Tools.tagToColor(session.tags[i]),
+                      label: Text(
+                        Tools.tagToName(session.tags[i]),
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                    if (i != session.tags.length - 1) SizedBox(width: 8)
+                  ]
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
               socialActions(context, session.speaker),
             ],
           ),
         ),
       ),
-      title: session.speaker.speakerName,
+      title: session.speaker?.speakerName ?? '',
     );
   }
 }

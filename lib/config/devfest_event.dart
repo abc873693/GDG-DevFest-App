@@ -25,9 +25,11 @@ class DevFestEventsData {
 class DevFestEvent {
   String tag;
   bool isActive;
+  bool hasLocalization;
   String name;
   String host;
   String date;
+  bool useImageAsset;
   String image;
   String imageAsset;
   String welcomeText;
@@ -37,8 +39,12 @@ class DevFestEvent {
 
   DevFestEvent(
       {this.tag,
+      this.isActive,
+      this.hasLocalization,
       this.name,
+      this.host,
       this.date,
+      this.useImageAsset,
       this.image,
       this.imageAsset,
       this.welcomeText,
@@ -49,9 +55,11 @@ class DevFestEvent {
   DevFestEvent.fromJson(Map<String, dynamic> json) {
     tag = json['tag'];
     isActive = json['isActive'];
+    hasLocalization = json['hasLocalization'];
     name = json['name'];
     host = json['host'];
     date = json['date'];
+    useImageAsset = json['useImageAsset'];
     image = json['image'];
     imageAsset = json['imageAsset'];
     welcomeText = json['welcomeText'];
@@ -66,9 +74,11 @@ class DevFestEvent {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['tag'] = this.tag;
     data['isActive'] = this.isActive;
+    data['hasLocalization'] = this.hasLocalization;
     data['name'] = this.name;
     data['host'] = this.host;
     data['date'] = this.date;
+    data['useImageAsset'] = this.useImageAsset;
     data['image'] = this.image;
     data['imageAsset'] = this.imageAsset;
     data['welcomeText'] = this.welcomeText;
@@ -82,32 +92,6 @@ class DevFestEvent {
     return data;
   }
 }
-
-DevFestEvent devFestEvent = DevFestEvent(
-  tag: "gdg",
-  name: "DevFest",
-  date: "2019/10/19",
-  image: "https://jamaicandevelopers.com/p/devfest-2019/@@images/image",
-  welcomeText: "Welcome to GDG DevFest",
-  descText:
-      "''DevFests are community-led, developer events hosted by GDG chapters around the globe focused on community building & learning about Google’s technologies. Each DevFest is inspired by and uniquely tailored to the needs of the developer community and region that hosts it.''",
-  location: Location(
-    name: "Your Location",
-    mapTitle: "Google Office",
-    mapSubTitle: "Shoreline Amphitheatre, Mountain View, CA",
-    lat: 37.42796133580664,
-    lng: -122.085749655962,
-  ),
-  links: Links(
-    facebook: "https://facebook.com/imthepk",
-    twitter: "https://twitter.com/imthepk",
-    linkedinIn: "https://linkedin.com/in/imthepk",
-    youtube: "https://youtube.com/mtechviral",
-    meetup: "https://meetup.com/",
-    emailUrl:
-        "''mailto:mtechviral@gmail.com?subject=Support Needed For DevFest App&body={Name: Pawan Kumar},Email: pawan221b@gmail.com}''",
-  ),
-);
 
 class Location {
   String name;
@@ -143,18 +127,17 @@ class Links {
   String linkedinIn;
   String youtube;
   String meetup;
-  String telegram;
   String emailUrl;
+  String telegram;
 
-  Links({
-    this.facebook,
-    this.twitter,
-    this.linkedinIn,
-    this.youtube,
-    this.meetup,
-    this.emailUrl,
-    this.telegram,
-  });
+  Links(
+      {this.facebook,
+      this.twitter,
+      this.linkedinIn,
+      this.youtube,
+      this.meetup,
+      this.emailUrl,
+      this.telegram});
 
   Links.fromJson(Map<String, dynamic> json) {
     facebook = json['facebook'];
@@ -162,8 +145,8 @@ class Links {
     linkedinIn = json['linkedinIn'];
     youtube = json['youtube'];
     meetup = json['meetup'];
-    telegram = json['telegram'];
     emailUrl = json['emailUrl'];
+    telegram = json['telegram'];
   }
 
   Map<String, dynamic> toJson() {
@@ -173,8 +156,34 @@ class Links {
     data['linkedinIn'] = this.linkedinIn;
     data['youtube'] = this.youtube;
     data['meetup'] = this.meetup;
-    data['telegram'] = this.telegram;
     data['emailUrl'] = this.emailUrl;
+    data['telegram'] = this.telegram;
     return data;
   }
 }
+
+DevFestEvent devFestEvent = DevFestEvent(
+  tag: "gdg",
+  name: "DevFest",
+  date: "2019/10/19",
+  image: "https://jamaicandevelopers.com/p/devfest-2019/@@images/image",
+  welcomeText: "Welcome to GDG DevFest",
+  descText:
+      "''DevFests are community-led, developer events hosted by GDG chapters around the globe focused on community building & learning about Google’s technologies. Each DevFest is inspired by and uniquely tailored to the needs of the developer community and region that hosts it.''",
+  location: Location(
+    name: "Your Location",
+    mapTitle: "Google Office",
+    mapSubTitle: "Shoreline Amphitheatre, Mountain View, CA",
+    lat: 37.42796133580664,
+    lng: -122.085749655962,
+  ),
+  links: Links(
+    facebook: "https://facebook.com/imthepk",
+    twitter: "https://twitter.com/imthepk",
+    linkedinIn: "https://linkedin.com/in/imthepk",
+    youtube: "https://youtube.com/mtechviral",
+    meetup: "https://meetup.com/",
+    emailUrl:
+        "''mailto:mtechviral@gmail.com?subject=Support Needed For DevFest App&body={Name: Pawan Kumar},Email: pawan221b@gmail.com}''",
+  ),
+);
