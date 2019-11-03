@@ -33,8 +33,8 @@
       "session_id": "3",
       "session_start_time": "2019-11-09 11:00:00",
       "session_total_time": "40",
-      "session_title": "探索 Tensorflow 2.0",
-      "session_desc": "新推出的 Tensorflow 2.0 與之前的版本有很大的差異，是否值得轉換呢？\n有哪些新的功能呢？\n程式碼要怎麼改？\n只要在 keras 前面加上 tf？\n我們將帶大家一起探索 Tensorflow 2.0。",
+      "session_title": "All you need to know about AMP",
+      "session_desc": "AMP 是 Google 根據開放原始碼格式所設計的網頁開發框架，能夠加快網頁載入速度進而提升使用者體驗。本議程概括 AMP 的發展歷程與其特色，幫助新手快速理解並上手，同時提供有經驗者最新的產品更新資訊。",
       "speaker_id": "3",
       "track_id": "1",
       "tags": [
@@ -70,8 +70,8 @@
       "session_id": "6",
       "session_start_time": "2019-11-09 16:00:00",
       "session_total_time": "40",
-      "session_title": "All you need to know about AMP",
-      "session_desc": "AMP 是 Google 根據開放原始碼格式所設計的網頁開發框架，能夠加快網頁載入速度進而提升使用者體驗。本議程概括 AMP 的發展歷程與其特色，幫助新手快速理解並上手，同時提供有經驗者最新的產品更新資訊。",
+      "session_title": "探索 Tensorflow 2.0",
+      "session_desc": "新推出的 Tensorflow 2.0 與之前的版本有很大的差異，是否值得轉換呢？\n有哪些新的功能呢？\n程式碼要怎麼改？\n只要在 keras 前面加上 tf？\n我們將帶大家一起探索 Tensorflow 2.0。",
       "speaker_id": "6",
       "track_id": "1",
       "tags": [
