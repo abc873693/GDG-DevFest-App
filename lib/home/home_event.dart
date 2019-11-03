@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter_devfest/home/home_provider.dart';
 import 'package:flutter_devfest/home/index.dart';
-import 'package:flutter_devfest/home/session.dart';
 import 'package:meta/meta.dart';
 
 @immutable
@@ -19,7 +18,6 @@ class LoadHomeEvent extends HomeEvent {
   Future<HomeState> applyAsync({HomeState currentState, HomeBloc bloc}) async {
     try {
       var speakersData = await _homeProvider.getSpeakers();
-      var tracksData = await _homeProvider.getTracks();
       var sessionsData = await _homeProvider.getSessions();
       var teamsData = await _homeProvider.getTeams();
       var sponsorsData = await _homeProvider.getSponsors();
@@ -28,7 +26,6 @@ class LoadHomeEvent extends HomeEvent {
       });
       return InHomeState(
         speakersData: speakersData,
-        tracksData: tracksData,
         sessionsData: sessionsData,
         teamsData: teamsData,
         sponsorsData: sponsorsData,

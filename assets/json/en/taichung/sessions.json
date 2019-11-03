@@ -1,4 +1,10 @@
 {
+  "tracks": [
+    {
+      "id": "1",
+      "title": "R1"
+    }
+  ],
   "sessions": [
     {
       "session_id": "1",

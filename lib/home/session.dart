@@ -1,11 +1,19 @@
 import 'package:flutter_devfest/home/speaker.dart';
+import 'package:flutter_devfest/home/track.dart';
 
 class SessionsData {
+  List<Track> tracks;
   List<Session> sessions;
 
   SessionsData({this.sessions});
 
   SessionsData.fromJson(Map<String, dynamic> json) {
+    if (json['tracks'] != null) {
+      tracks = new List<Track>();
+      json['tracks'].forEach((v) {
+        tracks.add(Track.fromJson(v));
+      });
+    }
     if (json['sessions'] != null) {
       sessions = new List<Session>();
       json['sessions'].forEach((v) {
@@ -16,6 +24,9 @@ class SessionsData {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
+    if (this.tracks != null) {
+      data['tracks'] = this.tracks.map((v) => v.toJson()).toList();
+    }
     if (this.sessions != null) {
       data['sessions'] = this.sessions.map((v) => v.toJson()).toList();
     }

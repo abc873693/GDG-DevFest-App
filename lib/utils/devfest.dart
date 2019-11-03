@@ -83,12 +83,10 @@ class Devfest {
 
   //* JSON URLS
   static const String speakersAssetJson = "assets/json/%s/speakers.json";
-  static const String tracksAssetJson = "assets/json/%s/tracks.json";
   static const String sessionsAssetJson = "assets/json/%s/sessions.json";
   static const String teamsAssetJson = "assets/json/%s/teams.json";
   static const String sponsorsAssetJson = "assets/json/%s/sponsors.json";
   static const String speakersAssetJsonCity = "assets/json/%s/%s/speakers.json";
-  static const String tracksAssetJsonCity = "assets/json/%s/%s/tracks.json";
   static const String sessionsAssetJsonCity = "assets/json/%s/%s/sessions.json";
   static const String teamsAssetJsonCity = "assets/json/%s/%s/teams.json";
   static const String sponsorsAssetJsonCity = "assets/json/%s/%s/sponsors.json";

@@ -42,21 +42,6 @@ class MockClient implements IClient {
       resultClass = await compute(jsonParserIsolate, rawString);
     }
 
-    //? For Tracks Hardcoded Data
-    else if (resourcePath == HomeProvider.kConstGetTracksUrl) {
-      if (Injector().currentDataMode == DataMode.DART) {
-        rawString = jsonEncode(TracksData(tracks: tracks));
-      } else {
-        rawString = await rootBundle.loadString(
-          Injector().currentEventMode == EventMode.MULTI
-              ? sprintf(Devfest.tracksAssetJsonCity,
-                  [ConfigBloc().languageCode, cityTag])
-              : sprintf(Devfest.tracksAssetJson, [ConfigBloc().languageCode]),
-        );
-      }
-      resultClass = await compute(jsonParserIsolate, rawString);
-    }
-
     //? For Sessions Hardcoded Data
     else if (resourcePath == HomeProvider.kConstGetSessionsUrl) {
       if (Injector().currentDataMode == DataMode.DART) {
