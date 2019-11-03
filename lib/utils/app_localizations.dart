@@ -125,7 +125,8 @@ class AppLocalizations {
       'minutes': 'Mins',
       'shareText':
           'Download the new DevFest App and share with your tech friends.\n'
-              'PlayStore -  http://bit.ly/2GDr18N',
+              'Play Store - https://devfesttw.page.link/android\n'
+              'Apple Store - https://devfesttw.page.link/ios',
       'events': 'Events',
       'home': 'Home',
       'navigate': 'Navigate',
@@ -159,7 +160,8 @@ class AppLocalizations {
       'comingSoon': '敬啟\n期待',
       'minutes': '分',
       'shareText': '下載 DevFest App 並分享給您的好朋友\n'
-          'PlayStore -  http://bit.ly/2GDr18N',
+          'Play Store - https://devfesttw.page.link/android\n'
+          'Apple Store - https://devfesttw.page.link/ios',
       'events': '活動',
       'home': '主畫面',
       'navigate': '導航',
