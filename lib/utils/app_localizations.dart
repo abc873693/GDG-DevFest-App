@@ -78,6 +78,8 @@ class AppLocalizations {
 
   String get home => _vocabularies['home'];
 
+  String get navigate => _vocabularies['navigate'];
+
   static AppLocalizations of(BuildContext context) {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
@@ -126,6 +128,7 @@ class AppLocalizations {
               'PlayStore -  http://bit.ly/2GDr18N',
       'events': 'Events',
       'home': 'Home',
+      'navigate': 'Navigate',
     },
     'zh': {
       'app_name': 'DevFest APP',
@@ -159,6 +162,7 @@ class AppLocalizations {
           'PlayStore -  http://bit.ly/2GDr18N',
       'events': '活動',
       'home': '主畫面',
+      'navigate': '導航',
     },
   };
 }

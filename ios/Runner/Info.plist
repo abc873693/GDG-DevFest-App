@@ -49,5 +49,25 @@
 	<false/>
 	<key>io.flutter.embedded_views_preview</key>
 	<true/>
+	<key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>googlechromes</string>
+        <string>comgooglemaps</string>
+       	<string>fb</string>
+		<string>fb-messenger</string>
+    </array>
+    <key>CFBundleURLTypes</key>
+    	<array>
+    		<dict>
+    			<key>CFBundleTypeRole</key>
+    			<string>Editor</string>
+    			<key>CFBundleURLName</key>
+    			<string>tw.gdg.devfest</string>
+    			<key>CFBundleURLSchemes</key>
+    			<array>
+    				<string>twgdgdevfest</string>
+    			</array>
+    		</dict>
+    	</array>
 </dict>
 </plist>

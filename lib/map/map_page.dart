@@ -5,6 +5,7 @@ import 'package:flutter_devfest/config/devfest_event.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
 import 'package:flutter_devfest/utils/app_localizations.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MapPage extends StatefulWidget {
   static const String routeName = "/map";
@@ -102,6 +103,37 @@ class _MapPageState extends State<MapPage> {
                               children: []),
                         ]),
                   )),
+            ),
+            Align(
+              alignment: Alignment(0.0, 0.9),
+              child: FloatingActionButton.extended(
+                onPressed: () async {
+                  final lat = ConfigBloc().devFestEvent.location.lat,
+                      lng = ConfigBloc().devFestEvent.location.lng;
+                  String googleiOSUrl = 'comgooglemaps://?daddr=$lat,$lng';
+                  String appleUrl = 'https://maps.apple.com/?sll=$lat,$lng';
+                  //String android = 'geo:$lat,$lng';
+                  String androidApp = 'google.navigation:q=$lat,$lng';
+                  if (await canLaunch(androidApp)) {
+                    await launch(androidApp);
+                  } else if (await canLaunch(googleiOSUrl)) {
+                    await launch(googleiOSUrl);
+                  } else if (await canLaunch(appleUrl)) {
+                    await launch(appleUrl);
+                  } else {
+                    throw 'Could not launch url';
+                  }
+                },
+                label: Text(
+                  AppLocalizations.of(context).navigate,
+                  style: TextStyle(color: Colors.white),
+                ),
+                icon: Icon(
+                  Icons.navigation,
+                  color: Colors.white,
+                ),
+                backgroundColor: Colors.blue,
+              ),
             )
           ],
         ),
