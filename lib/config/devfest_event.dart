@@ -129,6 +129,7 @@ class Links {
   String meetup;
   String emailUrl;
   String telegram;
+  String registration;
 
   Links(
       {this.facebook,
@@ -147,6 +148,7 @@ class Links {
     meetup = json['meetup'];
     emailUrl = json['emailUrl'];
     telegram = json['telegram'];
+    registration = json['registration'];
   }
 
   Map<String, dynamic> toJson() {
@@ -158,6 +160,7 @@ class Links {
     data['meetup'] = this.meetup;
     data['emailUrl'] = this.emailUrl;
     data['telegram'] = this.telegram;
+    data['registration'] = this.registration;
     return data;
   }
 }

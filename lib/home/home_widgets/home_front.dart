@@ -76,7 +76,7 @@ class HomeFront extends StatelessWidget {
             onPressed: () => Navigator.pushNamed(context, TeamPage.routeName),
           ),
           RaisedButton(
-            child: Text(AppLocalizations.of(context).faq),
+            child: Text(AppLocalizations.of(context).registration),
             shape: StadiumBorder(),
             color: Colors.brown,
             colorBrightness: Brightness.dark,
@@ -124,10 +124,10 @@ class HomeFront extends StatelessWidget {
                 Navigator.pushNamed(context, SponsorPage.routeName),
           ),
           ActionCard(
-            icon: Icons.question_answer,
+            icon: Icons.edit,
             color: Colors.brown,
-            title: AppLocalizations.of(context).faq,
-            onPressed: () => Navigator.pushNamed(context, FaqPage.routeName),
+            title: AppLocalizations.of(context).registration,
+            onPressed: () => _launchURL(_devFestEvent.links.registration),
           ),
           ActionCard(
             icon: Icons.map,

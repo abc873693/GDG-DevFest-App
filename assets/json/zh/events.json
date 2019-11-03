@@ -26,12 +26,13 @@
         "youtube": "",
         "meetup": "https://www.meetup.com/GDGTaichung",
         "emailUrl": "",
-        "telegram": "https://t.me/gdg_taichung"
+        "telegram": "https://t.me/gdg_taichung",
+        "registration": "https://gdgtaichung.kktix.cc/events/devfest-2019-taichung"
       }
     },
     {
       "tag": "hualien",
-      "isActive": true,
+      "isActive": false,
       "hasLocalization": false,
       "name": "DevFest 花蓮",
       "host": "GDG 花蓮",

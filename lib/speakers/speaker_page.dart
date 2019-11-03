@@ -128,14 +128,14 @@ class SpeakerPage extends StatelessWidget {
                           height: 10,
                         ),
                         Text(
-                          speakers[i].speakerDesc,
+                          speakers[i].speakerDesc ?? '',
                           style: Theme.of(context).textTheme.subtitle,
                         ),
                         SizedBox(
                           height: 10,
                         ),
                         Text(
-                          speakers[i].speakerSession,
+                          speakers[i].speakerSession ?? '',
                           style: Theme.of(context).textTheme.caption,
                         ),
                         socialActions(context, speakers[i]),
