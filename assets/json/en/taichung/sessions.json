@@ -38,7 +38,7 @@
       "speaker_id": "3",
       "track_id": "1",
       "tags": [
-        "tensorflow"
+        "web"
       ]
     },
     {
@@ -75,7 +75,7 @@
       "speaker_id": "6",
       "track_id": "1",
       "tags": [
-        "web"
+        "tensorflow"
       ]
     }
   ]
