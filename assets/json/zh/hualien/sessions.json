@@ -34,7 +34,10 @@
       "session_desc": "為了可以更簡單的使用 Kotlin 打造網路應用程式，JetBrains 自主研發推出了 Ktor  框架，讓我們可以快速打造需要的 API 應用，並享受 Kotlin 強型別所帶來的好處。在這場分享裡，將結合 Ktor 框架及 Exposed 函式庫，示範如何實作一個簡易的 API 應用。",
       "track_id": "1",
       "speaker_id": "3",
-      "tags": []
+      "tags": [
+        "kotlin",
+        "web"
+      ]
     },
     {
       "session_id": "4",
@@ -54,7 +57,9 @@
       "session_desc": "分享APP Girls創辦, 開發經驗, 職涯經驗以及自學經驗等等，歸納出任何自學的重要元素與方法，並鼓勵每個人都可以寫程式，靠自己的力量做自己想要做的事情！提供一個方向和方法與自學經驗分享彼此交流。另外也介紹Admob的觀念解析與程式碼分享，讓大家知道如何透過AdMob這個強大又好用的工具，在應用程式內放廣告，為APP新增一項金流管道。",
       "track_id": "1",
       "speaker_id": "5",
-      "tags": []
+      "tags": [
+        "mobile"
+      ]
     },
     {
       "session_id": "6",
@@ -74,7 +79,9 @@
       "session_desc": "",
       "track_id": "1",
       "speaker_id": "7",
-      "tags": []
+      "tags": [
+        "cloud"
+      ]
     },
     {
       "session_id": "8",
@@ -94,7 +101,9 @@
       "session_desc": "",
       "track_id": "1",
       "speaker_id": "9",
-      "tags": []
+      "tags": [
+        "kotlin"
+      ]
     },
     {
       "session_id": "10",
@@ -114,7 +123,9 @@
       "session_desc": "",
       "track_id": "1",
       "speaker_id": "11",
-      "tags": []
+      "tags": [
+        "WTM"
+      ]
     },
     {
       "session_id": "12",
@@ -134,7 +145,9 @@
       "session_desc": "程式麻瓜也能玩聊天機器人，免程式，使用 Dialogflow 建置 Google 語音助理動作 (Google Assistant Action )",
       "track_id": "1",
       "speaker_id": "13",
-      "tags": []
+      "tags": [
+        "assistant"
+      ]
     },
     {
       "session_id": "14",
@@ -154,7 +167,9 @@
       "session_desc": "實作 Google Cloud Run 作為 dialogflow webhook",
       "track_id": "1",
       "speaker_id": "13",
-      "tags": []
+      "tags": [
+        "cloud"
+      ]
     },
     {
       "session_id": "16",
@@ -174,7 +189,9 @@
       "session_desc": "新推出的 Tensorflow 2.0 與之前的版本有很大的差異，是否值得轉換呢? 有哪些新的功能呢? 程式碼要怎麼改? 只要在 keras 前面加上 tf? 我們將帶大家一起探索 Tensorflow 2.0。",
       "track_id": "1",
       "speaker_id": "17",
-      "tags": []
+      "tags": [
+        "tensorflow"
+      ]
     },
     {
       "session_id": "18",

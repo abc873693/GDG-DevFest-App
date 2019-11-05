@@ -3,6 +3,8 @@ import 'package:flutter_devfest/agenda/agenda_page.dart';
 import 'package:flutter_devfest/config/devfest_event.dart';
 import 'package:flutter_devfest/config/index.dart';
 import 'package:flutter_devfest/faq/faq_page.dart';
+import 'package:flutter_devfest/home/home_bloc.dart';
+import 'package:flutter_devfest/home/home_state.dart';
 import 'package:flutter_devfest/map/map_page.dart';
 import 'package:flutter_devfest/speakers/speaker_page.dart';
 import 'package:flutter_devfest/sponsors/sponsor_page.dart';
@@ -110,19 +112,26 @@ class HomeFront extends StatelessWidget {
             onPressed: () =>
                 Navigator.pushNamed(context, SpeakerPage.routeName),
           ),
-          ActionCard(
-            icon: Icons.people,
-            color: Colors.amber,
-            title: AppLocalizations.of(context).team,
-            onPressed: () => Navigator.pushNamed(context, TeamPage.routeName),
-          ),
-          ActionCard(
-            icon: Icons.attach_money,
-            color: Colors.purple,
-            title: AppLocalizations.of(context).sponsor,
-            onPressed: () =>
-                Navigator.pushNamed(context, SponsorPage.routeName),
-          ),
+          if ((HomeBloc().currentState as InHomeState).teamsData.teams.length !=
+              0)
+            ActionCard(
+              icon: Icons.people,
+              color: Colors.amber,
+              title: AppLocalizations.of(context).team,
+              onPressed: () => Navigator.pushNamed(context, TeamPage.routeName),
+            ),
+          if ((HomeBloc().currentState as InHomeState)
+                  .sponsorsData
+                  .sponsors
+                  .length !=
+              0)
+            ActionCard(
+              icon: Icons.attach_money,
+              color: Colors.purple,
+              title: AppLocalizations.of(context).sponsor,
+              onPressed: () =>
+                  Navigator.pushNamed(context, SponsorPage.routeName),
+            ),
           ActionCard(
             icon: Icons.edit,
             color: Colors.brown,

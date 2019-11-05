@@ -8,48 +8,66 @@ class Tools {
   }
 
   static Color tagToColor(String tag) {
-    switch (tag) {
+    var text = tag.toLowerCase();
+    switch (text) {
       case 'flutter':
-      case 'Flutter':
         return hexToColor('#0175C2');
       case 'tensorflow':
-      case 'TensorFlow':
       case 'tf':
         return hexToColor('#FFA800');
       case 'android':
-      case 'Android':
         return hexToColor('#78C257');
       case 'firebase':
         return hexToColor('#F57C00');
       case 'web':
         return hexToColor('#039BE5');
+      case 'kotlin':
+        return hexToColor('#ec840c');
       case 'md':
+      case 'materail design':
+      case 'materaildesign':
         return Colors.purple;
+      case 'wtm':
+        return hexToColor('#00bda4');
+      case 'mobile':
+        return Colors.blue;
+      case 'assistant':
+        return Colors.red;
+      case 'cloud':
+        return hexToColor('#2b86e7');
       default:
         return multiColors[Random().nextInt(3)];
     }
   }
 
   static String tagToName(String tag) {
-    switch (tag) {
+    var text = tag.toLowerCase();
+    switch (text) {
       case 'flutter':
-      case 'Flutter':
         return 'Flutter';
       case 'tensorflow':
-      case 'TensorFlow':
       case 'tf':
         return 'TensorFlow';
       case 'android':
-      case 'Android':
         return 'Android';
       case 'firebase':
-      case 'Firebase':
         return 'Firebase';
       case 'web':
-      case 'Web':
         return 'Web';
+      case 'wtm':
+        return 'Women Techmaker';
+      case 'mobile':
+        return 'Mobile';
+      case 'assistant':
+        return 'Assistant';
+      case 'cloud':
+        return 'Cloud';
       case 'md':
+      case 'materail design':
+      case 'materaildesign':
         return 'Materail Design';
+      case 'kotlin':
+        return 'Kotlin';
       default:
         return tag;
     }
