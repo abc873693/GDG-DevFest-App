@@ -24,18 +24,21 @@ class SessionList extends StatelessWidget {
         return Card(
           elevation: 0.0,
           child: ListTile(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => SessionDetail(
-                    session: allSessions[i],
-                  ),
-                ),
-              );
-            },
+            onTap: allSessions[i].sessionDesc != null &&
+                    allSessions[i].sessionDesc != ""
+                ? () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SessionDetail(
+                          session: allSessions[i],
+                        ),
+                      ),
+                    );
+                  }
+                : null,
             // dense: true,
-            isThreeLine: true,
+            isThreeLine: allSessions[i].tags.length != 0,
             trailing: RichText(
               textAlign: TextAlign.center,
               text: TextSpan(
@@ -60,6 +63,7 @@ class SessionList extends StatelessWidget {
               tag: allSessions[i].hashCode,
               child: CircleAvatar(
                 radius: 30,
+                backgroundColor: Colors.transparent,
                 backgroundImage: allSessions[i].speaker?.speakerImage != null &&
                         allSessions[i].speaker.speakerImage.isNotEmpty
                     ? CachedNetworkImageProvider(
@@ -74,7 +78,7 @@ class SessionList extends StatelessWidget {
                 style: Theme.of(context).textTheme.title.copyWith(fontSize: 16),
                 children: [
                   TextSpan(
-                      text: allSessions[i].speaker?.speakerName??'',
+                      text: allSessions[i].speaker?.speakerName ?? '',
                       style: Theme.of(context).textTheme.subtitle.copyWith(
                             fontSize: 14,
                             color: Tools.multiColors[Random().nextInt(4)],

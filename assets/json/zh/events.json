@@ -32,14 +32,14 @@
     },
     {
       "tag": "hualien",
-      "isActive": false,
+      "isActive": true,
       "hasLocalization": false,
       "name": "DevFest 花蓮",
       "host": "GDG 花蓮",
       "date": "2019-11-15",
       "useImageAsset": true,
       "image": "https://t.kfs.io/upload_images/104306/landing_large.png",
-      "imageAsset": "https://t.kfs.io/upload_images/104306/landing_large.png",
+      "imageAsset": "assets/images/banner_devfest_hualien.webp",
       "welcomeText": "Welcome to GDG DevFest",
       "descText": "GDG 花蓮是 2019 年初成立的 Google 技術開發者社群，舉行各類聚會，包含演講、自由交流、 workshop, study jam, 及年會 Devfest。由於創立成員與花蓮 Python 社群重疊度很高，議題較偏向開源技術，如  Tensorflow, Keras, Kotlin, Docker, Android, 以及 Python 和 Raspberry Pi 上 Google 的 API，讓不同專業以及不同背景的高手，能互相交流、擦出火花。在初學者方面，我們也利用建置雲端環境的方式，自然而然的介紹 linux 命令列、 git、 ssh 等開源技術常見的工具和觀念。 ",
       "location": {
@@ -55,7 +55,7 @@
         "linkedinIn": "",
         "youtube": "",
         "meetup": "https://www.meetup.com/GDG-Hualien/",
-        "emailUrl": ""
+        "emailUrl": "",
         "registration": "https://gdghualien.kktix.cc/events/devfest2019"
       }
     },

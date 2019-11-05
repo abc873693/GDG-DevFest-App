@@ -30,29 +30,29 @@ class DevScaffold extends StatelessWidget {
             centerTitle: true,
             bottom: tabBar != null ? tabBar : null,
             actions: <Widget>[
-              if (title == AppLocalizations.of(context).home ||
-                  title == AppLocalizations.of(context).events)
-                InkWell(
-                  child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 8.0),
-                    alignment: Alignment.center,
-                    child: Text(
-                      ConfigBloc().languageCode == AppLocalizations.ZH
-                          ? AppLocalizations.of(context).traditionalChinese
-                          : AppLocalizations.of(context).english,
-                    ),
-                  ),
-                  onTap: () {
-                    String code =
-                        ConfigBloc().languageCode == AppLocalizations.EN
-                            ? AppLocalizations.ZH
-                            : AppLocalizations.EN;
-                    ConfigBloc().dispatch(LocaleEvent(Locale(code)));
-                    if (title == AppLocalizations.of(context).home) {
-                      HomeBloc().dispatch(LoadHomeEvent());
-                    }
-                  },
-                ),
+//              if (title == AppLocalizations.of(context).home ||
+//                  title == AppLocalizations.of(context).events)
+//                InkWell(
+//                  child: Container(
+//                    padding: EdgeInsets.symmetric(horizontal: 8.0),
+//                    alignment: Alignment.center,
+//                    child: Text(
+//                      ConfigBloc().languageCode == AppLocalizations.ZH
+//                          ? AppLocalizations.of(context).traditionalChinese
+//                          : AppLocalizations.of(context).english,
+//                    ),
+//                  ),
+//                  onTap: () {
+//                    String code =
+//                        ConfigBloc().languageCode == AppLocalizations.EN
+//                            ? AppLocalizations.ZH
+//                            : AppLocalizations.EN;
+//                    ConfigBloc().dispatch(LocaleEvent(Locale(code)));
+//                    if (title == AppLocalizations.of(context).home) {
+//                      HomeBloc().dispatch(LoadHomeEvent());
+//                    }
+//                  },
+//                ),
               IconButton(
                 icon: Icon(
                   ConfigBloc().darkModeOn

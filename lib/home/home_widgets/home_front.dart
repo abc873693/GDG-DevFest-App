@@ -214,11 +214,25 @@ class HomeFront extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            ImageCard(
-              img: ConfigBloc().darkModeOn
-                  ? Devfest.banner_dark
-                  : Devfest.banner_light,
+            AspectRatio(
+              aspectRatio: 16 / 9,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: _devFestEvent.useImageAsset
+                        ? AssetImage(_devFestEvent.imageAsset)
+                        : NetworkImage(_devFestEvent.image),
+                  ),
+                  borderRadius: BorderRadiusDirectional.circular(24),
+                ),
+                margin: EdgeInsets.all(8.0),
+              ),
             ),
+//            ImageCard(
+//              img: _devFestEvent.imageAsset,
+//            ),
             SizedBox(
               height: 20,
             ),
