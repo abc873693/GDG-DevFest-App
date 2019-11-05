@@ -24,7 +24,7 @@
     },
     {
       "speaker_id": "7",
-      "speaker_image": "",
+      "speaker_image": "https://firebasestorage.googleapis.com/v0/b/gdg-hualien-devfest-2019.appspot.com/o/people%2Fbob.jpg?alt=media",
       "speaker_name": "Bob Lee",
       "speaker_desc": "",
       "speaker_session": null,
@@ -47,7 +47,7 @@
     {
       "speaker_id": "11",
       "speaker_image": "https://firebasestorage.googleapis.com/v0/b/gdg-hualien-devfest-2019.appspot.com/o/people%2Fsmile.png?alt=media&token=e197bc5b-1e76-4c16-9333-ee829400d2d1",
-      "speaker_name": "Simle Chao",
+      "speaker_name": "Smile Chao",
       "speaker_desc": "consultant + Digi maker",
       "speaker_session": null,
       "fb_url": null,
