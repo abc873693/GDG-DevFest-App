@@ -8,7 +8,7 @@
   "sessions": [
     {
       "session_id": "1",
-      "session_start_time": "2019-11-09 09:00:00",
+      "session_start_time": "2019-11-09 09:30:00",
       "session_total_time": "20",
       "session_title": "Opening",
       "session_desc": "",
@@ -56,6 +56,17 @@
     },
     {
       "session_id": "5",
+      "session_start_time": "2019-11-09 14:00:00",
+      "session_total_time": "60",
+      "session_title": "Lightning Talk",
+      "session_desc": "有什麼有趣的主題想跟大家分享嗎？活動當天現場報名！",
+      "speaker_id": "",
+      "track_id": "1",
+      "tags": [
+      ]
+    },
+    {
+      "session_id": "6",
       "session_start_time": "2019-11-09 15:00:00",
       "session_total_time": "40",
       "session_title": "為什麼要加「新功能」？",
@@ -67,7 +78,7 @@
       ]
     },
     {
-      "session_id": "6",
+      "session_id": "7",
       "session_start_time": "2019-11-09 16:00:00",
       "session_total_time": "40",
       "session_title": "探索 Tensorflow 2.0",
