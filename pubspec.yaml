@@ -26,9 +26,13 @@ dependencies:
   flutter_bloc: ^0.20.0
   equatable: ^0.3.0
   share: ^0.6.2+1
-  url_launcher: ^5.1.1
+  url_launcher: 5.2.4
+  url_launcher_web:
+    git:
+      url: git://github.com/flutter/plugins.git
+      path: packages/url_launcher/url_launcher_web
   font_awesome_flutter: ^8.5.0
-  cached_network_image: ^1.1.1
+  cached_network_image: 2.0.0-rc
   shared_preferences: ^0.5.3+4
   flutter_spinkit: "^3.1.0"
   sliding_up_panel: ^0.3.4
