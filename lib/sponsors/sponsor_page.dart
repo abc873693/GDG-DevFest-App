@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/home/home_bloc.dart';
 import 'package:flutter_devfest/home/home_state.dart';
@@ -51,12 +52,14 @@ class SponsorImage extends StatelessWidget {
       elevation: 0.0,
       child: Padding(
         padding: const EdgeInsets.all(12.0),
-        child: CachedNetworkImage(
-          imageUrl: imgUrl,
-          height: 50.0,
-          width: 50.0,
-          fit: BoxFit.contain,
-        ),
+        child: (kIsWeb)
+            ? NetworkImage(imgUrl)
+            : CachedNetworkImage(
+                imageUrl: imgUrl,
+                height: 50.0,
+                width: 50.0,
+                fit: BoxFit.contain,
+              ),
       ),
     );
   }

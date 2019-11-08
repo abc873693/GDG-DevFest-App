@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/home/session.dart';
 import 'package:flutter_devfest/home/speaker.dart';
@@ -86,13 +87,14 @@ class SessionDetail extends StatelessWidget {
                   child: CircleAvatar(
                     radius: 100.0,
                     backgroundColor: Colors.transparent,
-                    backgroundImage:
-                        session.speaker?.speakerImage != null &&
-                                session.speaker.speakerImage.isNotEmpty
-                            ? CachedNetworkImageProvider(
+                    backgroundImage: session.speaker?.speakerImage != null &&
+                            session.speaker.speakerImage.isNotEmpty
+                        ? ((kIsWeb)
+                            ? NetworkImage(session.speaker.speakerImage)
+                            : CachedNetworkImageProvider(
                                 session.speaker.speakerImage,
-                              )
-                            : null,
+                              ))
+                        : null,
                   ),
                 ),
               ),

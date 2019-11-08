@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/home/index.dart';
 import 'package:flutter_devfest/home/speaker.dart';
@@ -92,17 +93,19 @@ class TeamPage extends StatelessWidget {
                       height: MediaQuery.of(context).size.height * 0.2,
                       width: MediaQuery.of(context).size.width * 0.3,
                     ),
-                    child: CachedNetworkImage(
-                      fit: BoxFit.cover,
-                      imageUrl: teams[i].image,
-                      placeholder: (context, url) {
-                        return Center(
-                          child: SpinKitChasingDots(
-                            color: Tools.multiColors[Random().nextInt(3)],
+                    child: (kIsWeb)
+                        ? Image.network(teams[i].image)
+                        : CachedNetworkImage(
+                            fit: BoxFit.cover,
+                            imageUrl: teams[i].image,
+                            placeholder: (context, url) {
+                              return Center(
+                                child: SpinKitChasingDots(
+                                  color: Tools.multiColors[Random().nextInt(3)],
+                                ),
+                              );
+                            },
                           ),
-                        );
-                      },
-                    ),
                   ),
                   SizedBox(
                     width: 20,

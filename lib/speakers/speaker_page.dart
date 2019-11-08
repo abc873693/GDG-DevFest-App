@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/home/home_bloc.dart';
 import 'package:flutter_devfest/home/index.dart';
@@ -91,10 +92,12 @@ class SpeakerPage extends StatelessWidget {
                       height: MediaQuery.of(context).size.height * 0.2,
                       width: MediaQuery.of(context).size.width * 0.3,
                     ),
-                    child: CachedNetworkImage(
-                      fit: BoxFit.cover,
-                      imageUrl: speakers[i].speakerImage ?? '',
-                    ),
+                    child: (kIsWeb)
+                        ? Image.network(speakers[i].speakerImage ?? '')
+                        : CachedNetworkImage(
+                            fit: BoxFit.cover,
+                            imageUrl: speakers[i].speakerImage ?? '',
+                          ),
                   ),
                   SizedBox(
                     width: 20,

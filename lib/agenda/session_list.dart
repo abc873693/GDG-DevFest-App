@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/agenda/session_detail.dart';
 import 'package:flutter_devfest/home/session.dart';
@@ -66,9 +67,11 @@ class SessionList extends StatelessWidget {
                 backgroundColor: Colors.transparent,
                 backgroundImage: allSessions[i].speaker?.speakerImage != null &&
                         allSessions[i].speaker.speakerImage.isNotEmpty
-                    ? CachedNetworkImageProvider(
-                        allSessions[i].speaker.speakerImage,
-                      )
+                    ? ((kIsWeb)
+                        ? NetworkImage(allSessions[i].speaker.speakerImage)
+                        : CachedNetworkImageProvider(
+                            allSessions[i].speaker.speakerImage,
+                          ))
                     : null,
               ),
             ),

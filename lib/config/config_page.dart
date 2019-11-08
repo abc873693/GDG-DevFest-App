@@ -40,9 +40,9 @@ class _ConfigPageState extends State<ConfigPage> {
   setupApp() async {
     configBloc = ConfigBloc();
     configBloc.darkModeOn =
-        Devfest.prefs.getBool(Devfest.darkModePref) ?? false;
+        Devfest.prefs?.getBool(Devfest.darkModePref) ?? false;
     configBloc.languageCode =
-        Devfest.prefs.getString(Devfest.languagePref) ?? 'zh';
+        Devfest.prefs?.getString(Devfest.languagePref) ?? 'zh';
     configBloc.dispatch(LoadDevFestEvent());
     if (kIsWeb) {
     } else if (Platform.isAndroid || Platform.isIOS) {
