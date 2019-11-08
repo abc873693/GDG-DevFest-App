@@ -85,9 +85,14 @@ class SessionDetail extends StatelessWidget {
                   tag: session.hashCode,
                   child: CircleAvatar(
                     radius: 100.0,
-                    backgroundImage: CachedNetworkImageProvider(
-                      session.speaker?.speakerImage ?? '',
-                    ),
+                    backgroundColor: Colors.transparent,
+                    backgroundImage:
+                        session.speaker?.speakerImage != null &&
+                                session.speaker.speakerImage.isNotEmpty
+                            ? CachedNetworkImageProvider(
+                                session.speaker.speakerImage,
+                              )
+                            : null,
                   ),
                 ),
               ),

@@ -9,6 +9,7 @@ import 'package:flutter_devfest/home/team.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
 import 'package:flutter_devfest/utils/app_localizations.dart';
 import 'package:flutter_devfest/utils/tools.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -94,6 +95,13 @@ class TeamPage extends StatelessWidget {
                     child: CachedNetworkImage(
                       fit: BoxFit.cover,
                       imageUrl: teams[i].image,
+                      placeholder: (context, url) {
+                        return Center(
+                          child: SpinKitChasingDots(
+                            color: Tools.multiColors[Random().nextInt(3)],
+                          ),
+                        );
+                      },
                     ),
                   ),
                   SizedBox(
