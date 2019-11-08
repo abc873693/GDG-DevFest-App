@@ -1,4 +1,88 @@
 {
   "speakers": [
+    {
+      "speaker_id": "1",
+      "speaker_image": "https://lh3.googleusercontent.com/pjvPna6rXT8rKi4DVKUrKpfgNpK3aQpx_smyWLgn_drVcmEW9sdngl9ReWHRwsfZuDNw7o_KQHv5dtLiV1SNeqDUiUukN0hBJt_kSF-MGPOtVMFsqNuX_ytW_TDV4tgy9nRNNKQMOxyEkOqwPrXjfRCxSbB5Hve3ZL0ku7f9Jam7yNo7JqBVqq-bIUSewd7vgXB4jabe1a1Gu42YlrztcikTeCPMqOhjVmw6eUrPZOg-atyvG85CUbJ9gFnF69RDojtGihZo4i8WoSFr43xXetPBRDZBE4pofRNjcuZ42m2tjrET_72t5eNw--j0pP4ClPKJuqAorw2rClUDbPzWwWzuxIHXxbyqoSWogbg5rqk4xYsbRj85O5fHky9KABK_myOxQ8E0HEVIFuI7gm9ih4lCgYht9SU1vxkSa1X7PMvYk4SfIYzQ66W4keO8ChJzibspyT9C_TdCrwnMiaPaJgXm83M9hJnugnTt5i9pWtSuy0ypnJsPAmnZCF-u1ru-P-hDaAOhncxgedHc36AHPQ6OZ6xfYb638Xr0C-dyzW1l9X0Hw9kcCjcoxaHH8J58cb-MLZ2nR_wWqyFOhexTFKYdJ1TJ-pWiE8sgx9cvB35TTYRQdecQOzyfMaaHsjfTuo1da3zgTYNWlulBScWcQU1bD1MOiMN-snDrvy5gOByewYOKnLUsrkMI",
+      "speaker_name": "David Chi",
+      "speaker_desc": "Strategy Partnership Lead, GCKR, Google\n\n9年的金融業數位銀行／行動支付經驗。\n\n目前在Google負責Strategy Partnership, GCKR. 主要專長在策略管理及市場開發，負責台灣香港市場的重要客戶策略合作及AoG業務推動",
+      "speaker_session": "Google Assistant (AoG)的商業實作"
+    },
+    {
+      "speaker_id": "2",
+      "speaker_image": "https://lh3.googleusercontent.com/BHzfqqv0RCf7MnKLEmr_rgY9S1QUh_8vUzXBcueGxNrwZYHZaOgYP8SdTePnTCaM2Q1EDzn1vxWFTN37ayFin63KmHYohIwF5GICEz5XU8HOKPn4Mkly1184jxHgfh5iMyZXEQ3MMjlOFllx5TgmuXjiqA2zSLwvSk5mlYRGET2dSL27X1OQqUScKQlbZP34rEyjGKrt8VioD0K8IxlOgRpKDyn5R5r8pHjeisxYjLKbFdtMRwZO5eQ9kuUYT-PS9uV3OyA3_wNM1DQMNB7h0IusUpz_hTLOqYc0mmrazOljyv9ziiY7jyr4ESWCy0-q8grrk0kaSwTeKiaE6_JK3kEag2JZIyxUwL8mrPCVUfzHaCpEa7HQBuxbYXcBdTBtVJgT1Pj-NaEjGxIRCJVvlo8bHxLim4ECCqSKgQMCQaozrpvSE5n6v3DfyksDNxUNOOd3GkSXtm_XCc52mEN9s-fgO2GXRn8FI-34qg1Fm_sq32P7QRe6F_sZ7doavuJLV-Z9yAFdjL4k1BDwVDwsJxL8zbBYEDQb1DD8srgjS2ww25ojQzA5HS_6kuqx0zoUdNSQhXbosKXSIqPfjJiTk3XFUBmqfSfykwtpaFZ4MniedouLvyQTPDqm-our6HT2BZiiqtG3xmS-NKNyYi7Tuqiru-Pf3kjYVuNosigW6v5QQ6F_pnd4ZyUL",
+      "speaker_name": "Zonble",
+      "speaker_desc": "從 2005 年開始接觸 Objective C 語言已經 macOS App 開發，從 2008 年開始開發 iOS app，從 2011 年開始在 KKBOX 工作，參與過 KKBOX 的 macOS、iOS、tvOS 與 watchOS 版本開發，以及 KKTIX、Uta Pass 的 iOS 版本，之前也參與過雅虎輸入發以及無蝦米輸入法 macOS 版本。從 2018 年開始接觸 Flutter。",
+      "speaker_session": "在導入 Flutter 之前，你應該知道什麼？"
+    },
+    {
+      "speaker_id": "3",
+      "speaker_image": "https://lh3.googleusercontent.com/H7I5ZiEwJpXwujjZlOCjsXV-oEfI-cCP0ZiHbTBBOmHv_fcv1eVxk3sV8QBJ4fnTO3s_b0uqGm1EPbnHSm1mHXyD-UL1x6r0EZ01i8PArQt47etdfTqYws1IqE--tHG2UwwD7dgMtg_y9hpc_0tNuU4WI1rZctn9W-_oSjvE-DKd6gtdPsIrQImBskN1gzFl69Rv1-wZVn89CyhTrB-wIuYCN3TvOtCdWBnnAdGTcmDc2OZG8CLVsU3wYuGYfLiT6icgtWy_0IFSfZ45NAigXFcx6lwuNnlnIsApN83em2cswb7x7puGH3GTU2poe-VXhBBYmciWNjbvAo0HDSiUoJsY-IJwwTjLWjRjsS1boy8ziAm4JHRDtPjyhdGfkvv1o5HcmeH0K-8MrzXnD2TZL5jsyIPmjBL1__iSbiZsW82wcuipTc3nVEOGeh3AhuAseV7cWNX0qhO58GLBWVe2SJM4rDUIDlaoRUK5dWOTwYJqb0fWPNZF8nNR1BRX2FwlSK4-3H9GHqprsyf9Vugmz1XSD0d5vpQ8m9v6-Bu8HWEH2pSj8vrRUBvoxrYGAdaw7YKBmarmeuf4tr_bSLMd8lqF8njw2pd1JNAKnxBBso9gELUZ0J__XbntrqzyWWjiwpcRmYUHBElnGl59wNQxFSQBspm3SVuwS9nWwr4tjn15HSmE7OnE49AR",
+      "speaker_name": "Elvis Lee",
+      "speaker_desc": "Elvis Lee / CTO of Velodash Inc.\nFull stack developer and architect, Master of Computer science from NCTU.\nBuilt velodash software backend with Scala and frontend with Flutter.\nKeen on researching efficient ways of programming and abstract thinking.\n\nDenny Cheng / Senior flutter developer of Velodash Inc.\nFlutter developer, Master of Computer science from NCKU.\nHad android development experience before, learned flutter from scratch at Velodash and was able to create legit code production first day on board.",
+      "speaker_session": "Clean Architecture to Cross Platform"
+    },
+    {
+      "speaker_id": "4",
+      "speaker_image": "https://lh3.googleusercontent.com/ogc3F0rzTK4BwQLlEf4sirP6evURxcbAR2fbx6a33tTNk1i5OP4kr2QQ-mYPVY1Z72SQ6rGULCf3FeL3xIrH-RVcdjDcLe3BO2P7fRGJhOkCZLugG-YuiODxjiNJ8_cUrTbV1NRpuBiUfIMVoV2cr1O-FkxIilwsZDabTwI1o6fGO8hiKXoKGvsMGvKKnnUW7QJB5Rhimz_DXVGTmxPKWZkTf5uUzCyVAG2pwGzNuaH8oQ0vDMvjNHlRrJVs4gNnFRg0NuySqV4OYUZitzCt0aheaVRkqZftTlU3gqJjN8NYHZAolJt2jp_5t2zQJxvezXrPyZ4b8UMGY9nbXlbMEkTLepESJuWzVKa7fzzUvKnSp25jM5akMndZVNhNq5l0Zz7T49oMYHBR_FAcJ9bQ80VaK_LqSMaq_9gZLTPdZiSHiv_WKRsCaBGr0uMbbM_xsJvRS6eh25VmixFcUS-1XCEfJhZC2EnkOiTE8YFYV9Ay942tfXqo9Ns2GFEiLBDAGWkQBJCstCf2dNuEubiXihPgKDeC2ZPGE8YetXVOc-XzCF13QnCwkfBnjkJ9gEx_eZ-mpFDNTtjhW9FPEReWb4HOGo_uBvEbJv0QN9j8NxU2Qn3V7mMKZOHcAu33OJHFITMTDald1zqGP6Gloj5aebzkz9FdOpi27XfVFwI90spi7e3LpbQvvPIO",
+      "speaker_name": "Nevin Chen",
+      "speaker_desc": "Android/Backend Developer @Mozilla.",
+      "speaker_session": "Server-side Development using Kotlin"
+    },
+    {
+      "speaker_id": "5",
+      "speaker_image": "https://lh3.googleusercontent.com/I80c1VZz2U0GDHOSPk5qM9BkwuF2eQlhjA89Mhoh4gak5hOpCdInztGv6r6xwFG_vGFJDM-OwDC1V7qDXnRDnGSq3dSwu_FVBlIcqvmeP2go5KxAJ8v8gtlI2pWtiBW4JWZnMwMw7ttIslk9xcAsqjBIJRGbHI1oKrhd_IKSpW7jV9vOOrF8XHrHIJ_Ly7aKXsvsi_szdJVQGvckTbWVylL3m5-a488TWsKukFPQ5SqWqEpZKQWWfi7n5LQTBBhkyxueVxMqjx-Tmbm4bwqWp1_Bos5TqrqAc6civIArA_-TaD2PLjslmRrH9YdFUl0ISvReq1TqPbmp_v7wCUGmfsa6pRi1Tj9Nq9mb9Qtj0ltXFYB4suvEyIrcq2alSX6naDLdu4lqctr0d42OoUovogf81MeEW7PAizgOuBzlMM8dLud1TAetALdKX8ELXuk2pGWzeqDIYI2fEg5_a6syeYAbqxDoYbRadLmmUIpMOXOdYQbyWqW5a_lwZyw3r9QrVdHpd9Vq3R9mbZU_NqaHhxDOcarPzWeatY5AS01q-GXltmeTNZX2qvBi2rUXL_3vMCSh7TUx-pC8KJCQrkgsCXztdoCtGALUddRrk_jygjXvANUvCCEJjaQhzMulYzzcdLbmnUH4kYJQSc8R0xGowqoKOyhXJckMbLHH9E7iHUuHPW0e5j1V3fnd",
+      "speaker_name": "Shengyou",
+      "speaker_desc": "JetBrains Developer Advocate  JetBrains 技術傳教士，負責推廣 IntelliJ IDEA 系列 IDE 及 YouTrack、TeamCity、Upsource 等團隊合作解決方案，協助開發者善用工具輔助來提升生產力，同時維護程式碼品質。\n\n工作之餘也熱血經營技術社群，常在各社群及研討會裡出沒，歡迎拍打餵食",
+      "speaker_session": "以 Ktor 快速打造 Web 應用"
+    },
+    {
+      "speaker_id": "6",
+      "speaker_image": "https://lh3.googleusercontent.com/fVV6mdGDbEuL8GHa7zBtS5qmeFEfq-uLnTtd8GxXjgZhb1VBuOoRXs4Inx316Duwiql9pwSxjbws14M8U55POPshR0PoVqqfOVkayCZ5SPTgZl1ay_qOkyac9izRHf_O96095BGs5GTGVd8zQiglVVjwjheEwEdIa4Fyrf-pJIVF8a_xhSNUB_2ihp8AsxuOrlDofIpl2ZTfkJb4a4SeGd3X5tBro54v3NeX4w54w1YpLuMdxCfx3sDDJbFQcAh51IIZBbuHYz89bvTNKdYohkX1hyGa4wPp1kyKEFVgAgXU_Bg8wRTGyWdOEjVn3BozHNxRB0DOfVKKLLlKYklz3gZ07RAPlqlFd9mtkfjSKYUOWNw2aKEKZiIH-etrN-O9Gq7kG1Pmb5zl_pf1SVzqEW-TNVKHfDiTg6_p2nHVzzz8KMLNqlyzSHvAlO0aPdAn-hiQcRaelGHtdzxdP7fDfufZo_tL_XaWcLeAdgRvcUZr9rx6B4ukffivUcbP1Jd1yc54_0jcR2FCTces7ftVOSLo_911OPtx2yr2cjWOHpUYNliMtctd5MLmU3CkItkImbLQ0c4Csj3TwC-vWU9mqGw-ojRIErw2wXgICDKL_jyoZMm0d60CRhjl53H4Qa6FHdJupHxj1AKI7JSHf4rmtDmYEYHuXCWdfGJstz_Zo6LCpmJUfTQ8b4bs",
+      "speaker_name": "Jian-Min-Huang",
+      "speaker_desc": "Vincent is a software engineer who has wide range skill set (Research, Architecture, Coding, Database, Ops., Infra.). He mainly use JVM languages (Java > Kotlin > Scala) but also like Python and Go. Also, He is big fan of Hackintosh, Corsair RGB products and Kakao Friends Ryan.  \n\n🇹🇼 http://github.jianminhuang.cc \n 💎 http://linkedin.jianminhuang.cc \n 🐦 http://twitter.jianminhuang.cc \n 📔 http://note.jianminhuang.cc \n 📧 yfr.huang@hotmail.com",
+      "speaker_session": "Kubernetes and Your Microservices System"
+    },
+    {
+      "speaker_id": "7",
+      "speaker_image": "https://lh3.googleusercontent.com/zWd17yH0xVVti7JUukAZ0KVt0wJ-o7u2mPx-OBIkoAX_yxxfxziIFZKEZ4nqJB-4Cek4Qcr4OL7iqddv01ysOdPHhYYQrygu9-2R0tDaTkC5wIO-nLhCIhAUN7097ZOGGPtHn8fRzx8OxkaWck1FeWZwFvcj-OBrG7-bQvE1G7RPrDyvC3uwUXz8QsVh5aBiFYpJiUcByx2xOQOoWge1efoufLk4dTADo9N15uu_GBU_8R_B1WdJIIgkjZ1HVw9Ryv8AhPq0pDQ0vDzowKPHAYXqbo9q20HhBnC1fL8t69Z_FsUFKYFr0FbwstFIo4cYYUH0mkal4tMxI8IFSvhHfTjKp06tNj2-2BkO7uDmiJvrgzYhmuyTtUFJhN_Top9mnEotyUPXA-1s9GivVvXxOTe3L4wuIPNvXBxkre1f1n2IHcA8mwNqnPdeMyYB92GEmDBoy2muexq6JBnZb9cPumwEwYEyIjCNNTciFLf7_QUQQPpS1u9SZJs1WnhIahAb7smgKQRyWfCFtylRgIVQtx_0CZtVB-VuVnGpOOYnmT7PhGQWkXQ_TkKrDRM74OVwKZrMVRH7lNmR4wqXSXJfaK_g6DrqcR3eohzZZZI9_EuK-7BHtIqju1jnd7AEZESGePcoS1pwLritZ1HJ3coCSH646KJWlckh4aw6j-YZ-LNi5eS88N6-bCoo",
+      "speaker_name": "楊秉諺",
+      "speaker_desc": "KKBOX 後端工程師",
+      "speaker_session": "看如何用 K8s 走微服務之路"
+    },
+    {
+      "speaker_id": "7",
+      "speaker_image": "https://lh3.googleusercontent.com/cMCfBSRDTgC4N8RdKjNROEPLf4j1sIK-Xaa5LGOE_FXtghvWewo_GhHgy6RjG_E_2vIpQSRnZjGgDu6jnrbZjeF7tsY3GgrDNj21TpppTDuYoe_oN1cw5kHZax55omxs1xEMxOD5SSq69QP5ESabqnAjkWjr5142IzbjvVjUfI16OabNgo_M9QPoxbzA1Xp073y5Ss_ZU2WzjymgosQTZ-4Bqs33N89VfUoFu6kPHougBhneg4e9mhRaqa9HE4Jw10hEaXFPq8maIo1ROjptIlXyG65pMjLSyZygejvkricG0Pu5jdn8bXeiF4srJeUCerSFyD7dAnEssxLl11nOVayUpjNbpxvsmmfmgzD0ZaSItg7fel6kaT-FSpegK5PtDCRnopBh2Hvzn0Roa8yNVjLUnVhLpVLypj5kjqRRnbgGK6-1fmWWc3uEML6XuZiytFEeMu3CBBD2YOAFaKaPzRUQQNI5BH_iMvCvAT07h9PVxEDNDtCW5vAiNbmuNmKZkUhltTPekElXAjaAe1mYUURuqBFnTLShM_16_OpGDapQQ9oC1UxjEk7Npnh8Wb8sbr8X72euUVRlWcQoHlzMOpfdC1Y-lJ50Th-EgWliHX4YzXwgydv304o0rYoGx8YtZgVhOdtF1h8fHXTQBLVwgoJ_MbwtF8JoVXn53sCNZ1_r-aXvVdoeXH_E",
+      "speaker_name": "Summit",
+      "speaker_desc": "堅信「Data Speaks Louder Than Words」，身體力行藉由資料科學（Data Science）將數學帶出象牙塔服務人群，期望讓數據驅動（Data-Driven）的觀念帶動各個產業領域的創新。\n\n曾經服務於中央研究院，將數學及統計的訓練應用在生醫領域的研究；後投入產業界擔任資深資料科學家後參與開發推薦系統與數位廣告投放系統，同時為《數位時代》專欄作家、微軟最有價值專家（MVP）以及 Taiwan R User Group 社群主持人（常態活動 MLDM Monday 主辦單位）。",
+      "speaker_session": "從機器學習平台的發展觀察如何打造資料科學團隊"
+    },
+    {
+      "speaker_id": "9",
+      "speaker_image": "",
+      "speaker_name": "Kinni Mew",
+      "speaker_desc": "Machine Learning GDE (Google Developer Expert); GDG Hong Kong Organizer",
+      "speaker_session": "Building Machine Learning Workflows with Kubeflow Pipelines"
+    },
+    {
+      "speaker_id": "10",
+      "speaker_image": "https://lh3.googleusercontent.com/4vQS5pYVwqKECTp7oOe-OYWmv-eApHiX-qM1i88Ze-MZCrE74RU2wzIKmIM-cPvpVpF_ErxO-CBgrTXX-VhAidrCbrXv81w4MKq_inpFDn__JD9aPDUUQ1n3mG6sfOAyJZsuFe-vAYuh_6Y4bfW0OTJxD4DDt_d38vOXQF35cMgtWFCPYa7I6fAlegWwnJyMxz-yf1RoA--Nrhazi0fK8B-h_WQlYW8e8cGiVHyNx3TRSPLdVLJjDQi2GjQpnBzqvB6BwluM5jEEosOlgMca8GBljwUniM8XlOtJIKfx-ah4wWPT-QGlbOSJUA5JAi152D4k63nbRL2J5jZ3Kgb4AXk8jvadtQc4fVSz-AgciCAw9weKqM8zemqO7PHVc4tyqhlssN2DmNhPmiM5sl3ck3823wr3QBwD8G5i8IYI6vA40TGoNnJqwHWgBpy3jxPmWPRNGEGM-Tdo_pn8awMBCpx_NZ4UJt0VtYNcE0u4Rbm7SucsLvN4yCdl2yuBvOIYGztkkFg1yXSvwuQpnqSPK9ipTLVfxwnIP81xtkirsUzNE3FyOtlXAGcKyHlpkVb8Leg3PDBeF5GBFmn2BLRss2kRLBFaoxolAitrRc7z5aVD6DWT-fXzySbg8fDRI5hi58JArnsL0qNGgZr649Fi96l3EN5_XwgZ4Z913hKx6zYM3_LvnZc5wrNs",
+      "speaker_name": "Jerry Wu",
+      "speaker_desc": "Google機器學習開發專家、亞太智能機器創辦人兼技術長",
+      "speaker_session": "自然語言的遷移學習-BERT"
+    },
+    {
+      "speaker_id": "11",
+      "speaker_image": "https://lh3.googleusercontent.com/Z6a7uPjAHGy8vBw_64Xx253_lWft7tnA_7nyivndZA3oIebmrMATYd3LtYaWNlqs6QLkxg-VbGraoVKEJnieOYYlf7b2gSGcSzUFyYF9g9IJGvuxDMZnEfwPMS7n-jR8QVmiT91mVWJVqtcxfDzFatussdBkKWcHWLy7pOyOwZKI6cZeq-OOu5Z1tPSxL7S2x6aTIuWZANf0LWW3O1eHObeP6WYeshQZZbh7KrEqiHU_FpcxVaAKVSCrMOKIBJIsTmAhFuGdwEGn5xj8za2Exl7zrgYVxm18lgpkk0d-hpy_NHOdclFR5rN1JKQnK85EIfhQ47WEXtEteyj0o0FQFTbu4Z8P_GiqFEkz9cqd2PWp2OsEKCyXGmoHbeCm--DNJl_PdMh5Iv5P_ePej5a5WO8f5aRYgJ84In3Z6ojSgwFA5ynh1Y2ehdFmkkVh3QhZFcrgDPFnKTLm8jCMzIxs2n2WFtMz7pI6EOnTW2lo20Uayz9cbO_rIs8f69ZiqS4Oki6-Fcfkfy9TqdIdczoWRdi4bUKJ1OFiGhImQIrK-VExDRr3or3eFWAaU4MTRtgwtMIvY2SoZL2Ssv6N5w1H0PxidN9TTc25c_3Ouq0IUVT9HTsl6igX5FXH1v6SWcTlIq_w33_RSHJ2dZSXh1xobC4LupSDOu9XC5YTB1AhWmx4rkKde69kVvHX",
+      "speaker_name": "David Chang",
+      "speaker_desc": "David Chang，DevOps 與後端工程師，Kubernetes Admin。投入 Kubernetes 開發與技術推廣，常出現於 SDN x Cloud Native Meetup 與 Golang Taipei。Golang Taipei Meetup 的 organizer。",
+      "speaker_session": "從零開始的人臉辨識，七龍珠戰鬥力探測器"
+    },
+    {
+      "speaker_id": "12",
+      "speaker_image": "https://lh3.googleusercontent.com/lABDwDs7MgzhzigqFenie52SUqwlnCwyORVNce7rk27klmL36VeM7NlyjzJYjRMQeYfXcvuAxhxpX4EPjziDv_YaqhgT_85m8I19DDCZrN0hsjZvOo4FPWgmVTVZWGZeIzi_vrLbFOli_foTaK91eerxElDcN24FVr4NiknqTk1dTV3Wmm9wkFTvXYGNoM5dxnUDFjdAVtUNoGzNLXuEF9wd1PKvkTdT7pro3L0xHrdZwmW46sOcFHbB9k3BZcm2HUqe6WyMCZWBPL1nuyl57isrxwaEi5sxN2IMiLBZojGr1QPUcqW3LCQYru824Zx1jUNsJ75jesPCOmAngi1JkXhmWI5FzJXkGlHSVlOSWCmRCgj_0Xm037NuE5iZcanAXJIx52rhIoxL1E0uE9zZq7UBn8PFkxSdyfTRFA5f3xnp88G6dOy0CjqY9wWRzCvwkRhMgDWV1uNhldmopQStAlC4iE016qTvOInPNFvqOH4rdHka4TU6R-NCH7sL08hyiJDMN36M5gUgDTy2iQf5ug2KGmE2fDnaE2r2ygy01WIVFlHx6gGD_dKQ1l6pm5Tlzh6iQOA8iQ0ycwXPz4F30iVK2ym-avisQwWpAD5zU5mcgJCT_DVqL8fF6wWnuPoa_AyXwS6oXBDlD8ey_R3eAmrWzAjoCTJswWPqQ0SfEDmyT0fYWGRpC_2B",
+      "speaker_name": "Wolke",
+      "speaker_desc": "專長：AoG智慧語音/LINE Bot聊天機器人開發\n\nvoice app studio 創辦人：https://www.facebook.com/voiceappstudio/\n\n- 亞太 4 位 Assistant GDE(Google Developer Expert) 之一\n- 台灣 8 位 LAE (LINE API EXPERT)之一\n\n2019年，完成了30場的活動，和超過2000位幾乎沒有程式基礎的參與者，一起完成了LINE Bot聊天機器人或AoG語音應用開發。",
+      "speaker_session": "Code Lab"
+    }
   ]
 }
