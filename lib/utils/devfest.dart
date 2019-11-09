@@ -71,7 +71,6 @@ class Devfest {
   static const String map_text = "Locate Us";
 
   //* Preferences
-  static SharedPreferences prefs;
   static const String loggedInPref = "loggedInPref1";
   static const String displayNamePref = "displayNamePref";
   static const String emailPref = "emailPref";
@@ -81,11 +80,20 @@ class Devfest {
   static const String darkModePref = "darkModePref";
   static const String languagePref = "languagePref";
 
+  static const String eventsPref = "/%s/events.json";
+  static const String onForAllPref = "/%s/%s/one_for_all.json";
+  static const String sessionsPref = "/%s/%s/sessions.json";
+  static const String speakersPref = "/%s/%s/speakers.json";
+  static const String teamsPref = "/%s/%s/teams.json";
+  static const String sponsorPref = "/%s/%s/sponsor.json";
+
   //* JSON URLS
   static const String speakersAssetJson = "assets/json/%s/speakers.json";
   static const String sessionsAssetJson = "assets/json/%s/sessions.json";
   static const String teamsAssetJson = "assets/json/%s/teams.json";
   static const String sponsorsAssetJson = "assets/json/%s/sponsors.json";
+  static const String oneForAllAssetJsonCity =
+      "assets/json/%s/%s/one_for_all.json";
   static const String speakersAssetJsonCity = "assets/json/%s/%s/speakers.json";
   static const String sessionsAssetJsonCity = "assets/json/%s/%s/sessions.json";
   static const String teamsAssetJsonCity = "assets/json/%s/%s/teams.json";

@@ -1,12 +1,14 @@
 import 'dart:io';
 
 import 'package:bloc/bloc.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_devfest/utils/dependency_injection.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
+import 'package:flutter_devfest/utils/preferences.dart';
 import 'package:flutter_devfest/utils/simple_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -32,7 +34,9 @@ Future<void> main() async {
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 
   // * Get Shared Preference Instance for whole app
-  if (!kIsWeb) Devfest.prefs = await SharedPreferences.getInstance();
+  if (!kIsWeb) {
+    Preferences.init();
+  }
 
   //* To check the app is running in debug and set some variables for that
   Devfest.checkDebug();
@@ -42,13 +46,16 @@ Future<void> main() async {
 
   // * Set flavor for your app. For eg - MOCK for offline, REST for some random server calls to your backend, FIREBASE for firebase calls
   //* Set DataMode.DART to use Dart hardcoded data and DataMode.JSON to use json file for hardcoded data.
-  Injector.configure(Flavor.MOCK, DataMode.JSON, EventMode.MULTI);
+  Injector.configure(Flavor.FIREBASE, DataMode.JSON, EventMode.MULTI);
 
   if (kIsWeb) {
   } else if (Platform.isIOS || Platform.isAndroid) {
     Crashlytics.instance.enableInDevMode = true;
     // Pass all uncaught errors from the framework to Crashlytics.
     FlutterError.onError = Crashlytics.instance.recordFlutterError;
+    var analytics = FirebaseAnalytics();
+    // if in develop value use dev
+    await analytics?.setUserProperty(name: 'mode', value: 'release');
   }
 
   runApp(ConfigPage());

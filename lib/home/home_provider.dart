@@ -9,14 +9,22 @@ import 'package:flutter_devfest/utils/devfest.dart';
 
 abstract class IHomeProvider {
   Future<SpeakersData> getSpeakers();
+
   Future<TracksData> getTracks();
+
   Future<SessionsData> getSessions();
+
   Future<TeamsData> getTeams();
+
   Future<SponsorsData> getSponsors();
+
+  Future<Map<String, dynamic>> getOneForAll();
 }
 
 class HomeProvider implements IHomeProvider {
   IClient _client;
+  static final String kConstGetOneForAllUrl =
+      "${Devfest.baseUrl}/one-for-all-kol.json";
 
   static final String kConstGetSpeakersUrl =
       "${Devfest.baseUrl}/speaker-kol.json";
@@ -26,14 +34,14 @@ class HomeProvider implements IHomeProvider {
       "${Devfest.baseUrl}/session-kol.json";
 
   //! Not Working
-  static final String kConstGetTracksUrl =
-      "${Devfest.baseUrl}/track-kol.json";
+  static final String kConstGetTracksUrl = "${Devfest.baseUrl}/track-kol.json";
 
   //! Not Working
   static final String kConstGetTeamsUrl = "${Devfest.baseUrl}/team-kol.json";
 
   //! Not Working
-  static final String kConstGetSponsorsUrl = "${Devfest.baseUrl}/sponsor-kol.json";
+  static final String kConstGetSponsorsUrl =
+      "${Devfest.baseUrl}/sponsor-kol.json";
 
   HomeProvider() {
     _client = Injector().currentClient;
@@ -89,6 +97,16 @@ class HomeProvider implements IHomeProvider {
     if (result.networkServiceResponse.success) {
       SponsorsData res = SponsorsData.fromJson(result.mappedResult);
       return res;
+    }
+
+    throw Exception(result.networkServiceResponse.message);
+  }
+
+  @override
+  Future<Map<String, dynamic>> getOneForAll() async {
+    var result = await _client.getAsync(kConstGetOneForAllUrl);
+    if (result.networkServiceResponse.success) {
+      return result.mappedResult;
     }
 
     throw Exception(result.networkServiceResponse.message);

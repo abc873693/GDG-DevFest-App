@@ -1,0 +1,477 @@
+{
+  "tracks": [
+    {
+      "id": "1",
+      "title": "R1"
+    }
+  ],
+  "sessions": [
+    {
+      "session_id": "1",
+      "session_start_time": "2019-11-09 09:30:00",
+      "session_total_time": "20",
+      "session_title": "Opening",
+      "session_desc": "",
+      "speaker_id": "1",
+      "track_id": "1",
+      "tags": []
+    },
+    {
+      "session_id": "2",
+      "session_start_time": "2019-11-09 10:00:00",
+      "session_total_time": "40",
+      "session_title": "在導入 Flutter 之前，你應該知道什麼？",
+      "session_desc": "Flutter 是一套在這兩年逐漸普及的 App 開發框架。然而，即使採用了 Flutter 技術，最後你或你的企業，還是在做一套 iOS/Android App，也有不可迴避的原生部分。在這場 Talk 中，我會提到建議你如何評估 Flutter 這門技術，以及怎樣避免一些在導入 Flutter 的過程中可能會遇到的問題。",
+      "speaker_id": "2",
+      "track_id": "1",
+      "tags": [
+        "flutter",
+        "android"
+      ]
+    },
+    {
+      "session_id": "3",
+      "session_start_time": "2019-11-09 11:00:00",
+      "session_total_time": "40",
+      "session_title": "All you need to know about AMP",
+      "session_desc": "AMP 是 Google 根據開放原始碼格式所設計的網頁開發框架，能夠加快網頁載入速度進而提升使用者體驗。本議程概括 AMP 的發展歷程與其特色，幫助新手快速理解並上手，同時提供有經驗者最新的產品更新資訊。",
+      "speaker_id": "3",
+      "track_id": "1",
+      "tags": [
+        "web"
+      ]
+    },
+    {
+      "session_id": "4",
+      "session_start_time": "2019-11-09 13:00:00",
+      "session_total_time": "40",
+      "session_title": "用 Firebase 實現跨平台的行銷自動化",
+      "session_desc": "在這次的分享當中，我將帶大家一窺 Firebase 較少為人知與討論的數據分析及行銷相關功能。並以電商網站中最常見的「加入購物車後提醒」行銷手段作為範例，配合在今年 Firebase 最新推出的 Web 支援，與各位分享如何實現跨平台的行銷自動化，以技術手段創造出商業的好成績。",
+      "speaker_id": "4",
+      "track_id": "1",
+      "tags": [
+        "firebase",
+        "web"
+      ]
+    },
+    {
+      "session_id": "5",
+      "session_start_time": "2019-11-09 14:00:00",
+      "session_total_time": "60",
+      "session_title": "Lightning Talk",
+      "session_desc": "有什麼有趣的主題想跟大家分享嗎？活動當天現場報名！",
+      "speaker_id": "",
+      "track_id": "1",
+      "tags": [
+      ]
+    },
+    {
+      "session_id": "6",
+      "session_start_time": "2019-11-09 15:00:00",
+      "session_total_time": "40",
+      "session_title": "為什麼要加「新功能」？",
+      "session_desc": "要不要加新功能、新功能怎麼來是某人說了算？設計師和工程師僅能被動接受指令嗎？傳統的公司營運方式很難理解產品對顧客造成的什麼樣的影響，即使知道使用者經驗很重要也不覺得應該導入目前的開發流程。難道開發人員就只能待在隕石坑底了嗎？",
+      "speaker_id": "5",
+      "track_id": "1",
+      "tags": [
+        "md"
+      ]
+    },
+    {
+      "session_id": "7",
+      "session_start_time": "2019-11-09 16:00:00",
+      "session_total_time": "40",
+      "session_title": "探索 Tensorflow 2.0",
+      "session_desc": "新推出的 Tensorflow 2.0 與之前的版本有很大的差異，是否值得轉換呢？\n有哪些新的功能呢？\n程式碼要怎麼改？\n只要在 keras 前面加上 tf？\n我們將帶大家一起探索 Tensorflow 2.0。",
+      "speaker_id": "6",
+      "track_id": "1",
+      "tags": [
+        "tensorflow"
+      ]
+    }
+  ],
+  "speakers": [
+    {
+      "speaker_id": "1",
+      "speaker_image": "https://lh3.googleusercontent.com/84yGq2yzvFvgduFD-IrRy_GCDNJAzBSlMuJO1S9JRi98OCWpbKK5SK6q298isb18-9wVYkjhDT7Q_Ygaw9cWo06VRsWmwVMk9LLf1TBBeOB3vxILTQW50HhwPY1ywRWtFap_EMM3x5SdSF4bEkKk4ntOuEbpj1A_GVtWAP1zHBvf3OHqpb2LJx4AwklWFsSuP12mCTUIBS3DEhhbuTVs01w1q96-Y5xfQF7v5hfyA7_5F8X-yvKCom7aIr9mD3GgvvlELp0jyIH9ROdRkhyrrRrsBevckpbEEbkcl6eb1biahcLDPQ_oRcTfyJC9FR9biqWk1X-Ehzr8RwaJ4JEsegL0tiJtoDsnwQyMFy7haoYS7JLxLrjwyhO8hwEJQCzomD28Q9tgnu6YwF2BXYqVJMinU5DrgpK_Twsl_XIcLv9Yhzr6upVsKljNSKNC3nMTZM30yl5YwFh_fNH8ilVRIOAGzJzNq4HFUiBZ4RxdZXcWiBmYhS0Utgtz0DmcjNbj8yB4u1hnXyh5CNG345C5mSJ8csDZyXgyK8AXxVz0jBdHLnK-okp-0ZcPcwZjzetP4VpB7vg5_SgAoZSYDCaviPsvq-Odp5GCsqEzRKbUAc_MlNOPNXmGlm-CuMMGu31X4nBGbPn62W75yDuF5tfpv0Fesxc7Izn74pYf9GrI8se-bpc7YtulBLZvbTtMC9T37NysND0GaYicBoDf-pVY329pXM1BVTNTDr-UtxrAP-rEvLbo=w958-h960-no",
+      "speaker_name": "Ericsk",
+      "speaker_desc": "",
+      "speaker_session": "Opening",
+      "fb_url": null,
+      "github_url": null,
+      "linkedin_url": null,
+      "twitter_url": null
+    },
+    {
+      "speaker_id": "2",
+      "speaker_image": "https://lh3.googleusercontent.com/Q4tA-59e3B7LxIJiXxTBVXJfps_UWNdOnQBc2teSV9DwXo62Fvl2K8n1dmbSnBkFGsSPvV9QeUS7MMEcMX33rcYrR1VK_YRqcvTvOk4XETkYDsagMpriGnw5QiBEA_zP6H2D9yBws7zWl4cTZKKuMmMNmMJemRWNwOGtHk75Po5Ywai-_V6ewkgr7OWiHVxWmov7UwnJAKFROfatPBl_6esZHDwS_Hxlz609mIfEX3oSo-ofWeChgFKI5OlZgskTOGeW4FCl938KTdtKn2temAIO-TgxiPf3FaXhyPwvwvX077P5dfOO1JzGZd-U_uclccF0mObk9pWogE72yo6ls4dnAOU4J6Di1EzbQ77x3SOr3um0JUEqKbs5llDz79y44psm5QXrD5vq_8ApRYIyzHwVJ6rk6AZrF9AZ0Zto0VeissWnGlmbEnuYG_i8LR-ockUcw1l00uY2MUDtTLX8KhnQdPXRzd0ykEzteTTaUpz_7VU1C6MYNEv2u1CDmw2eN98vbvcy17zbDKLnfWUULtMwsWy0hh7sciGYs6AtTHiZ_EHTr6X8BzbjPl7i-ot48U72OnMq33xuFLhG4MiKTfkcbzF7mzvt3AMb-ow44C-RanX5wT4EZeFDCMddRc6otyFR-Rr4URW1eqqurW640MIUsNsOfMX-3R61nbNEIfeb-010sKDNPMQZUlmrAU0105MZGJzk_yQwTbWFj7Qj9JzYWzlfjNDSyYj6QPE5oimR4fFl=w168-h167-no",
+      "speaker_name": "Weizhong Yang",
+      "speaker_desc": "從 2005 年開始接觸 Objective C 語言已經 macOS App 開發，從 2008 年開始開發 iOS app，從 2011 年開始在 KKBOX 工作，參與過 KKBOX 的 macOS、iOS、tvOS 與 watchOS 版本開發，以及 KKTIX、Uta Pass 的 iOS 版本，之前也參與過雅虎輸入法以及無蝦米輸入法 macOS 版本。從 2018 年開始接觸 Flutter。",
+      "speaker_session": "在導入 Flutter 之前，你應該知道什麼？",
+      "fb_url": null,
+      "github_url": null,
+      "linkedin_url": null,
+      "twitter_url": null
+    },
+    {
+      "speaker_id": "3",
+      "speaker_image": "https://lh3.googleusercontent.com/smPIt1qefaqLCf9Jl8ZNtD2BBNR5-h7F4d6Ak9nJYouXL3iNAZ91IRfdRV6YogOyTj8U5g3pp6LF4nJ7TmjRktSJEBlNZKGZflBMGwZi-5lyEGlm_eL5CHKoTUyInwlQmc6iTl4LboeUOROq_yr9ygMXSX4f-VkTCOiXHTWSL-4a4Nm7o8nhA0ZC-nqyLm3-Gy0cgnWnUA6VQfYlenHs7U_CNqziJ9MbYDr06ANQfiSxIX1aMy_dgn5wVh9H_44hhM56zD9talQ2LRkMEuNpYKrIyhq_qaSgalo62y_2-xfQki7V0xz0tkQm3aN6Kj-sH4yu99fcl-bBkC9Bdy_Er69Sn-MnBTgnsDDNUUqVbFmJ0WccBgEfRWmd3fXHECa_6zDHe2XT9ZsV7v9ZDsn1eaUtTl7AFOJrkZL434-z1ocok_G7SKfCx0H6aqta5iEX3vYkDbsXAJHvZ6hdVXm_6VWPvIqtN3wwIII_YjPnfXFRx9dkmVgcbTAAeLCgYh7jlCZ0U-fbZ-dwgWmvCZBilB4AlPai9459r1_smRovCJZhDDvU_MRnT8QxPbpNVElHnZUpTCSux2m4DMrCj6Oni1SVrDqWm7SBJfiWGXI-PApcbVeuN4heECVAZxCg_l57hqXnFdC5JH17lc1K5vry25xHFi9uwW2JknJJKlom9KjqF9pjk9I7QZJyJyEruSLiANkMHVGb2DOt_eXpxnCklya4zCBtZZ-QMOx0KmpMb6V8H5wf=s900-no",
+      "speaker_name": "Irene Chang",
+      "speaker_desc": "目前在 Google 擔任 Assistant Mobile Solutions Consultant (Temp)，致力於推廣 Mobile Web 相關技術，包括 Accelerated Mobile Pages (AMP)、Progressive Web App (PWA)、User Experience (UX) 與 web optimization 等。平面設計出身，4 年網頁設計與開發經驗。咖啡成癮的貓奴，喜歡撞球和小酌。",
+      "speaker_session": "All you need to know about AMP",
+      "fb_url": null,
+      "github_url": null,
+      "linkedin_url": null,
+      "twitter_url": null
+    },
+    {
+      "speaker_id": "4",
+      "speaker_image": "https://lh3.googleusercontent.com/k_kmyDeD9e-FJ2ntY_5kY0H9MFBsssvsMrImP5Dkjtypjwo6ALIL63WuqGrCt04F-OhUzZ6MxM7K0yVfVbytK78kTLQ4zwvoi1vpHHPCs0BthkrZd-P--6F1ZYFI1niGDMrFEbpg8Fd3Dcq5Zcilx1lYIZGnBbUqbE3bW1MLtaT3j0qsZ5xOejfGZ_ojOP34E80ijih-c3xxQUSYt2Cf7flD-wNsh-Hwe9oNTdY2LnhDyhF1FYui8uzWNfGePnPDbihznIvOQfFHl2PN-pDfCMQApHpTfbNErDL9bCaE5SCZNrvq46OaoizXANF52I7YShAetHRGfTHY9q7BrnwmRcAtDTUdjrF4GihHxjs5Gh2GgdmzkWQ4D-24G8vxUpvT8C4JVhZL_xjYSAGY3wptm1J73Vcvqx8yqgY70MvPW9bQOQZGcPX3HJSfTRDriv4JTqTrgGKiy9czYKCCA7-eceBDHRy4G9959NJ3ESiwWNgO1FH2iQUIFq7Gxr5xyxqvzQ6JmveryiHBW3iy2GkbrTRJ2jODcdcFGoW-J9CdgUMuBYvR1snmriWmTOnP1fAtSW2MCfUlwLZLa1pRN7bek4FnHuOWLL4mLJpuRFnnQH7ESWcfKGpDVuZlXfYyyDMk3kpUkQn31M3GgGI3xr40ZcA4jxV8ZdTPpPDfSk4yWNcUUGRpDoWWaa4PK11sutpajRrVvq3WxS65LrbJ5V_ogi4oCvq7NeZ6c25fHkaWcTWFE7eB=s1578-no",
+      "speaker_name": "Richard Lee",
+      "speaker_desc": "愛料理技術長與共同創辦人，同時為創業人、行銷人及技術人。\n近期聚焦於將機器學習應用在商業產品中，並且替顧客、合作夥伴創造商業價值。\n業餘時為 LINE 官方推薦的 API Expert，並為商業技術社群 TGONetworks 的理事，2017 年亦被選為富比世亞洲30位30歲以下傑出青年。\n可以透過 Facebook / Twitter 聯繫我：Richard Lee / dlackty 或可以撰寫 Email： rl@icook.tw",
+      "speaker_session": "用 Firebase 實現跨平台的行銷自動化",
+      "fb_url": null,
+      "github_url": null,
+      "linkedin_url": null,
+      "twitter_url": null
+    },
+    {
+      "speaker_id": "5",
+      "speaker_image": "https://lh3.googleusercontent.com/G5WQ1wnf0eoE6zz_1Z2mm8qzsjSTLk7D1vzR7Gl-E1Ff5mPUQvYw9npDjIEUFuBidp3TIumnspSY4_bgh9WRD6_WaF1niRw3x46mhjhZ2YgBI8f8TJdryQpJLrw63ahvyezmh7O-PGEF0jAk-7ZC-KCiNXmSfXTZ-lkYXUaoAzosDc-cPLZHEZJfwnYV3m21y-ZuiqpkKGKoubnhG2YwyjoqckVRp3S7OQGeOjB7_exoFAEKIAbI7-s5f6j5PY2U2bdQ3jD7GQyJ3-NTjaNj09RRL0rPKg4ssS7byGGPM0raHvgh2x1ATsaTX_1_lCXoxzF5XX193usuyqBK8GJ27MCnrHf05mePRkbbJQ_OZ-qRg9aJM50xzDm--lGM1oKu2fupnlImMtGYvmT4Ekp_I6p52g4YED__SrYFssQuqSzpLVGNimgoyK3ueWrgXNXZ6EoIduivHpqyecuocdtZg8WlEvBoApeQU-Yttzi3hgYF4Pd9nh9IQOUDsD0DMNvxW1fTuTYU1F7Zg5OVrqcU_WbyFDuDQEnNXt-8BxAB97kIilzpE0CXLbjG6BX9PAQdieMjSqkJGBK_JlOnd001mTt8nA_3fjGgag-9SOrrzv5qck3wOF_-efSWzm2D8Z9I4EHnSW--m-XvK_58RBej_Aacx5x8ePS8nMBkxmjI-kpt_mNfKdC5O1cLjhuD_bkQkot3Aec1tjUU7vUUPJmnLqSpJtCYHdsBazQb4p04zC8QorM5=s800-no",
+      "speaker_name": "Akane Lee",
+      "speaker_desc": "如果設計師能和工程師順利合作，那麼老公也就能準時下班了吧。因此努力推廣 UI/UX 設計方面的知識、技術，並分享自己在專案開發上踩過的各種坑與心得。",
+      "speaker_session": "為什麼要加「新功能」？",
+      "fb_url": null,
+      "github_url": null,
+      "linkedin_url": null,
+      "twitter_url": null
+    },
+    {
+      "speaker_id": "6",
+      "speaker_image": "https://lh3.googleusercontent.com/CCaAlRaXvr0YEcsxXvUn74aS96iG1HxJ41itg_91W3siyvjvb2_Ib2Vzqoul4CzayJiMc5aFNpepNTwjPcy09Xj94RIJhOO7T17oBgllnCthKgvyWkyjs-ouOeYHzUj2ptr0OMAUxHsTIEWh4Oqb5b9nyJdxtmL_DElcoBQ81LIdFClbZEdjmcq6VfdbvRQaE4TNyj0nWfma7IWw0dFCByfMutQagHpm-h2N_Qkj_c5RgnIRe7h59ox10ifc8wN5jSVRnBkUtfJwmS_M6Ciu5pC9_zgLeuo_0zJW8Zr5B3CIQav7VpuEo0Qmbg4zj5U1ofRhq6kbqTu1Anvo_J6fKXGdZIWcYiErDUVh0mJehjDXC1AvWWpFTMsQBndq6uiPNhFchzstHqtgACCtvg--loX-qOiU-aUim2XIQHm4GlqnFNl7uCYdGSZ5qp2eT3OVhzNlxgpK7DGZyLFehKwHF9irs6nP0zc6-WMAW5maNrgOuYhdApB2M6w0rV8nBeeUqdDR6VKM0QEp0qtfB8UNQm9L9cNU3LnVpMbqWIgb-fTIJVBmSMOiGKjBp7i4OsbeLWsxod2_e2mGOnlfZb1w1c3M9_AjIu1auGM0rr5SXbCeHJLfK2geCVpmL3S-pB8ZAwaYFljEHwrdRtagMHJBUPYZfs45uwrkWYYH738uqx6gcTLvIEqihqTxEGXycNkun8AyALNcVcx-R6cszOT9WVyCbIxyFMVtQ5WwFxpT01aTIGrN=w200-h168-no",
+      "speaker_name": "魏澤人",
+      "speaker_desc": "ML GDE、iiNumbers 首席數學家、花蓮.py 及 GDG 花蓮發起人。",
+      "speaker_session": "探索 Tensorflow 2.0",
+      "fb_url": null,
+      "github_url": null,
+      "linkedin_url": null,
+      "twitter_url": null
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "desc": "主辦單位",
+      "url": "https://www.facebook.com/GDG.Taichung/",
+      "logo": ""
+    },
+    {
+      "name": "Google",
+      "image": "https://lh3.googleusercontent.com/u0Ct8FEWUyG75GFA0IXfr3JpI4eGttqyy-3w98cE78TZH94f789uKVaz5ZHPc0HRmSPI2mT7Y7BGPUAgSsPwLMVXEHw2bkmXF5OX3lhxEKR-4X7BfxRl-1hgCuvmfOKZvKE__GWQKuAou5Wxlou7VUEqxRXhe6cIiNnGkJsoqgmjLnES4b2eGSdTC3Aw4AwFm7Xpbaxbsk490h0LqvX1QI7P4DgS387-Wuhw304TBB3Jm3lKcNWlucadnDS7StNUOvr_pILAbZVdKDzV4HSAxa6UKwJ0urDuwd4fhhkOI7A-8M2IHbh0iavm44ZSYD83wbjlA8Ie7x0Wf1sYwHqh4RodwnihZj7m0-lN8hyyHRUmmy90G338qx-r3qPAMfi1jGOPO78EEK0hE4i_K-FV4LRA9h1hCtVYT3kw8bxlkuRr3sq-YaWhW7QBtS6xzFZVVdDFWiuDWJMcPgO4UqExFapM7mfxTUZbPDee8RfgQTW9xF2WTMTZfqsXCTIElYP3YqA20XdbFXkpy07_bKiW7mp7Sp-sc5tCHV3NL1TzQo3iqx1gcrD9kMmH2g4i7yDjneTMc3TCiJSzygy2Y5GS70ltqcEcFshYCXpvW70ZlNWuqM91cQTwaIhYjEbUjto9cn6r0iO7P6AUb7a7JDwe370vyomyqDAILLeeBjcihbUKRcWpYCBaVTlnpQteh3OGmVzYScDaBs2die5-kZ3Pkuew5Lgt5P7zAK62d1WGfQkFArBZ=w2048-h276-no",
+      "desc": "贊助商",
+      "url": "https://developers.google.com/",
+      "logo": ""
+    }
+  ],
+  "teams": [
+    {
+      "name": "阿達",
+      "desc": "核心組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "Recca",
+      "desc": "核心組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "Dion",
+      "desc": "核心組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "Kevin",
+      "desc": "核心組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "Duran",
+      "desc": "核心組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "小貓",
+      "desc": "文創組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "米娜",
+      "desc": "文創組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "Howard",
+      "desc": "文創組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "JinWen Shieh",
+      "desc": "文創組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "Titan",
+      "desc": "文創組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "yachen",
+      "desc": "文創組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "Wade",
+      "desc": "文創組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "letterliu",
+      "desc": "文創組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "ruru",
+      "desc": "文創組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "山葵泥",
+      "desc": "機動組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "Phoebe",
+      "desc": "機動組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "文豪",
+      "desc": "機動組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "智惠",
+      "desc": "機動組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "DS",
+      "desc": "機動組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "Teresa",
+      "desc": "機動組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "daYuan",
+      "desc": "機動組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "Infax Lai (小賴)",
+      "desc": "紀錄組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "星雨",
+      "desc": "紀錄組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "蘇蘇",
+      "desc": "議程組",
+      "contribution": "GDG Taichung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "job": "",
+      "speciality": "",
+      "fb_url": "",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": ""
+    },
+    {
+      "name": "Weitsai",
+      "desc": "議程組",
+      "contribution": "GDG Kaohsiung",
+      "image": "https://lh3.googleusercontent.com/WOxbIiyW6E02I3e1y-UcLX_5MSnas4QHASi5sB35hZC7OP2-RJk0u_I62lpXsrM9u7G1ldRS_mT450oKYCBtq0AjaDI7ZvpJJgXO0-GtGEezPcI1mc4u3K0pCpnXoBAd3arW0fDst7EQ0Y7uunFq5C_X9ou8QdX1U8zaHmrFpzYWVRsC_hJAhuKBx8wlTGzycVO07WjGrKeJfZWQw3seMWh8ppmxd8g8hVie_bR0fN1di6crZoWyyYOgLEWGZ62Tg4lJ_Q7TDs9oJxrPIDoanC4GxOAHuPyNYWfZgwhUbw0xLfRWmipWKenJxq0_x9wj_JiXxCgGfdGSPp23Lu_FA08JHIMq6hdoHjGr9U4kQ-Ac9qSWAlHIOaWNArOWO1LAu8QA6MjOQpAwHAvR9sGZDoxe3LvzDAnwxboxPTYgl1e-RV3RXUed-PcJ0p-cBQI_lbf0yaFu-BeZbc0Ul7UyrrkTL7FryceXqXiRecqSR3-l6uJCFyHr74ZPDCKgtY9PZwm5cuKqjf7SyKjYpa2r8tT9XVEtGLSahvir_70Zn55yHjVPYoZRjj9fxak2fBTC8Hi5LaeC-DD3RZdoCcRG480ptDnimRZPVu06FZrWUGkxaNpVbM0XEH2I0jItYX3zFHaPvj1xuBRk_jMTm8MeDdQlrJH75wVNx00eS6tWEmAZCtoq9zopSNYfKAeAwzmslHWUY-V-dKo1UMOzDz2lUfhSTjkWiHQT5PJgAI9YRxlH_9_T=s1578-no",
+      "fb_url": "https://www.facebook.com/begining1003",
+      "twitter_url": "",
+      "linkedin_url": "",
+      "github_url": "https://github.com/weitsai"
+    }
+  ]
+}

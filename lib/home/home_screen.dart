@@ -31,7 +31,7 @@ class HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    this._homeBloc.dispatch(LoadHomeEvent());
+    this._homeBloc.dispatch(LoadHomeByOnForAllEvent());
   }
 
   @override
@@ -51,7 +51,7 @@ class HomeScreenState extends State<HomeScreen> {
             builder: (context) => ErrorDialog(
               error: state.errorMessage,
               onTap: () {
-                _homeBloc.dispatch(LoadHomeEvent());
+                _homeBloc.dispatch(LoadHomeByOnForAllEvent());
               },
             ),
           );

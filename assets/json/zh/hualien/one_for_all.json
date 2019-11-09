@@ -1,0 +1,290 @@
+{
+  "tracks": [
+    {
+      "id": "1",
+      "title": "R1"
+    }
+  ],
+  "sessions": [
+    {
+      "session_id": "1",
+      "session_start_time": "2019-11-16 08:30:00",
+      "session_total_time": "30",
+      "session_title": "Registration",
+      "session_desc": "報到並且領取 Badge",
+      "track_id": "1",
+      "speaker_id": "1",
+      "tags": []
+    },
+    {
+      "session_id": "2",
+      "session_start_time": "2019-11-16 09:20:00",
+      "session_total_time": "10",
+      "session_title": "GDG DevFest Hualien 2019 Opening / 開場",
+      "session_desc": "",
+      "track_id": "1",
+      "speaker_id": "17",
+      "tags": []
+    },
+    {
+      "session_id": "3",
+      "session_start_time": "2019-11-16 09:30:00",
+      "session_total_time": "30",
+      "session_title": "以 Ktor 打造 API 應用",
+      "session_desc": "為了可以更簡單的使用 Kotlin 打造網路應用程式，JetBrains 自主研發推出了 Ktor  框架，讓我們可以快速打造需要的 API 應用，並享受 Kotlin 強型別所帶來的好處。在這場分享裡，將結合 Ktor 框架及 Exposed 函式庫，示範如何實作一個簡易的 API 應用。",
+      "track_id": "1",
+      "speaker_id": "3",
+      "tags": [
+        "kotlin",
+        "web"
+      ]
+    },
+    {
+      "session_id": "4",
+      "session_start_time": "2019-11-16 10:00:00",
+      "session_total_time": "10",
+      "session_title": "Break",
+      "session_desc": "",
+      "track_id": "1",
+      "speaker_id": "4",
+      "tags": []
+    },
+    {
+      "session_id": "5",
+      "session_start_time": "2019-11-16 10:10:00",
+      "session_total_time": "30",
+      "session_title": "APP Girls創辦人教你如何跨越程式高牆 - admob google廣告串接與開發經驗和自學經驗分享",
+      "session_desc": "分享APP Girls創辦, 開發經驗, 職涯經驗以及自學經驗等等，歸納出任何自學的重要元素與方法，並鼓勵每個人都可以寫程式，靠自己的力量做自己想要做的事情！提供一個方向和方法與自學經驗分享彼此交流。另外也介紹Admob的觀念解析與程式碼分享，讓大家知道如何透過AdMob這個強大又好用的工具，在應用程式內放廣告，為APP新增一項金流管道。",
+      "track_id": "1",
+      "speaker_id": "5",
+      "tags": [
+        "mobile"
+      ]
+    },
+    {
+      "session_id": "6",
+      "session_start_time": "2019-11-16 10:40:00",
+      "session_total_time": "10",
+      "session_title": "Break",
+      "session_desc": "",
+      "track_id": "1",
+      "speaker_id": "6",
+      "tags": []
+    },
+    {
+      "session_id": "7",
+      "session_start_time": "2019-11-16 10:50:00",
+      "session_total_time": "30",
+      "session_title": "Blockchain on BigQuery: 我與 Google Public Datasets 戰鬥的故事",
+      "session_desc": "",
+      "track_id": "1",
+      "speaker_id": "7",
+      "tags": [
+        "cloud"
+      ]
+    },
+    {
+      "session_id": "8",
+      "session_start_time": "2019-11-16 11:20:00",
+      "session_total_time": "10",
+      "session_title": "Break",
+      "session_desc": "",
+      "track_id": "1",
+      "speaker_id": "8",
+      "tags": []
+    },
+    {
+      "session_id": "9",
+      "session_start_time": "2019-11-16 11:30:00",
+      "session_total_time": "30",
+      "session_title": "Kotlin overview",
+      "session_desc": "",
+      "track_id": "1",
+      "speaker_id": "9",
+      "tags": [
+        "kotlin"
+      ]
+    },
+    {
+      "session_id": "10",
+      "session_start_time": "2019-11-16 12:00:00",
+      "session_total_time": "60",
+      "session_title": "Lunch Break / 午餐",
+      "session_desc": "",
+      "track_id": "1",
+      "speaker_id": "10",
+      "tags": []
+    },
+    {
+      "session_id": "11",
+      "session_start_time": "2019-11-16 13:00:00",
+      "session_total_time": "30",
+      "session_title": "女性開發者經驗分享",
+      "session_desc": "",
+      "track_id": "1",
+      "speaker_id": "11",
+      "tags": [
+        "WTM"
+      ]
+    },
+    {
+      "session_id": "12",
+      "session_start_time": "2019-11-16 13:30:00",
+      "session_total_time": "10",
+      "session_title": "Break",
+      "session_desc": "",
+      "track_id": "1",
+      "speaker_id": "12",
+      "tags": []
+    },
+    {
+      "session_id": "13",
+      "session_start_time": "2019-11-16 13:40:00",
+      "session_total_time": "50",
+      "session_title": "工作坊 1",
+      "session_desc": "程式麻瓜也能玩聊天機器人，免程式，使用 Dialogflow 建置 Google 語音助理動作 (Google Assistant Action )",
+      "track_id": "1",
+      "speaker_id": "13",
+      "tags": [
+        "assistant"
+      ]
+    },
+    {
+      "session_id": "14",
+      "session_start_time": "2019-11-16 14:30:00",
+      "session_total_time": "30",
+      "session_title": "Tea Break / 茶歇",
+      "session_desc": "",
+      "track_id": "1",
+      "speaker_id": "14",
+      "tags": []
+    },
+    {
+      "session_id": "15",
+      "session_start_time": "2019-11-16 15:00:00",
+      "session_total_time": "60",
+      "session_title": "工作坊 2",
+      "session_desc": "實作 Google Cloud Run 作為 dialogflow webhook",
+      "track_id": "1",
+      "speaker_id": "13",
+      "tags": [
+        "cloud"
+      ]
+    },
+    {
+      "session_id": "16",
+      "session_start_time": "2019-11-16 16:00:00",
+      "session_total_time": "10",
+      "session_title": "Break",
+      "session_desc": "",
+      "track_id": "1",
+      "speaker_id": "16",
+      "tags": []
+    },
+    {
+      "session_id": "17",
+      "session_start_time": "2019-11-16 16:10:00",
+      "session_total_time": "30",
+      "session_title": "Tensorflow 2.0",
+      "session_desc": "新推出的 Tensorflow 2.0 與之前的版本有很大的差異，是否值得轉換呢? 有哪些新的功能呢? 程式碼要怎麼改? 只要在 keras 前面加上 tf? 我們將帶大家一起探索 Tensorflow 2.0。",
+      "track_id": "1",
+      "speaker_id": "17",
+      "tags": [
+        "tensorflow"
+      ]
+    },
+    {
+      "session_id": "18",
+      "session_start_time": "2019-11-16 16:40:00",
+      "session_total_time": "10",
+      "session_title": "閉幕",
+      "session_desc": "",
+      "track_id": "1",
+      "speaker_id": "18",
+      "tags": []
+    }
+  ],
+  "speakers": [
+    {
+      "speaker_id": "3",
+      "speaker_image": "https://firebasestorage.googleapis.com/v0/b/gdg-hualien-devfest-2019.appspot.com/o/people%2Ffan.jpeg?alt=media&token=c1da8812-88c8-498e-95fa-e65afd8df517",
+      "speaker_name": "Shengyou Fan",
+      "speaker_desc": "",
+      "speaker_session": null,
+      "fb_url": null,
+      "github_url": null,
+      "linkedin_url": null,
+      "twitter_url": null
+    },
+    {
+      "speaker_id": "5",
+      "speaker_image": "https://firebasestorage.googleapis.com/v0/b/gdg-hualien-devfest-2019.appspot.com/o/people%2Favon.jpg?alt=media",
+      "speaker_name": "鄭雅方",
+      "speaker_desc": "App Girls 創辦人",
+      "speaker_session": null,
+      "fb_url": null,
+      "github_url": null,
+      "linkedin_url": null,
+      "twitter_url": null
+    },
+    {
+      "speaker_id": "7",
+      "speaker_image": "https://firebasestorage.googleapis.com/v0/b/gdg-hualien-devfest-2019.appspot.com/o/people%2Fbob.jpg?alt=media",
+      "speaker_name": "Bob Lee",
+      "speaker_desc": "",
+      "speaker_session": null,
+      "fb_url": null,
+      "github_url": null,
+      "linkedin_url": null,
+      "twitter_url": null
+    },
+    {
+      "speaker_id": "9",
+      "speaker_image": "https://firebasestorage.googleapis.com/v0/b/gdg-hualien-devfest-2019.appspot.com/o/people%2Ftakuma.jpg?alt=media",
+      "speaker_name": "Takuma Lee",
+      "speaker_desc": "喜歡技術與研究，專門挖坑順便推人下坑然後自己無法補完坑；專注於 Android application 開發，目前研究學習開發 Flutter 與 iOS 中。",
+      "speaker_session": null,
+      "fb_url": null,
+      "github_url": null,
+      "linkedin_url": null,
+      "twitter_url": null
+    },
+    {
+      "speaker_id": "11",
+      "speaker_image": "https://firebasestorage.googleapis.com/v0/b/gdg-hualien-devfest-2019.appspot.com/o/people%2Fsmile.png?alt=media&token=e197bc5b-1e76-4c16-9333-ee829400d2d1",
+      "speaker_name": "Smile Chao",
+      "speaker_desc": "consultant + Digi maker",
+      "speaker_session": null,
+      "fb_url": null,
+      "github_url": null,
+      "linkedin_url": null,
+      "twitter_url": null
+    },
+    {
+      "speaker_id": "13",
+      "speaker_image": "https://firebasestorage.googleapis.com/v0/b/gdg-hualien-devfest-2019.appspot.com/o/people%2Fwolke.jpg?alt=media",
+      "speaker_name": "Wolke",
+      "speaker_desc": "台灣 9 位 LAE (LINE API EXPERT)之一 亞太 4 位 Assistant GDE(Google Developer Expert) 之一 voice app studio 創辦人 http://facebook.com/voiceappstudio/ 軟體工程系統開發，技術文件寫作, 教育訓練，喜好研究程式語言、框架、社群，從中學習設計，目前以node.js 開發前後台及智能語音應用/聊天機器人為主。",
+      "speaker_session": null,
+      "fb_url": null,
+      "github_url": null,
+      "linkedin_url": null,
+      "twitter_url": null
+    },
+    {
+      "speaker_id": "17",
+      "speaker_image": "https://firebasestorage.googleapis.com/v0/b/gdg-hualien-devfest-2019.appspot.com/o/people%2Ftjwei.jpg?alt=media",
+      "speaker_name": "魏澤人",
+      "speaker_desc": "ML GDE / 交大 AI 學院副教授",
+      "speaker_session": null,
+      "fb_url": null,
+      "github_url": null,
+      "linkedin_url": null,
+      "twitter_url": null
+    }
+  ],
+  "sponsors": [
+  ],
+  "teams": [
+  ]
+}

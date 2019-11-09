@@ -19,6 +19,7 @@ import 'package:flutter_devfest/team/team_page.dart';
 import 'package:flutter_devfest/utils/app_localizations.dart';
 import 'package:flutter_devfest/utils/dependency_injection.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
+import 'package:flutter_devfest/utils/preferences.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 class ConfigPage extends StatefulWidget {
@@ -39,11 +40,9 @@ class _ConfigPageState extends State<ConfigPage> {
 
   setupApp() async {
     configBloc = ConfigBloc();
-    configBloc.darkModeOn =
-        Devfest.prefs?.getBool(Devfest.darkModePref) ?? false;
-    configBloc.languageCode =
-        Devfest.prefs?.getString(Devfest.languagePref) ?? 'zh';
-    configBloc.dispatch(LoadDevFestEvent());
+    configBloc.darkModeOn = Preferences.getBool(Devfest.darkModePref, false);
+    configBloc.languageCode = Preferences.getString(Devfest.languagePref, 'zh');
+    configBloc.dispatch(LoadDevFestByFirebaseEvent());
     if (kIsWeb) {
     } else if (Platform.isAndroid || Platform.isIOS) {
       configBloc.analytics = FirebaseAnalytics();

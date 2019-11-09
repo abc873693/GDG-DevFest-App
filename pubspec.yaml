@@ -66,6 +66,10 @@ flutter:
     - assets/json/
     - assets/json/en/
     - assets/json/zh/
+    - assets/json/zh/taichung/one_for_all.json
+    - assets/json/zh/hualien/one_for_all.json
+    - assets/json/zh/taipei/one_for_all.json
+    - assets/json/zh/kaohsiung/one_for_all.json
   # assets:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
