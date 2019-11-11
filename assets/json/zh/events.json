@@ -89,22 +89,22 @@
     },
     {
       "tag": "kaohsiung",
-      "isActive": false,
-      "hasLocalization": false,
+      "isActive": true,
+      "hasLocalization": true,
       "name": "DevFest 高雄",
       "host": "GDG 高雄",
       "date": "2019-12-07",
-      "useImageAsset": false,
-      "image": "https://jamaicandevelopers.com/p/devfest-2019/@@images/image",
+      "useImageAsset": true,
+      "image": "https://lh3.googleusercontent.com/dOTFKdW1U6OqDG9DRlNT6PhQdCozArYOZXymt1EEPbF6a9tqBPqKEJjrew55HbeF3No6i0VO3yyrmHUhvCZacwSIynwXT2CvJLX8gs23ZrtcS1DZjUVfC4GM39e3qIwsbHDfuYLRM2kmQjl8coDaLjT0EBj7G4hbOCjq9x1hHT9GM5sbP7JZYY_F0TKaLphlVH5Zwh-6nMSKQR1EE90tAVjHqjo8qXvrjTblIKjT-aVNKPjHEbpBUhLusi5wCloCCvjsbbzTVcvw57gnr2p9FT_C9kx6-Hw8_9jzGq_HXThBW7yvLdFKLWFy4Od-Mt2r3ntruuvNf59j9iSmaVOnW4BzB-D7AdlBVPEsBeweOKswsDbcwWu3kSYtGh71fmyG7RGeopb3MH5JgCBHh1Rqqglo44Mwh8SRS0nH6OdciPJu17NjxSmHNkQoEGuw-1IDzDGLU-ZbmD8V5XiBweUIZ1RGw_EJf3zjOkcGoajwWmDvQGhVSeT9IH05fr5BIkFGf16_iSNqO36pJVnJ9_4ilJwoGKuDY4C2LjIosagYrteLooouHfStRnDm4lopDey2LosIztkl_wFotoc3Or85J-Xlh9VERULQUltxvMsWCem8ZjmNoFrZvZy9yqmtu7TITwz_ATS0UlecaaY7kev5brQi_v2YhOsoUnnxo2YC5zaUYRPUJCCUepTy=w921-h481-no",
       "imageAsset": "",
       "welcomeText": "Welcome to GDG DevFest",
       "descText": "''DevFests are community-led, developer events hosted by GDG chapters around the globe focused on community building & learning about Google’s technologies. Each DevFest is inspired by and uniquely tailored to the needs of the developer community and region that hosts it.''",
       "location": {
         "name": "DAKUO",
-        "mapTitle": "Google Office",
-        "mapSubTitle": "Shoreline Amphitheatre, Mountain View, CA",
-        "lat": 37.42796133580664,
-        "lng": -122.085749655962
+        "mapTitle": "數位創意內容中心",
+        "mapSubTitle": "",
+        "lat": 22.625888,
+        "lng": 120.2810908
       },
       "links": {
         "facebook": "https://facebook.com/imthepk",

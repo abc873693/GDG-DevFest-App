@@ -1,4 +1,341 @@
 {
+  "tracks": [
+    {
+      "id": "1",
+      "title": "Room 1"
+    },
+    {
+      "id": "2",
+      "title": "Room 2"
+    },
+    {
+      "id": "3",
+      "title": "Code Lab"
+    }
+  ],
   "sessions": [
+    {
+      "session_id": "1",
+      "session_start_time": "2019-11-09 09:50:00",
+      "session_total_time": "10",
+      "session_title": "Opening",
+      "session_desc": "",
+      "speaker_id": "",
+      "track_id": "1",
+      "tags": []
+    },
+    {
+      "session_id": "2",
+      "session_start_time": "2019-11-09 10:00:00",
+      "session_total_time": "40",
+      "session_title": "在導入 Flutter 之前，你應該知道什麼？",
+      "session_desc": "Flutter 是一套在這兩年逐漸普及的 App 開發框架。然而，即使採用了 Flutter 技術，最後你或你的企業，還是在做一套 iOS/Android App，也有不可迴避的原生部分。在這場 Talk 中，我會提到建議你如何評估 Flutter 這門技術，以及怎樣避免一些在導入 Flutter 的過程中可能會遇到的問題。",
+      "speaker_id": "2",
+      "track_id": "1",
+      "tags": [
+        "flutter",
+        "android",
+        "iOS"
+      ]
+    },
+    {
+      "session_id": "3",
+      "session_start_time": "2019-11-09 11:00:00",
+      "session_total_time": "40",
+      "session_title": "Clean Architecture to Cross Platform",
+      "session_desc": "使用 Flutter 可以達成 Android / iOS 跨平台，但如果要跨平台到 Desktop / Web，則需要好的架構來幫我們組織，理解程式。\n\n我們會從 Flutter 開始，介紹基本 build block、新手容易犯的錯誤以及該如何避免。最終可以讓各個平台共用程式碼，減少維護成本，最大化生產力。",
+      "speaker_id": "3",
+      "track_id": "1",
+      "tags": [
+        "flutter",
+        "android",
+        "iOS"
+      ]
+    },
+    {
+      "session_id": "4",
+      "session_start_time": "2019-11-09 12:00:00",
+      "session_total_time": "60",
+      "session_title": "午餐時間",
+      "session_desc": "🍽 約約身邊的人去附近享受美食",
+      "speaker_id": "",
+      "track_id": "1",
+      "tags": [
+      ]
+    },
+    {
+      "session_id": "5",
+      "session_start_time": "2019-11-09 13:00:00",
+      "session_total_time": "40",
+      "session_title": "Server-side Development using Kotlin",
+      "session_desc": " Introduction to Ktor Architecture Server-side Development for Android Developer",
+      "speaker_id": "4",
+      "track_id": "1",
+      "tags": [
+        "kotlin",
+        "web"
+      ]
+    },
+    {
+      "session_id": "6",
+      "session_start_time": "2019-11-09 14:00:00",
+      "session_total_time": "40",
+      "session_title": "以 Ktor 快速打造 Web 應用",
+      "session_desc": "Kotlin 是一個適用於多平台的程式語言。為了讓開發者更輕鬆打造 Web 應用，JetBrains 研發了 Ktor Web 框架及 Exposed SQL 函式庫，讓大家可以用精簡清楚的語法，快速打造 Web 應用。\n在這場分享裡，將會以實作一個簡易的 CRUD 應用程式為例，展示 Kotlin 在 Web 方面的實務應用。",
+      "speaker_id": "5",
+      "track_id": "1",
+      "tags": [
+        "kotlin",
+        "web"
+      ]
+    },
+    {
+      "session_id": "7",
+      "session_start_time": "2019-11-09 15:00:00",
+      "session_total_time": "60",
+      "session_title": "點心時間 + Lighting Talk",
+      "session_desc": "",
+      "speaker_id": "",
+      "track_id": "1",
+      "tags": [
+      ]
+    },
+    {
+      "session_id": "8",
+      "session_start_time": "2019-11-09 16:00:00",
+      "session_total_time": "40",
+      "session_title": "從零開始的人臉辨識，七龍珠戰鬥力探測器",
+      "session_desc": "是的，我們做了一款七龍珠中的戰鬥力探測器。透過人臉辨識，探測工程師的開源貢獻力。 本次演講內容有： \n\n 1. 初心者的人臉辨識技術 ，Face Recognition API\n 2. 使用 Golang 在 Github 上做 Data Mining\n 3. 從零開始的 side project，開發心路歷程與收穫分享 \n\n 內容包含 Fce Rcognition API，Github Data Mining，難度入門，適合沒有經驗但想上手人臉辨識的人。\n 這是一個純粹來鬧，但是做得很認真的專案，希望在博君一笑之餘，也能跟大家分享過程中的心路歷程。",
+      "speaker_id": "11",
+      "track_id": "1",
+      "tags": [
+        "Golang"
+      ]
+    },
+    {
+      "session_id": "9",
+      "session_start_time": "2019-11-09 17:00:00",
+      "session_total_time": "10",
+      "session_title": "閉幕",
+      "session_desc": "",
+      "speaker_id": "",
+      "track_id": "1",
+      "tags": [
+      ]
+
+    },
+    {
+      "session_id": "10",
+      "session_start_time": "2019-11-09 09:50:00",
+      "session_total_time": "10",
+      "session_title": "Opening",
+      "session_desc": "歡迎移至 R1 參加",
+      "speaker_id": "",
+      "track_id": "2",
+      "tags": []
+    },
+    {
+      "session_id": "11",
+      "session_start_time": "2019-11-09 10:00:00",
+      "session_total_time": "40",
+      "session_title": "自然語言的遷移學習- BERT",
+      "session_desc": "分享自然語言理解領域裡面，要如何使用預先訓練模型來進行語意分類與理解。",
+      "speaker_id": "10",
+      "track_id": "2",
+      "tags": [
+        "Tensorflow"
+      ]
+    },
+    {
+      "session_id": "12",
+      "session_start_time": "2019-11-09 11:00:00",
+      "session_total_time": "40",
+      "session_title": "從機器學習平台的發展觀察如何打造資料科學團隊",
+      "session_desc": "資料分析與機器學習需要大量的假設、實驗、驗證，如同在實驗室一般是個冗長且由少數專家一手掌握的過程。如同軟體開發發展出 DevOps，資料科學藉此成為能夠讓更多角色參與、讓更多想法能夠被測試，實踐 end-to-end 生產線的流程。\n\n除了持續交付數據及數據產品，如何建立一個可以重複進行訓練以及測試的環境與架構，是現在建置資料科學團隊時重點探討的議題。",
+      "speaker_id": "7",
+      "track_id": "2",
+      "tags": [
+        "Tensorflow"
+      ]
+    },
+    {
+      "session_id": "13",
+      "session_start_time": "2019-11-09 12:00:00",
+      "session_total_time": "60",
+      "session_title": "午餐時間",
+      "session_desc": "🍽 約約身邊的人去附近享受美食",
+      "speaker_id": "",
+      "track_id": "2",
+      "tags": [
+      ]
+    },
+    {
+      "session_id": "14",
+      "session_start_time": "2019-11-09 13:00:00",
+      "session_total_time": "40",
+      "session_title": "Building Machine Learning Workflows with Kubeflow Pipelines",
+      "session_desc": "1. Introduction to Kubeflow and Kubeflow Pipelines (KFP) \n2. End-to-end example from prototype to production using KFP",
+      "speaker_id": "9",
+      "track_id": "2",
+      "tags": [
+        "Tensorflow"
+      ]
+    },
+    {
+      "session_id": "15",
+      "session_start_time": "2019-11-09 14:00:00",
+      "session_total_time": "40",
+      "session_title": "Kubernetes and Your Microservices System",
+      "session_desc": "1. multi-module but share database\n 　 -> split business model with separate application and database\n 2. client side vs server side service discovery\n 3. classic deploy on one vm\n 　 -> multi-vm with reverse proxy\n 　　-> containerize\n 　　　-> cloud deploymen\n 　　　　 -> Kubernetes\n\n",
+      "speaker_id": "6",
+      "track_id": "2",
+      "tags": [
+        "Kubernetes",
+        "Microservices"
+      ]
+    },
+    {
+      "session_id": "16",
+      "session_start_time": "2019-11-09 15:00:00",
+      "session_total_time": "60",
+      "session_title": "點心時間 + Lighting Talk",
+      "session_desc": "",
+      "speaker_id": "",
+      "track_id": "2",
+      "tags": [
+      ]
+    },
+    {
+      "session_id": "17",
+      "session_start_time": "2019-11-09 16:00:00",
+      "session_total_time": "40",
+      "session_title": "如何用 K8s 走微服務之路",
+      "session_desc": "隨著微服務的興起，container 化一時之間成為微服務的其中一個手段，伴隨而來的眾多微服務管理問題，K8s 的出現為我們帶來什麼嶄新的概念？\n讓眾多的開發者願意使用 K8s 為其首選管理容器化服務項目之一。",
+      "speaker_id": "6",
+      "track_id": "2",
+      "tags": [
+        "Kubernetes"
+      ]
+    },
+    {
+      "session_id": "18",
+      "session_start_time": "2019-11-09 17:00:00",
+      "session_total_time": "10",
+      "session_title": "閉幕",
+      "session_desc": "",
+      "speaker_id": "",
+      "track_id": "2",
+      "tags": [
+      ]
+    },
+    {
+      "session_id": "19",
+      "session_start_time": "2019-11-09 09:50:00",
+      "session_total_time": "10",
+      "session_title": "Opening",
+      "session_desc": "歡迎移至 R1 參加",
+      "speaker_id": "",
+      "track_id": "3",
+      "tags": []
+    },
+    {
+      "session_id": "20",
+      "session_start_time": "2019-11-09 10:00:00",
+      "session_total_time": "40",
+      "session_title": "Google Assistant (AoG) 的商業實作",
+      "session_desc": "1. 面對語音互動的未來，企業如何定位此全新的數位通路\n2. Omni-Channel 的思維中，語音又如何和其他通路相輔相成的合作\n3. 在技術開發之前，最重要的事\n4. 案例分享",
+      "speaker_id": "1",
+      "track_id": "3",
+      "tags": [
+        "Assistant"
+      ]
+    },
+    {
+      "session_id": "21",
+      "session_start_time": "2019-11-09 11:00:00",
+      "session_total_time": "40",
+      "session_title": "初階工作坊",
+      "session_desc": "1. 簡介 Google Assistant 和 LINE Bot 及做好 Action 和 Chatbot 的要領\n2. 使用 Dialogflow 實作 Google Assistant 和 LINE Bot",
+      "speaker_id": "12",
+      "track_id": "3",
+      "tags": [
+        "Dialoglow",
+        "AutionOnGoogle"
+      ]
+    },
+    {
+      "session_id": "22",
+      "session_start_time": "2019-11-09 12:00:00",
+      "session_total_time": "60",
+      "session_title": "午餐時間",
+      "session_desc": "🍽 約約身邊的人去附近享受美食",
+      "speaker_id": "",
+      "track_id": "3",
+      "tags": [
+      ]
+    },
+    {
+      "session_id": "23",
+      "session_start_time": "2019-11-09 11:00:00",
+      "session_total_time": "40",
+      "session_title": "初階工作坊",
+      "session_desc": "1. 簡介 Google Assistant 和 LINE Bot 及做好 Action 和 Chatbot 的要領\n2. 使用 Dialogflow 實作 Google Assistant 和 LINE Bot",
+      "speaker_id": "12",
+      "track_id": "3",
+      "tags": [
+        "Dialoglow",
+        "AutionOnGoogle"
+      ]
+    },
+    {
+      "session_id": "24",
+      "session_start_time": "2019-11-09 14:00:00",
+      "session_total_time": "40",
+      "session_title": "實作 Google 最新的 serverless 解決方案做為 chatbot (LINE Bot) / voice app (Google智慧語音助理) 的 webhook 應用",
+      "session_desc": "1. 第1小時 帶 Google qwiklabs 教學平台 的 Hello Cloud Run 範例\n2. 第2小時 實作 web hook 於 Cloud Run 上",
+      "speaker_id": "12",
+      "track_id": "3",
+      "tags": [
+        "Dialoglow",
+        "AutionOnGoogle",
+        "GoogleCloudRun"
+      ]
+    },
+    {
+      "session_id": "25",
+      "session_start_time": "2019-11-09 15:00:00",
+      "session_total_time": "60",
+      "session_title": "點心時間 + Lighting Talk",
+      "session_desc": "",
+      "speaker_id": "",
+      "track_id": "3",
+      "tags": [
+      ]
+    },
+    {
+      "session_id": "26",
+      "session_start_time": "2019-11-09 14:00:00",
+      "session_total_time": "40",
+      "session_title": "實作 Google 最新的 serverless 解決方案做為 chatbot (LINE Bot) / voice app (Google智慧語音助理) 的 webhook 應用",
+      "session_desc": "1. 第1小時 帶 Google qwiklabs 教學平台 的 Hello Cloud Run 範例\n2. 第2小時 實作 web hook 於 Cloud Run 上",
+      "speaker_id": "12",
+      "track_id": "3",
+      "tags": [
+        "Dialoglow",
+        "AutionOnGoogle",
+        "GoogleCloudRun"
+      ]
+    },
+    {
+      "session_id": "27",
+      "session_start_time": "2019-11-09 17:00:00",
+      "session_total_time": "10",
+      "session_title": "閉幕",
+      "session_desc": "",
+      "speaker_id": "",
+      "track_id": "3",
+      "tags": [
+      ]
+    }
   ]
 }
