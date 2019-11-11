@@ -66,6 +66,7 @@ flutter:
     - assets/json/
     - assets/json/en/
     - assets/json/zh/
+    - assets/json/zh/events.json
     - assets/json/zh/taichung/one_for_all.json
     - assets/json/zh/hualien/one_for_all.json
     - assets/json/zh/taipei/one_for_all.json

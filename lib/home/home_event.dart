@@ -91,7 +91,7 @@ class LoadHomeByOnForAllEvent extends HomeEvent {
       var sessionsData = SessionsData.fromJson(json);
       var teamsData = TeamsData.fromJson(json);
       var sponsorsData = SponsorsData.fromJson(json);
-      sessionsData.sessions.forEach((session) {
+      sessionsData.sessions?.forEach((session) {
         session.setSpeaker(speakersData.speakers);
       });
       return InHomeState(

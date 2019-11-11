@@ -160,7 +160,7 @@ class AppLocalizations {
       'comingSoon': '敬啟\n期待',
       'minutes': '分',
       'shareText': '下載 DevFest App 並分享給您的好朋友\n'
-          'https://devfesttw.page.link/download'
+          'https://devfesttw.page.link/download',
       'events': '活動',
       'home': '主畫面',
       'navigate': '導航',
