@@ -259,6 +259,8 @@
       "speaker_id": "12",
       "track_id": "3",
       "tags": [
+        "Dialoglow",
+        "AutionOnGoogle",
       ]
     },
     {
@@ -281,6 +283,8 @@
       "speaker_id": "12",
       "track_id": "3",
       "tags": [
+        "Dialoglow",
+        "AutionOnGoogle",
       ]
     },
     {
@@ -292,6 +296,9 @@
       "speaker_id": "12",
       "track_id": "3",
       "tags": [
+        "Dialoglow",
+        "AutionOnGoogle",
+        "GoogleCloudRun"
       ]
     },
     {
@@ -314,6 +321,9 @@
       "speaker_id": "12",
       "track_id": "3",
       "tags": [
+        "Dialoglow",
+        "AutionOnGoogle",
+        "GoogleCloudRun"
       ]
     },
     {
