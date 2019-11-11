@@ -19,7 +19,6 @@ class FirebaseClient implements IClient {
     final cityTag = ConfigBloc().devFestEvent?.tag;
 
     //? For Speakers Hardcoded Data
-    print(resourcePath);
     if (resourcePath == ConfigProvider.kConstGetDevFestEventsUrl) {
       path = "${ConfigBloc().languageCode}_events";
     } else if (resourcePath == HomeProvider.kConstGetOneForAllUrl) {
@@ -33,13 +32,10 @@ class FirebaseClient implements IClient {
     } else if (resourcePath == HomeProvider.kConstGetSponsorsUrl) {
       path = "${ConfigBloc().languageCode}_${cityTag}_sponsors";
     }
-    print('path = ${path}');
-    var start = DateTime.now();
     final RemoteConfig remoteConfig = await RemoteConfig.instance;
     await remoteConfig.fetch(expiration: const Duration(seconds: 5));
     await remoteConfig.activateFetched();
     resultClass = jsonDecode(remoteConfig.getString(path));
-    print(DateTime.now().millisecondsSinceEpoch - start.millisecondsSinceEpoch);
     return MappedNetworkServiceResponse<T>(
       mappedResult: resultClass,
       networkServiceResponse: NetworkServiceResponse<T>(success: true),

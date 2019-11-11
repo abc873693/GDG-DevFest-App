@@ -14,7 +14,12 @@
       "session_desc": "",
       "speaker_id": "1",
       "track_id": "1",
-      "tags": []
+      "tags": [],
+      "links": {
+        "presentation": "",
+        "video": "",
+        "hackmd": ""
+      }
     },
     {
       "session_id": "2",
@@ -27,7 +32,12 @@
       "tags": [
         "flutter",
         "android"
-      ]
+      ],
+      "links": {
+        "presentation": "",
+        "video": "",
+        "hackmd": ""
+      }
     },
     {
       "session_id": "3",

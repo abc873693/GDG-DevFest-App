@@ -50,6 +50,7 @@ class Session {
   String trackId;
   List<String> tags;
   Speaker speaker;
+  Links links;
 
   Session({
     this.sessionId,
@@ -82,6 +83,7 @@ class Session {
     speakerId = json['speaker_id'];
     trackId = json['track_id'];
     tags = List<String>.from(json["tags"].map((x) => x));
+    links = json['links'] != null ? new Links.fromJson(json['links']) : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -100,6 +102,9 @@ class Session {
     data['speaker_id'] = this.speakerId;
     data['track_id'] = this.trackId;
     data['tags'] = List<dynamic>.from(tags.map((x) => x));
+    if (this.links != null) {
+      data['links'] = this.links.toJson();
+    }
     return data;
   }
 
@@ -107,6 +112,28 @@ class Session {
     list.forEach((speaker) {
       if (speaker.speakerId == speakerId) this.speaker = speaker;
     });
+  }
+}
+
+class Links {
+  String presentation;
+  String video;
+  String hackmd;
+
+  Links({this.presentation, this.video, this.hackmd});
+
+  Links.fromJson(Map<String, dynamic> json) {
+    presentation = json['presentation'];
+    video = json['video'];
+    hackmd = json['hackmd'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['presentation'] = this.presentation;
+    data['video'] = this.video;
+    data['hackmd'] = this.hackmd;
+    return data;
   }
 }
 

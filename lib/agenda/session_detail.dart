@@ -20,7 +20,14 @@ class SessionDetail extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            if (speaker?.fbUrl != null && speaker?.fbUrl.isNotEmpty)
+            IconButton(
+              icon: Icon(
+                FontAwesomeIcons.github,
+                size: 0,
+              ),
+              onPressed: null,
+            ),
+            if (speaker?.fbUrl != null && speaker.fbUrl.isNotEmpty)
               IconButton(
                 icon: Icon(
                   FontAwesomeIcons.facebookF,
@@ -30,7 +37,7 @@ class SessionDetail extends StatelessWidget {
                   launch(speaker?.fbUrl);
                 },
               ),
-            if (speaker?.twitterUrl != null && speaker?.twitterUrl.isNotEmpty)
+            if (speaker?.twitterUrl != null && speaker.twitterUrl.isNotEmpty)
               IconButton(
                 icon: Icon(
                   FontAwesomeIcons.twitter,
@@ -40,7 +47,7 @@ class SessionDetail extends StatelessWidget {
                   launch(speaker?.twitterUrl);
                 },
               ),
-            if (speaker?.linkedinUrl != null && speaker?.linkedinUrl.isNotEmpty)
+            if (speaker?.linkedinUrl != null && speaker.linkedinUrl.isNotEmpty)
               IconButton(
                 icon: Icon(
                   FontAwesomeIcons.linkedinIn,
@@ -50,7 +57,7 @@ class SessionDetail extends StatelessWidget {
                   launch(speaker?.linkedinUrl);
                 },
               ),
-            if (speaker?.githubUrl != null && speaker?.githubUrl.isNotEmpty)
+            if (speaker?.githubUrl != null && speaker.githubUrl.isNotEmpty)
               IconButton(
                 icon: Icon(
                   FontAwesomeIcons.github,
@@ -58,6 +65,58 @@ class SessionDetail extends StatelessWidget {
                 ),
                 onPressed: () {
                   launch(speaker?.githubUrl);
+                },
+              ),
+            IconButton(
+              icon: Icon(
+                FontAwesomeIcons.github,
+                size: 0,
+              ),
+              onPressed: null,
+            ),
+          ],
+        ),
+      );
+
+  Widget linksActions(context, Links links) => FittedBox(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            IconButton(
+              icon: Icon(
+                FontAwesomeIcons.github,
+                size: 0,
+              ),
+              onPressed: null,
+            ),
+            if (links?.presentation != null && links.presentation.isNotEmpty)
+              IconButton(
+                icon: Icon(
+                  FontAwesomeIcons.filePowerpoint,
+                  size: 15,
+                ),
+                onPressed: () {
+                  launch(links?.presentation);
+                },
+              ),
+            if (links?.video != null && links.video.isNotEmpty)
+              IconButton(
+                icon: Icon(
+                  FontAwesomeIcons.video,
+                  size: 15,
+                ),
+                onPressed: () {
+                  launch(links?.video);
+                },
+              ),
+            if (links?.hackmd != null && links.hackmd.isNotEmpty)
+              IconButton(
+                icon: Icon(
+                  Icons.speaker_notes,
+                  size: 15,
+                ),
+                onPressed: () {
+                  launch(links?.hackmd);
                 },
               ),
             IconButton(
@@ -150,6 +209,7 @@ class SessionDetail extends StatelessWidget {
                 height: 20,
               ),
               socialActions(context, session.speaker),
+              linksActions(context, session.links),
             ],
           ),
         ),
