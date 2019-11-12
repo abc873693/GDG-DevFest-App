@@ -10,7 +10,6 @@ import 'package:flutter_devfest/utils/dependency_injection.dart';
 import 'package:flutter_devfest/utils/devfest.dart';
 import 'package:flutter_devfest/utils/preferences.dart';
 import 'package:flutter_devfest/utils/simple_bloc.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import 'config/config_page.dart';
 
