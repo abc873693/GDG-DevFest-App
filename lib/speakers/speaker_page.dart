@@ -95,7 +95,7 @@ class SpeakerPage extends StatelessWidget {
                     child: (kIsWeb)
                         ? Image.network(speakers[i].speakerImage ?? '')
                         : CachedNetworkImage(
-                            fit: BoxFit.cover,
+                            fit: BoxFit.contain,
                             imageUrl: speakers[i].speakerImage ?? '',
                           ),
                   ),
