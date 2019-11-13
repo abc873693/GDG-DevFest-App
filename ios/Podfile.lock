@@ -9,6 +9,9 @@ PODS:
     - FirebaseAnalytics (= 6.1.3)
   - Firebase/CoreOnly (6.11.0):
     - FirebaseCore (= 6.3.2)
+  - Firebase/DynamicLinks (6.11.0):
+    - Firebase/CoreOnly
+    - FirebaseDynamicLinks (~> 4.0.5)
   - Firebase/Messaging (6.11.0):
     - Firebase/CoreOnly
     - FirebaseMessaging (~> 4.1.7)
@@ -26,6 +29,9 @@ PODS:
     - Crashlytics
     - Fabric
     - Firebase/Core
+    - Flutter
+  - firebase_dynamic_links (0.1.0):
+    - Firebase/DynamicLinks
     - Flutter
   - firebase_messaging (0.0.1):
     - Firebase/Core
@@ -60,6 +66,9 @@ PODS:
     - GoogleUtilities/Logger (~> 6.2)
     - nanopb (~> 0.3.901)
   - FirebaseCoreDiagnosticsInterop (1.0.0)
+  - FirebaseDynamicLinks (4.0.5):
+    - FirebaseAnalyticsInterop (~> 1.3)
+    - FirebaseCore (~> 6.2)
   - FirebaseInstanceID (4.2.6):
     - FirebaseCore (~> 6.0)
     - GoogleUtilities/Environment (~> 6.0)
@@ -143,9 +152,10 @@ DEPENDENCIES:
   - firebase_analytics (from `.symlinks/plugins/firebase_analytics/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - firebase_crashlytics (from `.symlinks/plugins/firebase_crashlytics/ios`)
+  - firebase_dynamic_links (from `.symlinks/plugins/firebase_dynamic_links/ios`)
   - firebase_messaging (from `.symlinks/plugins/firebase_messaging/ios`)
   - firebase_remote_config (from `.symlinks/plugins/firebase_remote_config/ios`)
-  - Flutter (from `.symlinks/flutter/ios-release`)
+  - Flutter (from `.symlinks/flutter/ios`)
   - google_maps_flutter (from `.symlinks/plugins/google_maps_flutter/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
   - share (from `.symlinks/plugins/share/ios`)
@@ -167,6 +177,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseCoreDiagnosticsInterop
+    - FirebaseDynamicLinks
     - FirebaseInstanceID
     - FirebaseMessaging
     - FirebaseRemoteConfig
@@ -184,12 +195,14 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/firebase_core/ios"
   firebase_crashlytics:
     :path: ".symlinks/plugins/firebase_crashlytics/ios"
+  firebase_dynamic_links:
+    :path: ".symlinks/plugins/firebase_dynamic_links/ios"
   firebase_messaging:
     :path: ".symlinks/plugins/firebase_messaging/ios"
   firebase_remote_config:
     :path: ".symlinks/plugins/firebase_remote_config/ios"
   Flutter:
-    :path: ".symlinks/flutter/ios-release"
+    :path: ".symlinks/flutter/ios"
   google_maps_flutter:
     :path: ".symlinks/plugins/google_maps_flutter/ios"
   path_provider:
@@ -210,6 +223,7 @@ SPEC CHECKSUMS:
   firebase_analytics: 045e7ebe7b8a4d27357168072868ff082dca15a6
   firebase_core: ae55ea92448ec8675d325da4db22cf3b4d58a54d
   firebase_crashlytics: 6b8e7358dbac1359c1e29e0796adf48eddef99c9
+  firebase_dynamic_links: 60ab9cdc77eef76b199beb720cc89d0a2bd88452
   firebase_messaging: 0d5c04cc40f58bd4bf7f2992c91050f9bc01bec3
   firebase_remote_config: dadb2f94875e4f2e173b570a77b88f4df3b14631
   FirebaseABTesting: 0d10f3cdc3fa00f3f175b5b56c1003c8e888299f
@@ -218,6 +232,7 @@ SPEC CHECKSUMS:
   FirebaseCore: beeff42c07c30ea94702471d99db2089b594fbbd
   FirebaseCoreDiagnostics: af29e43048607588c050889d19204f4d7b758c9f
   FirebaseCoreDiagnosticsInterop: 6829da2b8d1fc795ff1bd99df751d3788035d2cb
+  FirebaseDynamicLinks: db62e9da4788f9c5ebce2028dab933a0c158cfe2
   FirebaseInstanceID: d0eafcd8bdbd3447cd694594734078c3e3e77d8b
   FirebaseMessaging: 5ab57080c83bc98c9961412e1dab379f4193d02a
   FirebaseRemoteConfig: 51df936d5dfba17f267b2344070c89e8daa3fcfb
