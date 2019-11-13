@@ -26,7 +26,8 @@ class FindDevFestPage extends StatelessWidget {
 
   _body(BuildContext context) {
     var _configBloc = ConfigBloc();
-    if (_configBloc.currentState is InConfigState) {
+    if (_configBloc.currentState is InConfigState &&
+        _configBloc.devFestEventsData != null) {
       final events = _configBloc.devFestEventsData.devFestEvents;
       final format = DateFormat('yyyy-MM-DD', _configBloc.languageCode);
       return ListView.builder(
