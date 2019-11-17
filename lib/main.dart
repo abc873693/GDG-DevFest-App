@@ -54,7 +54,7 @@ Future<void> main() async {
     FlutterError.onError = Crashlytics.instance.recordFlutterError;
     var analytics = FirebaseAnalytics();
     // if in develop value use dev
-    await analytics?.setUserProperty(name: 'mode', value: 'dev');
+    await analytics?.setUserProperty(name: 'mode', value: 'release');
   }
 
   runApp(ConfigPage());

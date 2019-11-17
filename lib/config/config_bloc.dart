@@ -76,7 +76,7 @@ class ConfigBloc extends Bloc<ConfigEvent, ConfigState> {
   void initFCM() {
     firebaseMessaging.requestNotificationPermissions();
     //TODO need comment in release
-    firebaseMessaging.subscribeToTopic('dev');
+    firebaseMessaging.unsubscribeFromTopic('dev');
     firebaseMessaging.configure(
       onMessage: (Map<String, dynamic> message) async {
         if (Devfest.isDebugMode) print("onMessage: $message");
