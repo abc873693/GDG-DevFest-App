@@ -19,11 +19,21 @@ class SponsorPage extends StatelessWidget {
       body: ListView.separated(
         itemBuilder: (BuildContext context, int index) {
           return ListTile(
-            leading: SponsorImage(
-              imgUrl: sponsors[index].image,
+            title: Column(
+              children: <Widget>[
+                if (sponsors[index].image != null &&
+                    sponsors[index].image.isNotEmpty)
+                  SponsorImage(
+                    imgUrl: sponsors[index].image,
+                    level: sponsors[index].level,
+                  ),
+                SizedBox(height: 8),
+                Text(sponsors[index].name),
+              ],
             ),
-            title: Text(sponsors[index].name),
-            subtitle: Text(sponsors[index].desc),
+            subtitle: Center(
+              child: Text(sponsors[index].desc),
+            ),
             onTap: () {
               launch(sponsors[index].url);
             },
@@ -31,7 +41,7 @@ class SponsorPage extends StatelessWidget {
         },
         separatorBuilder: (BuildContext context, int index) {
           return SizedBox(
-            height: 30,
+            height: 20,
           );
         },
         itemCount: sponsors.length,
@@ -43,11 +53,27 @@ class SponsorPage extends StatelessWidget {
 
 class SponsorImage extends StatelessWidget {
   final String imgUrl;
+  final String level;
 
-  const SponsorImage({Key key, this.imgUrl}) : super(key: key);
+  const SponsorImage({Key key, this.imgUrl, this.level}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    double size = 50;
+    switch (this.level) {
+      case "1":
+        size = 200;
+        break;
+      case "2":
+        size = 150;
+        break;
+      case "3":
+        size = 100;
+        break;
+      default:
+        size = 50;
+        break;
+    }
     return Card(
       elevation: 0.0,
       child: Padding(
@@ -56,9 +82,12 @@ class SponsorImage extends StatelessWidget {
             ? NetworkImage(imgUrl)
             : CachedNetworkImage(
                 imageUrl: imgUrl,
-                height: 50.0,
-                width: 50.0,
+                height: size,
+                width: size,
                 fit: BoxFit.contain,
+                errorWidget: (_, __, ___) {
+                  return SizedBox(height: 0);
+                },
               ),
       ),
     );

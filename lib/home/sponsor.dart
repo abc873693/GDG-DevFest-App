@@ -27,6 +27,7 @@ class Sponsor {
   String desc;
   String url;
   String logo;
+  String level;
 
   Sponsor({this.name, this.image, this.desc, this.url, this.logo});
 
@@ -36,6 +37,7 @@ class Sponsor {
     desc = json['desc'];
     url = json['url'];
     logo = json['logo'];
+    level = json['level'];
   }
 
   Map<String, dynamic> toJson() {
@@ -45,6 +47,7 @@ class Sponsor {
     data['desc'] = this.desc;
     data['url'] = this.url;
     data['logo'] = this.logo;
+    data['level'] = this.level;
     return data;
   }
 }
