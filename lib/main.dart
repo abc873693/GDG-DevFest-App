@@ -49,12 +49,12 @@ Future<void> main() async {
 
   if (kIsWeb) {
   } else if (Platform.isIOS || Platform.isAndroid) {
-    Crashlytics.instance.enableInDevMode = true;
+    Crashlytics.instance.enableInDevMode = false;
     // Pass all uncaught errors from the framework to Crashlytics.
     FlutterError.onError = Crashlytics.instance.recordFlutterError;
     var analytics = FirebaseAnalytics();
     // if in develop value use dev
-    await analytics?.setUserProperty(name: 'mode', value: 'release');
+    await analytics?.setUserProperty(name: 'mode', value: 'dev');
   }
 
   runApp(ConfigPage());

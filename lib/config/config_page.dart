@@ -4,11 +4,12 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_analytics/observer.dart';
 import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_devfest/agenda/agenda_page.dart';
-import 'package:flutter_devfest/config/devfest_event.dart';
+import 'package:flutter_devfest/agenda/session_detail.dart';
 import 'package:flutter_devfest/config/index.dart';
 import 'package:flutter_devfest/faq/faq_page.dart';
 import 'package:flutter_devfest/find_devfest/find_devfest_page.dart';
@@ -44,11 +45,12 @@ class _ConfigPageState extends State<ConfigPage> {
     configBloc = ConfigBloc();
     configBloc.darkModeOn = Preferences.getBool(Devfest.darkModePref, false);
     configBloc.languageCode = Preferences.getString(Devfest.languagePref, 'zh');
-    configBloc.dispatch(LoadDevFestByFirebaseEvent());
     if (kIsWeb) {
     } else if (Platform.isAndroid || Platform.isIOS) {
       configBloc.analytics = FirebaseAnalytics();
       configBloc.firebaseMessaging = FirebaseMessaging();
+      configBloc.remoteConfig = await RemoteConfig.instance;
+      ConfigBloc().dispatch(LoadDevFestByFirebaseEvent());
       configBloc.initFCM();
     }
   }
@@ -118,6 +120,7 @@ class _ConfigPageState extends State<ConfigPage> {
               GlobalCupertinoLocalizations.delegate,
             ],
             supportedLocales: AppLocalizations.supportLocales,
+            navigatorKey: configBloc.navigatorKey,
             routes: {
               HomePage.routeName: (context) => HomePage(),
               SpeakerPage.routeName: (context) => SpeakerPage(),
@@ -127,6 +130,7 @@ class _ConfigPageState extends State<ConfigPage> {
               FaqPage.routeName: (context) => FaqPage(),
               FindDevFestPage.routeName: (context) => FindDevFestPage(),
               MapPage.routeName: (context) => MapPage(),
+              SessionDetail.routeName: (context) => SessionDetail(),
             },
             navigatorObservers: (kIsWeb)
                 ? []

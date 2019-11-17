@@ -14,7 +14,7 @@ class SessionDetail extends StatelessWidget {
   static const String routeName = "/session_detail";
   final Session session;
 
-  SessionDetail({Key key, @required this.session}) : super(key: key);
+  SessionDetail({Key key, this.session}) : super(key: key);
 
   Widget socialActions(context, Speaker speaker) => FittedBox(
         child: Row(
@@ -133,6 +133,10 @@ class SessionDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // var _homeBloc = HomeBloc();
+    Session session = ModalRoute.of(context).settings.arguments;
+    if (this.session != null) {
+      session = this.session;
+    }
     return DevScaffold(
       body: SingleChildScrollView(
         child: Padding(

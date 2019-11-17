@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_devfest/config/config_bloc.dart';
+import 'package:flutter_devfest/config/config_event.dart';
 import 'package:flutter_devfest/config/config_state.dart';
 import 'package:flutter_devfest/home/home_page.dart';
 import 'package:flutter_devfest/universal/dev_scaffold.dart';
@@ -12,8 +13,18 @@ import 'package:flutter_devfest/utils/tools.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:intl/intl.dart';
 
-class FindDevFestPage extends StatelessWidget {
+class FindDevFestPage extends StatefulWidget {
   static const String routeName = "/find";
+
+  @override
+  _FindDevFestPageState createState() => _FindDevFestPageState();
+}
+
+class _FindDevFestPageState extends State<FindDevFestPage> {
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {

@@ -2,6 +2,7 @@
 import 'dart:convert';
 
 import 'package:firebase_remote_config/firebase_remote_config.dart';
+
 //import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter_devfest/config/config_bloc.dart';
 import 'package:flutter_devfest/config/config_provider.dart';
@@ -32,10 +33,11 @@ class FirebaseClient implements IClient {
     } else if (resourcePath == HomeProvider.kConstGetSponsorsUrl) {
       path = "${ConfigBloc().languageCode}_${cityTag}_sponsors";
     }
-    final RemoteConfig remoteConfig = await RemoteConfig.instance;
-    await remoteConfig.fetch(expiration: const Duration(seconds: 5));
-    await remoteConfig.activateFetched();
-    resultClass = jsonDecode(remoteConfig.getString(path));
+    await ConfigBloc()
+        .remoteConfig
+        .fetch(expiration: const Duration(seconds: 5));
+    await ConfigBloc().remoteConfig.activateFetched();
+    resultClass = jsonDecode(ConfigBloc().remoteConfig.getString(path));
     return MappedNetworkServiceResponse<T>(
       mappedResult: resultClass,
       networkServiceResponse: NetworkServiceResponse<T>(success: true),
