@@ -7,7 +7,7 @@ class Preferences {
   static SharedPreferences prefs;
 
   static init() async {
-    if (kIsWeb) {
+    if (false) {
     } else if (Platform.isIOS || Platform.isAndroid) {
       prefs = await SharedPreferences.getInstance();
     }

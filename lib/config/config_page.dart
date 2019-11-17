@@ -45,7 +45,7 @@ class _ConfigPageState extends State<ConfigPage> {
     configBloc = ConfigBloc();
     configBloc.darkModeOn = Preferences.getBool(Devfest.darkModePref, false);
     configBloc.languageCode = Preferences.getString(Devfest.languagePref, 'zh');
-    if (kIsWeb) {
+    if (false) {
     } else if (Platform.isAndroid || Platform.isIOS) {
       configBloc.analytics = FirebaseAnalytics();
       configBloc.firebaseMessaging = FirebaseMessaging();
@@ -132,7 +132,7 @@ class _ConfigPageState extends State<ConfigPage> {
               MapPage.routeName: (context) => MapPage(),
               SessionDetail.routeName: (context) => SessionDetail(),
             },
-            navigatorObservers: (kIsWeb)
+            navigatorObservers: (false)
                 ? []
                 : (Platform.isIOS || Platform.isAndroid)
                     ? [

@@ -52,7 +52,7 @@ class SponsorImage extends StatelessWidget {
       elevation: 0.0,
       child: Padding(
         padding: const EdgeInsets.all(12.0),
-        child: (kIsWeb)
+        child: (false)
             ? NetworkImage(imgUrl)
             : CachedNetworkImage(
                 imageUrl: imgUrl,

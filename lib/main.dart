@@ -33,7 +33,7 @@ Future<void> main() async {
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 
   // * Get Shared Preference Instance for whole app
-  if (!kIsWeb) {
+  if (!false) {
     Preferences.init();
   }
 
@@ -47,7 +47,7 @@ Future<void> main() async {
   //* Set DataMode.DART to use Dart hardcoded data and DataMode.JSON to use json file for hardcoded data.
   Injector.configure(Flavor.FIREBASE, DataMode.JSON, EventMode.MULTI);
 
-  if (kIsWeb) {
+  if (false) {
   } else if (Platform.isIOS || Platform.isAndroid) {
     Crashlytics.instance.enableInDevMode = false;
     // Pass all uncaught errors from the framework to Crashlytics.

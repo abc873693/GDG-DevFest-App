@@ -67,7 +67,7 @@ class SessionList extends StatelessWidget {
                 backgroundColor: Colors.transparent,
                 backgroundImage: allSessions[i].speaker?.speakerImage != null &&
                         allSessions[i].speaker.speakerImage.isNotEmpty
-                    ? ((kIsWeb)
+                    ? ((false)
                         ? NetworkImage(allSessions[i].speaker.speakerImage)
                         : CachedNetworkImageProvider(
                             allSessions[i].speaker.speakerImage,

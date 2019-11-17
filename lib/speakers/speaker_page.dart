@@ -92,7 +92,7 @@ class SpeakerPage extends StatelessWidget {
                       height: MediaQuery.of(context).size.height * 0.2,
                       width: MediaQuery.of(context).size.width * 0.3,
                     ),
-                    child: (kIsWeb)
+                    child: (false)
                         ? Image.network(speakers[i].speakerImage ?? '')
                         : CachedNetworkImage(
                             fit: BoxFit.contain,

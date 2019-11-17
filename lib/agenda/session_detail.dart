@@ -152,7 +152,7 @@ class SessionDetail extends StatelessWidget {
                     backgroundColor: Colors.transparent,
                     backgroundImage: session.speaker?.speakerImage != null &&
                             session.speaker.speakerImage.isNotEmpty
-                        ? ((kIsWeb)
+                        ? ((false)
                             ? NetworkImage(session.speaker.speakerImage)
                             : CachedNetworkImageProvider(
                                 session.speaker.speakerImage,
